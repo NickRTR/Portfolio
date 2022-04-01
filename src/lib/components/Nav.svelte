@@ -3,16 +3,16 @@
 
     const nav = [
         {title: "Home", path: "/"},
-        {title: "Practice", path: "/practice"}
+        {title: "Blog", path: "/blog"}
     ];
 </script>
 
 <main>
     <nav>
-        <h1>Nick Reutlinger</h1>
+        <a href="/" sveltekit:prefetch title="Go Home">Nick Reutlinger</a>
         <div class="links">
             {#each nav as link}
-                <a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:prefetch title={link.title}>{link.title}</a>
+                <a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:prefetch title={"Go" + link.title}>{link.title}</a>
             {/each} 
         </div>
     </nav>
@@ -29,13 +29,14 @@
         align-items: center;
         justify-content: space-between;
         background-color: var(--yellow);
-        padding: 0 1rem;
+        padding: 1rem;
     }
     
     nav a {
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-left: .5rem;
+        color: var(--textDark)
     }
 
     .active {

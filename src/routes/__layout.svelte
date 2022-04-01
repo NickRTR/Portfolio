@@ -22,7 +22,7 @@
 
 	:global(body) {
         background-color: var(--textLight);
-        background-image: radial-gradient(#d2d6d8 1px, transparent 1px);
+        background-image: radial-gradient(var(--dots) 1px, transparent 1px);
         background-size: 10px 10px;
     }
 
@@ -32,5 +32,6 @@
         --yellow: #FFC600;
         --textLight: white;
         --textDark: black;
+        --dots: #d2d6d9;
     }
 </style>
