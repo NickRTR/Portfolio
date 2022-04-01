@@ -3,6 +3,7 @@
 
     const nav = [
         {title: "Home", path: "/"},
+        {title: "Uses", path: "#uses"},
         {title: "Blog", path: "/blog"}
     ];
 </script>
@@ -22,6 +23,7 @@
     main {
         position: sticky;
         top: 0;
+        z-index: 1;
     }
 
     nav {
