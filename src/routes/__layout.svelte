@@ -1,6 +1,9 @@
 <script>
-    import Nav from "$lib/components/nav.svelte";
+<<<<<<< HEAD
+    import Nav from "$lib/components/Nav.svelte";
     import Footer from "$lib/components/Footer.svelte";
+=======
+>>>>>>> 0d5e07f1ecb8d4e7d76e3b5d0f3048b223bd22c0
 </script>
 
 <body>
