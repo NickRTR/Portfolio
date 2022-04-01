@@ -16,7 +16,7 @@
     }
 
     main {
-        max-width: 900px;
+        max-width: 500px;
         margin: auto;
     }
 

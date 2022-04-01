@@ -1,9 +1,7 @@
 <script>
-    import { page } from "$app/stores";
-
     const nav = [
         {title: "Home", path: "/"},
-        {title: "Uses", path: "#uses"},
+        {title: "Uses", path: "/#uses"},
         {title: "Blog", path: "/blog"}
     ];
 </script>
@@ -13,7 +11,7 @@
         <a href="/" sveltekit:prefetch title="Go Home">Nick Reutlinger</a>
         <div class="links">
             {#each nav as link}
-                <a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:prefetch title={"Go" + link.title}>{link.title}</a>
+                <a href={link.path} sveltekit:prefetch title={"Go" + link.title}>{link.title}</a>
             {/each} 
         </div>
     </nav>
@@ -39,9 +37,5 @@
         font-size: 1.8rem;
         margin-left: .5rem;
         color: var(--textDark)
-    }
-
-    .active {
-        border-top: 3px solid var(--yellow);
     }
 </style>
