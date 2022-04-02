@@ -4,7 +4,9 @@
 
     const nav = [
         {title: "Home", path: "/"},
+        {title: "Work", path: "/work"},
         {title: "Uses", path: "/uses"},
+        {title: "Contact", path: "/contact"},
         {title: "Blog", path: "/blog"}
     ];
 
@@ -17,7 +19,7 @@
 <main>
     <nav>
         <a id="title" href="/" sveltekit:prefetch>Nick Reutlinger</a>
-        {#if innerWidth >= 600}
+        {#if innerWidth >= 750}
         <div class="links">
             {#each nav as link}
                 <!-- use p to transform on hover -->
