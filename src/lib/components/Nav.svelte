@@ -80,7 +80,7 @@
         color: var(--yellow);
     }
 
-    a:not(.active):hover, a:focus {
+    a:not(.active, #title):hover, a:focus {
         text-decoration: underline;
     }
 
