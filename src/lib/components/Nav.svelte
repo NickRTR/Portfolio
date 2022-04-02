@@ -53,7 +53,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: var(--yellow);
-        padding: .5rem;
+        padding: 1rem;
     }
     
     #title {
@@ -68,20 +68,16 @@
         color: var(--textDark);
         text-decoration: none;
         font-size: 1.5rem;
-        padding: .5rem;
-        margin: 0 .25rem;
-        border-radius: .5rem;
+        margin: 0 .5rem;
         outline: none;
     }
 
-    .active {
-        transition: .5s ease-in-out;
-        background-color: var(--textDark);
-        color: var(--yellow);
+    .links a:not(.active, #title):hover, a:focus {
+        border-bottom: 3px dashed var(--textDark);
     }
 
-    a:not(.active, #title):hover, a:focus {
-        text-decoration: underline;
+    .active {
+        border-bottom: 3px solid var(--textDark);
     }
 
     /* Hamburger */
@@ -112,7 +108,6 @@
     }
 
     .hamburger a {
-        margin: 0;
-        line-height: 2rem;
+        line-height: 2.5rem;
     }
 </style>
