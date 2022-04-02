@@ -22,4 +22,14 @@
     footer p {
         margin: 0;
     }
+
+    @media only screen and (max-width: 450px) {
+        footer {
+            flex-direction: column;
+        }
+
+        footer p {
+            margin: .1rem 0;
+        }
+    }
 </style>
