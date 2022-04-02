@@ -9,8 +9,7 @@
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <img src="/me.jpg" alt="A picture of myself" title="A picture of myself">
             <p>
-                I'm a self thaught software engineer at the age of 16, located in Germany.<br>
-                For the most part, I'm developing Web Apps with Sveltekit and Javascript. Additionally I'm interested in anything that has to do with tech.
+                I'm a self-thaught software engineer at the age of 16, located in Germany.<br>For the most part, I'm developing Web Apps with Sveltekit and Javascript. Additionally, I'm interested in anything that has to do with tech.
             </p>
         </section>
     </article>

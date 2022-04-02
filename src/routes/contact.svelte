@@ -19,6 +19,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1.2rem;
     }
 
     form * {
@@ -49,7 +50,6 @@
         background-color: var(--yellow);
         color: var(--textDark);
         padding: .25rem .5rem;
-        font-size: 1.2rem;
     }
 
     @media only screen and (max-width: 600px) {

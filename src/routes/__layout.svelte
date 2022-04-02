@@ -14,7 +14,8 @@
 <style>
     * {
         margin: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
         color: var(--textDark);
     }
 
@@ -40,6 +41,12 @@
         --textLight: white;
         --textDark: black;
         --dots: #d2d6d9;
+    }
+
+    @font-face {
+        font-family: 'Work Sans', sans-serif;
+        src: url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap') format('woff2');
+        font-display: swap;
     }
 
     /* scroll bar */

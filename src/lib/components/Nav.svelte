@@ -48,15 +48,20 @@
         margin-bottom: 1rem;
     }
 
+    #title {
+        font-size: 1.8rem;
+    }
+
     a {
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: var(--textDark)
     }
 
     nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background-color: var(--yellow);
         padding: 1rem;
     }
