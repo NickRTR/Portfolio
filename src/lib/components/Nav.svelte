@@ -8,10 +8,11 @@
 
 <main>
     <nav>
-        <a href="/" sveltekit:prefetch title="Go Home">Nick Reutlinger</a>
+        <a href="/" sveltekit:prefetch>Nick Reutlinger</a>
         <div class="links">
             {#each nav as link}
-                <a href={link.path} sveltekit:prefetch title={"Go" + link.title}>{link.title}</a>
+                <!-- Have to use p to transform on hover -->
+                <p><a href={link.path} sveltekit:prefetch title={"-> " + link.title}>{link.title}</a></p>
             {/each} 
         </div>
     </nav>
@@ -35,7 +36,19 @@
     nav a {
         text-decoration: none;
         font-size: 1.8rem;
-        margin-left: .5rem;
+        margin-left: 1rem;
         color: var(--textDark)
+    }
+
+    .links {
+        display: flex;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    p:hover {
+        transform: scale(1.1);
     }
 </style>
