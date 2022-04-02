@@ -13,7 +13,6 @@
 <style>
     main {
         text-align: center;
-        margin-bottom: 1rem;
     }
 
     .container {

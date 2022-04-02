@@ -18,7 +18,7 @@
 <style>
     section {
         font-size: 1.3rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         display: flex;
         align-items: center;
     }

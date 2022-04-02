@@ -38,7 +38,7 @@
     main {
         max-width: 600px;
         margin: auto;
-        padding: 0 1rem;
+        padding: 1rem;
     }
 
 	:global(body) {
