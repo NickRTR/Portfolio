@@ -4,9 +4,8 @@
 
 <main>
     <footer>
-        <p>Germany, Stuttgart</p>
         <p>©2022, Nick Reutlinger</p>
-    <p>{weather.current.temp_c} °C</p>
+        <p>Germany, Stuttgart {weather.current.temp_c} °C</p>
     </footer>
 </main>
 

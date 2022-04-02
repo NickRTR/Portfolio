@@ -1,6 +1,6 @@
 <script context="module">
-    export async function load() {
-        let res = await fetch("https://weatherwatch.vercel.app/api/Stuttgart.json"); 
+    export async function load({ fetch }) {
+        let res = await fetch("/api/weather.json"); 
 		if (res.ok) {
             const data = await res.json();
             return {
