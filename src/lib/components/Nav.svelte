@@ -43,6 +43,7 @@
         position: sticky;
         top: 0;
         z-index: 1;
+        margin-bottom: 1rem;
     }
 
     a {

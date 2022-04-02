@@ -23,11 +23,17 @@
         display: flex;
         align-items: center;
     }
-
+    
     img {
         height: 175px;
         border-radius: 100%;
         margin-right: 1rem;
         border: 5px solid var(--yellow);
+    }
+    
+    @media only screen and (max-width: 600px) {
+        section {
+            flex-direction: column;
+        }
     }
 </style>
