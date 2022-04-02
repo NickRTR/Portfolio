@@ -1,6 +1,22 @@
+<script context="module">
+    export async function load() {
+        let res = await fetch("https://weatherwatch.vercel.app/api/Stuttgart.json"); 
+		if (res.ok) {
+            const data = await res.json();
+            return {
+                props: {
+                    weather: data
+                }
+            }
+        }
+	}
+</script>
+
 <script>
     import Nav from "$lib/components/Nav.svelte";
     import Footer from "$lib/components/Footer.svelte";
+
+    export let weather;
 </script>
 
 <body>
@@ -8,7 +24,7 @@
 
     <main><slot></slot></main>
 
-    <Footer />
+    <Footer {weather} />
 </body>
 
 <style>
