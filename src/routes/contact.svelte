@@ -30,6 +30,7 @@
     }
 
     form *:focus, form *:hover {
+        transition: .1s ease-in-out;
         border: 2px solid var(--yellow);
     }
 
@@ -49,7 +50,16 @@
     button {
         background-color: var(--yellow);
         color: var(--textDark);
+        border: 2px solid var(--yellow);
         padding: .25rem .5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        user-select: none;
+    }
+
+    button:hover, button:focus {
+        transition: .1s ease-in-out;
+        border: 2px solid var(--textDark);
     }
 
     @media only screen and (max-width: 600px) {

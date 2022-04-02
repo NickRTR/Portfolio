@@ -35,4 +35,8 @@
         color: black;
         line-height: 2rem;
     }
+
+    ul *::selection {
+        background-color: var(--yellow);
+    }
 </style>

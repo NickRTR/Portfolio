@@ -23,7 +23,7 @@
         <div class="links">
             {#each nav as link}
                 <!-- use p to transform on hover -->
-                <p><a href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path} title={"-> " + link.title}>{link.title}</a></p>
+                <a href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path} title={"-> " + link.title}>{link.title}</a>
             {/each} 
         </div>
         {:else}
@@ -48,38 +48,39 @@
         margin-bottom: 1rem;
     }
 
-    #title {
-        font-size: 1.8rem;
-    }
-
-    a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: var(--textDark)
-    }
-
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: var(--yellow);
-        padding: 1rem;
+        padding: .5rem;
+    }
+    
+    #title {
+        font-size: 1.8rem;
     }
 
     .links {
         display: flex;
     }
-    
-    p {
-        margin: 0;
-        margin-left: .75rem;
-    }
 
-    p:hover {
-        transform: scale(1.1);
+    a {
+        color: var(--textDark);
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: .5rem;
+        margin: 0 .25rem;
+        border-radius: .5rem;
+        outline: none;
     }
 
     .active {
+        transition: .5s ease-in-out;
+        background-color: var(--textDark);
+        color: var(--yellow);
+    }
+
+    a:not(.active):hover, a:focus {
         text-decoration: underline;
     }
 
