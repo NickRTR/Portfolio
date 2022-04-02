@@ -4,7 +4,7 @@
 
 <main>
     <article id="uses">
-        <Heading lines={["uses"]}/> 
+        <Heading text={["uses"]}/> 
         <ul>
             <li>Laptop: <a href="https://www.lenovo.com/us/en/laptops/legion-laptops/legion-5-series/c/legion-5-series" target="_blank">Lenovo Legion 5</a> (Ryzen 5 5600h, RTX 3060)</li>
             <li>Keyboard: <a href="https://www.keychron.com/pages/keychron-k8-wireless-mechanical-keyboard" target="_blank">Keychron K8</a></li>

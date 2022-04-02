@@ -1,10 +1,10 @@
 <script>
-    export let lines;
+    export let text;
 </script>
 
 <main>
     <div class="container">
-        {#each lines as title}
+        {#each text as title}
             <h1>{title}</h1>
         {/each}
     </div>
@@ -13,6 +13,7 @@
 <style>
     main {
         text-align: center;
+        margin-bottom: 1rem;
     }
 
     .container {
@@ -27,5 +28,6 @@
     h1 {
         transform: rotate(5deg);
         margin: 0;
+        font-size: 2rem;
     }
 </style>

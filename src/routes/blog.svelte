@@ -1,3 +1,7 @@
+<script>
+    import Heading from "$lib/components/Heading.svelte";
+</script>
+
 <main>
-    Placeholder
+    <Heading text={["Blog"]} />
 </main>
