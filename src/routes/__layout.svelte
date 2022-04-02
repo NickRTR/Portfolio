@@ -28,10 +28,9 @@
         background-color: var(--textLight);
         background-image: radial-gradient(var(--dots) 1px, transparent 1px);
         background-size: 10px 10px;
-        display: flex;
         min-height: 100vh;
+        display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     /* Variables */
@@ -41,5 +40,21 @@
         --textLight: white;
         --textDark: black;
         --dots: #d2d6d9;
+    }
+
+    /* scroll bar */
+    ::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 0;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border: 5px solid var(--textDark)
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--yellow);
     }
 </style>
