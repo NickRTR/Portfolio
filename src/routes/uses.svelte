@@ -29,13 +29,10 @@
         padding-left: 1.1rem;
     }
 
-    li {
-        margin: .2rem 0;
-    }
-
     li a {
         border-bottom: 3px solid var(--yellow);
         text-decoration: none;
         color: black;
+        line-height: 2rem;
     }
 </style>

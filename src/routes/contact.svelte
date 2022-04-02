@@ -23,13 +23,13 @@
 
     form * {
         border-radius: 5px;
-        outline: 2px solid var(--textDark);
-        border: none;
+        outline: none;
+        border: 2px solid var(--textDark);
         padding: .2rem;
     }
 
     form *:focus, form *:hover {
-        outline: 2px solid var(--yellow);
+        border: 2px solid var(--yellow);
     }
 
     input {
@@ -47,6 +47,7 @@
 
     button {
         background-color: var(--yellow);
+        color: var(--textDark);
         padding: .25rem .5rem;
         font-size: 1.2rem;
     }
