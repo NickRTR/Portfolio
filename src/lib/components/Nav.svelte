@@ -69,9 +69,10 @@
         font-size: 1.5rem;
         margin: 0 .5rem;
         outline: none;
+        user-select: none;
     }
 
-    .links a:hover, a:focus {
+    .links a:hover, a:not(#title):focus {
         border-bottom: 3px dashed var(--textDark);
     }
 
