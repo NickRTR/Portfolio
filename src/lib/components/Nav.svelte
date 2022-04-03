@@ -18,14 +18,13 @@
 
 <main>
     <nav>
-        <a id="title" href="/" sveltekit:prefetch>Nick Reutlinger</a>
+        <a id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
         {#if innerWidth >= 750}
-        <div class="links">
-            {#each nav as link}
-                <!-- use p to transform on hover -->
-                <a href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path} title={"-> " + link.title}>{link.title}</a>
-            {/each} 
-        </div>
+            <div class="links">
+                {#each nav as link}
+                    <a href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path} title={"-> " + link.title}>{link.title}</a>
+                {/each} 
+            </div>
         {:else}
             <input type="checkbox" id="toggle" bind:checked={showHamburger}>
             <label for="toggle"><img src="/menu.svg" alt="Menu"></label>
@@ -72,12 +71,12 @@
         outline: none;
     }
 
-    .links a:not(.active, #title):hover, a:focus {
+    .links a:hover, a:focus {
         border-bottom: 3px dashed var(--textDark);
     }
 
     .active {
-        border-bottom: 3px solid var(--textDark);
+        border-bottom: 3px solid var(--textDark) !important;
     }
 
     /* Hamburger */

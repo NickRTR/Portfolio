@@ -20,6 +20,7 @@
         flex-direction: column;
         align-items: center;
         font-size: 1.2rem;
+        margin-top: 1rem;
     }
 
     form * {
