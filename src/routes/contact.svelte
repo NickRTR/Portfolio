@@ -19,7 +19,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.2rem;
         margin-top: 1rem;
     }
 
@@ -27,7 +26,8 @@
         border-radius: 5px;
         outline: none;
         border: 2px solid var(--textDark);
-        padding: .2rem;
+        padding: .5rem;
+        font-size: 1rem;
     }
 
     form *:focus, form *:hover {
@@ -44,6 +44,8 @@
         margin-bottom: .4rem;
         width: 300px;
         height: 100px;
+        min-width: 200px;
+        min-height: 100px;
         max-width: 400px;
         max-height: 200px;
     }

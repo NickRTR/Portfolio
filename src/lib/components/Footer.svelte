@@ -5,7 +5,7 @@
 <main>
     <footer>
         <p>©2022, Nick Reutlinger</p>
-        <p>📍Germany, Stuttgart {weather.current.temp_c}°C</p>
+        <p>📍Germany, Stuttgart {Math.round(weather.current.temp_c)}°C | {Math.round(weather.current.temp_f)}F</p>
     </footer>
 </main>
 
