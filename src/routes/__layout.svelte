@@ -36,7 +36,7 @@
     }
 
     main {
-        max-width: 600px;
+        max-width: 37.5rem;
         margin: auto;
         padding: 1rem;
     }
