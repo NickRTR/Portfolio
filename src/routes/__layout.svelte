@@ -1,6 +1,6 @@
 <script context="module">
     export async function load({ fetch }) {
-        let res = await fetch("/api/weather.json"); 
+        let res = await fetch("/api/weather.json");
 		if (res.ok) {
             const data = await res.json();
             return {
@@ -8,6 +8,10 @@
                     weather: data
                 }
             }
+        } else {
+            return {
+                status: 301
+            };
         }
 	}
 </script>
@@ -35,12 +39,6 @@
         color: var(--textDark);
     }
 
-    main {
-        max-width: 37.5rem;
-        margin: auto;
-        padding: 1rem;
-    }
-
 	:global(body) {
         background-color: var(--textLight);
         background-image: radial-gradient(var(--dots) 1px, transparent 1px);
@@ -48,6 +46,12 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+
+    main {
+        max-width: 37.5rem;
+        margin: auto;
+        padding: 1rem;
     }
 
     /* Variables */

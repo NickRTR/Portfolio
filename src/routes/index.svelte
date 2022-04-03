@@ -3,28 +3,28 @@
 </script>
 
 <main>
-    <article id="about">
+    <section>
         <Heading text={["Hi, I'm Nick", "Reutlinger"]}/> 
-        <div class="content">
+        <article>
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <img id="me" src="/me.jpg" alt="A picture of myself" title="A picture of myself">
-            <section>
+            <aside>
                 <p>
                     I'm a self-taught software engineer at the age of 16, located in Germany.<br>For the most part, I'm developing Web Apps with Sveltekit and Javascript. Additionally, I'm interested in anything that has to do with tech.
                 </p>
                 <div class="links">
-                    <a href="https://twitter.com/nickrtrrtr" target="_blank"><img class="social" src="/twitter.svg" alt="twitter" title="twitter"></a>
-                    <a href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img class="social" src="/linkedin.svg" alt="linkedin" title="linkedin"></a>
-                    <a href="https://github.com/NickRTR" target="_blank"><img class="social" src="/github.svg" alt="github" title="github"></a>
-                    <a href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img class="social" src="/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
+                    <a href="https://twitter.com/nickrtrrtr" target="_blank"><img class="socialLink" src="/twitter.svg" alt="twitter" title="twitter"></a>
+                    <a href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img class="socialLink" src="/linkedin.svg" alt="linkedin" title="linkedin"></a>
+                    <a href="https://github.com/NickRTR" target="_blank"><img class="socialLink" src="/github.svg" alt="github" title="github"></a>
+                    <a href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img class="socialLink" src="/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
                 </div>
-            </section>
-        </div>
-    </article>
+            </aside>
+        </article>
+    </section>
 </main>
 
 <style>
-    .content {
+    article {
         font-size: 1.2rem;
         margin-top: 1.5rem;
         display: flex;
@@ -41,8 +41,12 @@
         margin-right: 1rem;
         border: 5px solid var(--yellow);
     }
+    
+    p {
+        margin-bottom: .5rem;
+    }
 
-    .social {
+    .socialLink {
         width: 2rem;
         background-color: var(--yellow);
         padding: .5rem;
@@ -58,16 +62,12 @@
         opacity: .75;
     }
 
-    p {
-        margin-bottom: .5rem;
-    }
-
     *::selection {
         background-color: var(--yellow);
     }
     
     @media only screen and (max-width: 600px) {
-        .content {
+        article {
             flex-direction: column;
         }
     }
