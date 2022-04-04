@@ -72,7 +72,7 @@
     }
 
     .links a:hover, a:not(#title):focus {
-        border-bottom: 3px dashed var(--textDark);
+        border-bottom: 3px solid var(--textLight);
     }
 
     .active {
