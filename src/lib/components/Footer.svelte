@@ -6,7 +6,7 @@
     <footer>
         <p>©2022, Nick Reutlinger</p>
         {#if weather}
-            <p>📍Germany, Stuttgart {Math.round(weather.current.temp_c)}°C | {Math.round(weather.current.temp_f)}F</p>
+            <p>📍Germany, Stuttgart {Math.round(weather.current.temp_c)}°C / {Math.round(weather.current.temp_f)}F</p>
         {:else}
             <p>📍Germany, Stuttgart</p>
         {/if}
