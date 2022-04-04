@@ -2,14 +2,14 @@
     <h1>WeatherWatch</h1>
 
     <article>
-        <a class="linkUnderline" href="https://weatherwatch.vercel.app/" title="https://weatherwatch.vercel.app/" target="_blank">Visit WeatherWatch</a><br>
-        <a href="https://weatherwatch.vercel.app/" target="_blank"><img src="/work/WeatherWatch.svg" alt="WeatherWatch Logo" title="WeatherWatch Logo"></a>
+        <a href="https://weatherwatch.vercel.app/" title="https://weatherwatch.vercel.app/" target="_blank">Visit WeatherWatch</a><br>
+        <a class="noUnderline" href="https://weatherwatch.vercel.app/" target="_blank"><img src="/work/WeatherWatch.svg" alt="WeatherWatch Logo" title="WeatherWatch Logo"></a>
         <p>
             Weather Watch is a weather report built in Sveltekit. 
             It shows the current weather and a weather forecast for 3 days. 
             Additionally it offers a small advice for every day at the bottom of the app. 
-            The App is available in every Browser at <a class="linkUnderline" href="https://weatherwatch.vercel.app/" target="_blank">https://weatherwatch.vercel.app/</a>. 
-            The data is delivered by <a class="linkUnderline" href="https://www.weatherapi.com/" target="_blank">https://www.weatherapi.com/</a> and <a class="linkUnderline" href="https://api.adviceslip.com/" target="_blank">https://api.adviceslip.com/</a>.
+            The App is available in every Browser at <a href="https://weatherwatch.vercel.app/" target="_blank">https://weatherwatch.vercel.app/</a>. 
+            The data is delivered by <a href="https://www.weatherapi.com/" target="_blank">https://www.weatherapi.com/</a> and <a class="linkUnderline" href="https://api.adviceslip.com/" target="_blank">https://api.adviceslip.com/</a>.
         </p>
         <h2>Features</h2>
         <ul>
@@ -30,7 +30,7 @@
         </ul>
         <h2>Difficulties</h2>
         <p>This time, it was difficult to secure the API Key from the users.</p>
-        <p>Therefore I used SvelteKit API routes and <a class="linkUnderline" href="https://www.npmjs.com/package/dotenv" title="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a>.</p>
+        <p>Therefore I used SvelteKit API routes and <a href="https://www.npmjs.com/package/dotenv" title="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a>.</p>
     </article>
 </main>
 

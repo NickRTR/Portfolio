@@ -76,7 +76,7 @@
         color: var(--textDark);
     }
 
-    :global(.linkUnderline) {
+    :global(a:not(.noUnderline)) {
         text-decoration: none;
         border-bottom: 3px solid var(--yellow);
     }

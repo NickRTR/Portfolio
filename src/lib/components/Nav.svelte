@@ -18,11 +18,11 @@
 
 <main>
     <nav>
-        <a id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
+        <a class="noUnderline" id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
         {#if innerWidth >= 750}
             <div class="links">
                 {#each nav as link}
-                    <a href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")} title={"-> " + link.title}>{link.title}</a>
+                    <a class="noUnderline" href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")} title={"-> " + link.title}>{link.title}</a>
                 {/each} 
             </div>
         {:else}
@@ -41,8 +41,6 @@
 
 <style>
     main {
-        position: sticky;
-        top: 0;
         z-index: 1;
         margin-bottom: 1rem;
     }
@@ -51,12 +49,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--yellow);
+        border-bottom: 5px solid var(--yellow);
         padding: 1rem;
     }
     
     #title {
         font-size: 1.8rem;
+        margin: 0;
     }
 
     .links {
@@ -72,11 +71,11 @@
     }
 
     .links a:hover, a:not(#title):focus {
-        border-bottom: 3px solid var(--textLight);
+        border-bottom: 3px solid var(--textDark);
     }
 
     .active {
-        border-bottom: 3px solid var(--textDark) !important;
+        border-bottom: 3px solid var(--yellow) !important;
     }
 
     /* Hamburger */

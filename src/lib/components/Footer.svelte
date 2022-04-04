@@ -15,9 +15,8 @@
 
 <style>
     footer {
-        background-color: var(--yellow);
-        padding: .9rem;
-        text-align: center;
+        border-top: 5px solid var(--yellow);
+        padding: .6rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
