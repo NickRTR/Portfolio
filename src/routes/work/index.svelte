@@ -24,7 +24,7 @@
     }
 
     ul {
-        margin: .5rem 0;
+        margin: .25rem 0;
     }
 
     ul *::selection {

@@ -2,7 +2,7 @@
     <h1>Mikki</h1>
 
     <article>
-        <a class="linkUnderline" href="https://mikki.gq" target="_blank">Visit Mikki</a><br>
+        <a class="linkUnderline" href="https://mikki.gq" title="https://mikki.gq" target="_blank">Visit Mikki</a><br>
         <a href="https://mikki.gq" target="_blank"><img src="/work/Mikki.svg" alt="Mikki Logo" title="Mikki Logo"></a>
         <p>Mikki is an assembler wiki created in SvelteKit, to provide a nice and easy way for my class mates to write down all the things we are learning in our Assembler class. Special features are the Tauri Desktop App and the auto caching system.</p>
         <h2>Features</h2>
@@ -17,14 +17,18 @@
             <li>extremely fast and small desktop app with Tauri</li>
         </ul>
         <h2>Difficulties</h2>
-        <p>Interpreting markdown files was difficult to setup at first, but now works like a charm.</p>
-        <p>We used <a class="linkUnderline" href="https://www.npmjs.com/package/svelte-markdown" target="_blank">svelte-markdown</a> as a solution and got it to work with our database.</p>
+        <p>Interpreting markdown files was difficult to setup at first, but now it's working like a charm.</p>
+        <p>We used <a class="linkUnderline" href="https://www.npmjs.com/package/svelte-markdown" title="https://www.npmjs.com/package/svelte-markdown" target="_blank">svelte-markdown</a> as a solution and got it to work with our database.</p>
     </article>
 </main>
 
 <style>
     article {
         font-size: 1.2rem;
+    }
+
+    h1 {
+        margin-top: 0;
     }
 
     img {

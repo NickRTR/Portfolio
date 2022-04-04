@@ -37,6 +37,7 @@
         font-family: 'Work Sans', sans-serif;
         font-weight: bold;
         color: var(--textDark);
+        line-height: 1.8rem;
     }
 
 	:global(body) {
@@ -78,7 +79,6 @@
     :global(.linkUnderline) {
         text-decoration: none;
         border-bottom: 3px solid var(--yellow);
-        line-height: 2rem;
     }
 
     @font-face {
