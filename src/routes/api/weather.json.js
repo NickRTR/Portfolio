@@ -1,7 +1,12 @@
 import { API_KEY } from "$lib/api";
 
 export async function get() {
-    const result = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Stuttgart`);
+    let result;
+    try {
+        result = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Stuttgart`);
+    } catch (error) {
+        return error;
+    }
     let data = await result.json();
 
     if (result.ok) {

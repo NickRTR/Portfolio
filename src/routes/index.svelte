@@ -10,13 +10,13 @@
             <img id="me" src="/me.jpg" alt="A picture of myself" title="A picture of myself">
             <aside>
                 <p>
-                    I'm a self-taught software engineer at the age of 16, located in <mark>Germany</mark> <br>For the most part, I'm developing Web Apps with <mark>Sveltekit</mark> and <mark>Javascript</mark> Additionally, I'm interested in anything that has to do with <mark>tech</mark>.
+                    I'm a self-taught software engineer at the age of 16, located in <mark>Germany</mark>.<br>For the most part, I'm developing Web Apps with <mark>Sveltekit</mark> and <mark>Javascript</mark> Additionally, I'm interested in anything that has to do with <mark>tech</mark>.
                 </p>
                 <div class="links">
-                    <a href="https://twitter.com/nickrtrrtr" target="_blank"><img class="socialLink" src="/twitter.svg" alt="twitter" title="twitter"></a>
-                    <a href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img class="socialLink" src="/linkedin.svg" alt="linkedin" title="linkedin"></a>
-                    <a href="https://github.com/NickRTR" target="_blank"><img class="socialLink" src="/github.svg" alt="github" title="github"></a>
-                    <a href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img class="socialLink" src="/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
+                    <a href="https://twitter.com/nickrtrrtr" target="_blank"><img class="socialLink" src="/social/twitter.svg" alt="twitter" title="twitter"></a>
+                    <a href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img class="socialLink" src="/social/linkedin.svg" alt="linkedin" title="linkedin"></a>
+                    <a href="https://github.com/NickRTR" target="_blank"><img class="socialLink" src="/social/github.svg" alt="github" title="github"></a>
+                    <a href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img class="socialLink" src="/social/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
                 </div>
             </aside>
         </article>
@@ -46,10 +46,6 @@
         margin-bottom: .5rem;
     }
 
-    mark {
-        background-color: var(--yellow);
-    }
-
     .socialLink {
         width: 2rem;
         background-color: var(--yellow);
@@ -64,10 +60,6 @@
     .links a:hover, a:focus {
         outline: none;
         opacity: .75;
-    }
-
-    *::selection {
-        background-color: var(--yellow);
     }
     
     @media only screen and (max-width: 600px) {

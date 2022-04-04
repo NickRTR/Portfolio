@@ -63,6 +63,24 @@
         --dots: #d2d6d9;
     }
 
+    :global(mark) {
+        background-color: var(--yellow);
+    }
+
+    :global(*::selection ) {
+        background-color: var(--yellow);
+    }
+
+    :global(a) {
+        color: var(--textDark);
+    }
+
+    :global(.linkUnderline) {
+        text-decoration: none;
+        border-bottom: 3px solid var(--yellow);
+        line-height: 2rem;
+    }
+
     @font-face {
         font-family: 'Work Sans', sans-serif;
         src: url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap') format('woff2');

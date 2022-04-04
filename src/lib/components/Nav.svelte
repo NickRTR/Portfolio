@@ -22,7 +22,7 @@
         {#if innerWidth >= 750}
             <div class="links">
                 {#each nav as link}
-                    <a href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path} title={"-> " + link.title}>{link.title}</a>
+                    <a href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")} title={"-> " + link.title}>{link.title}</a>
                 {/each} 
             </div>
         {:else}
@@ -64,7 +64,6 @@
     }
 
     a {
-        color: var(--textDark);
         text-decoration: none;
         font-size: 1.5rem;
         margin: 0 .5rem;
