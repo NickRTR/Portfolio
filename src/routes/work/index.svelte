@@ -13,7 +13,7 @@
         <li><a class="linkUnderline" href="/work/Schoppy" sveltekit:prefetch title="Schoppy">Schoppy</a></li>
             <ul><li>A simple yet powerful shopping list with themes, quantity, category icons, multiply languages and much more.</li></ul>
         <li><a class="linkUnderline" href="/work/Carify" sveltekit:prefetch title="Carify">Carify</a></li>
-            <ul><li>Identify the origin of any car owner, in Germany and Austria, by its number plate.</li></ul>
+            <ul><li>Identify the origin of any car owner, in Germany and Austria, by the car's number plate.</li></ul>
     </ul>
 </main> 
 
