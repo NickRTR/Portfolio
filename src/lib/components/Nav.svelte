@@ -41,7 +41,6 @@
 
 <style>
     main {
-        z-index: 1;
         margin-bottom: 1rem;
     }
 
@@ -49,7 +48,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 5px solid var(--yellow);
+        border-bottom: 8px solid var(--yellow);
         padding: 1rem;
     }
     
