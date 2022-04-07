@@ -7,7 +7,7 @@
         {title: "Work", path: "/work"},
         {title: "Uses", path: "/uses"},
         {title: "Contact", path: "/contact"},
-        // {title: "Blog", path: "/blog"}
+        {title: "Blog", path: "/blog"}
     ];
 
     let innerWidth;
@@ -22,7 +22,13 @@
         {#if innerWidth >= 750}
             <div class="links">
                 {#each nav as link}
-                    <a class="noUnderline" href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")} title={"-> " + link.title}>{link.title}</a>
+                    <a class="noUnderline" href={link.path} sveltekit:prefetch class:active=
+                    {
+                        $page.url.pathname === link.path || 
+                        ($page.url.pathname.includes("/work") && link.path === "/work") || 
+                        ($page.url.pathname.includes("/blog") && link.path === "/blog")
+                    } 
+                    title={"-> " + link.title}>{link.title}</a>
                 {/each} 
             </div>
         {:else}
@@ -33,7 +39,13 @@
     {#if showHamburger && innerWidth < 600}
         <div class="hamburger" transition:slide>
             {#each nav as link}
-                <a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:prefetch title={link.title} on:click={() => {showHamburger = false}}>{link.title}</a><br>
+                <a href={link.path} class:active=
+                {
+                    $page.url.pathname === link.path || 
+                    ($page.url.pathname.includes("/work") && link.path === "/work") || 
+                    ($page.url.pathname.includes("/blog") && link.path === "/blog")
+                } 
+                sveltekit:prefetch title={link.title} on:click={() => {showHamburger = false}}>{link.title}</a><br>
             {/each}
         </div>
     {/if}
@@ -48,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 8px solid var(--yellow);
+        border-bottom: 7px solid var(--yellow);
         padding: 1rem;
     }
     
@@ -107,6 +119,10 @@
     .hamburger a {
         line-height: 2.5rem;
         margin: 0;
+    }
+
+    .hamburger .active {
+        border-bottom: 3px solid var(--textDark) !important;
     }
 
     @media only screen and (max-width: 750px) {
