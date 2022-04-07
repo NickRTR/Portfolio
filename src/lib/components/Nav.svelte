@@ -106,5 +106,13 @@
 
     .hamburger a {
         line-height: 2.5rem;
+        margin: 0;
+    }
+
+    @media only screen and (max-width: 750px) {
+        nav {
+            background-color: var(--yellow);
+            border: none;
+        }
     }
 </style>

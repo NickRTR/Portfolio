@@ -15,7 +15,7 @@
 
 <style>
     footer {
-        border-top: 5px solid var(--yellow);
+        background-color: var(--yellow);
         padding: .6rem;
         display: flex;
         align-items: center;
@@ -25,7 +25,7 @@
     footer p {
         margin: 0;
     }
-
+    
     @media only screen and (max-width: 450px) {
         footer {
             flex-direction: column;
