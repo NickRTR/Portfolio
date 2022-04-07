@@ -7,7 +7,7 @@
         <p>©2022, Nick Reutlinger</p>
         <p>📍Germany, Stuttgart
             {#if weather}
-                 {Math.round(weather.current.temp_c)}°C / {Math.round(weather.current.temp_f)}F
+                 {Math.round(weather.current.temp_c)}°C / {Math.round(weather.current.temp_f)}°F
             {/if}
         </p>
     </footer>
