@@ -7,7 +7,7 @@
         {title: "Work", path: "/work"},
         {title: "Uses", path: "/uses"},
         {title: "Contact", path: "/contact"},
-        {title: "Blog", path: "/blog"}
+        // {title: "Blog", path: "/blog"}
     ];
 
     let innerWidth;

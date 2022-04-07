@@ -28,10 +28,6 @@
         transform: rotate(5deg);
         margin: 0;
         font-size: 2rem;
-    }
-
-    h1::selection {
-        background-color: var(--yellow);
-        color: var(--textDark);
+        user-select: none;
     }
 </style>
