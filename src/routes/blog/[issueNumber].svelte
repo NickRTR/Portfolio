@@ -18,4 +18,8 @@
         border: none;
         background-color: var(--yellow);
     }
+
+    :global(h2) {
+        border-bottom: 3px solid var(--yellow);
+    }
 </style>
