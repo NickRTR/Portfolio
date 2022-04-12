@@ -11,3 +11,11 @@
 
     <SvelteMarkdown source={post.body} />
 </main>
+
+<style>
+    hr {
+        height: 3px;
+        border: none;
+        background-color: var(--yellow);
+    }
+</style>
