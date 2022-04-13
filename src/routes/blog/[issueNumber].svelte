@@ -2,10 +2,15 @@
     import SvelteMarkdown from "svelte-markdown";
 
     export let post;
+
+    let created = new Date(post.created_at);
+    let edited = new Date(post.updated_at);
 </script>
 
 <main>   
     <h1>{post.title}</h1>
+    <p>Created on {`${created.getDate()}.${created.getMonth()}.${created.getFullYear()}`}</p>
+    <p>Edited on {`${edited.getDate()}.${edited.getMonth()}.${edited.getFullYear()}`}</p>
 
     <hr>
 
@@ -19,7 +24,20 @@
         background-color: var(--yellow);
     }
 
+    h1 {
+        margin-bottom: .75rem;
+    }
+    
+    p {
+        margin: 0;
+        opacity: .7;
+    }
+
     :global(h2) {
         border-bottom: 3px solid var(--yellow);
+    }
+
+    :global(*) {
+        word-wrap: break-word;
     }
 </style>
