@@ -37,7 +37,7 @@
         border-bottom: 3px solid var(--yellow);
     }
 
-    :global(*) {
-        word-wrap: break-word;
+    :global(a) {
+        word-break: break-all; 
     }
 </style>

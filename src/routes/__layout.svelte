@@ -37,7 +37,7 @@
         font-family: 'Work Sans', sans-serif;
         font-weight: bold;
         color: var(--textDark);
-        line-height: 1.8rem;
+        line-height: 1.9rem;
     }
 
 	:global(body) {
