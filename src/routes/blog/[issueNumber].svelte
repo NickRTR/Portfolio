@@ -41,6 +41,11 @@
         word-break: break-all;
     }
 
+    :global(blockquote) {
+        border-left: 3px solid var(--yellow);
+        margin-left: 0;
+        padding-left: .6rem;
+    }
 
     :global(ul) {
         padding-left: 1.3rem;

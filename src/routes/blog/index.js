@@ -2,7 +2,7 @@ import { GH_HEADER } from "$lib/api";
 
 export async function get() {   
     const res = await fetch(
-        "https://api.github.com/repos/nickrtr/portfolio/issues?labels=post", 
+        "https://api.github.com/repos/nickrtr/portfolio/issues?labels=post&state=all", 
         {
             headers: GH_HEADER
         }
