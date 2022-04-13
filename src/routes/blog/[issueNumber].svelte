@@ -38,6 +38,11 @@
     }
 
     :global(a) {
-        word-break: break-all; 
+        word-break: break-all;
+    }
+
+
+    :global(ul) {
+        padding-left: 1.3rem;
     }
 </style>
