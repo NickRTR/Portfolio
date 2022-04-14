@@ -1,18 +1,28 @@
 import { GH_HEADER } from "$lib/api";
 
 export async function get({ params }) {   
-    const res = await fetch(
+    const postRes = await fetch(
         `https://api.github.com/repos/nickrtr/portfolio/issues/${params.issueNumber}`,
         {
             headers: GH_HEADER
         }
     );
 
-    const post = await res.json();
+    
+    const commentsRes = await fetch(
+        `https://api.github.com/repos/nickrtr/portfolio/issues/${params.issueNumber}/comments`,
+        {
+            headers: GH_HEADER
+        }
+    );
+        
+    const post = await postRes.json();
+    const comments = await commentsRes.json();
 
     return {
         body: {
-            post
+            post,
+            comments
         }
     }
 }
