@@ -11,7 +11,11 @@
 <main>
     <Heading text={["Blog"]} />
 
-    {#each posts as post}
-        <h1><a href={"/blog/" + post.number} sveltekit:prefetch>{post.title}</a></h1>
-    {/each}
+    {#if posts instanceof Array}
+        {#each posts as post}
+            <h1><a href={"/blog/" + post.number} sveltekit:prefetch>{post.title}</a></h1>
+        {/each}
+    {:else}
+        {posts.message}
+    {/if}
 </main>

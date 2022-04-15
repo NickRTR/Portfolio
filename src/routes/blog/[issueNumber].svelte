@@ -15,35 +15,40 @@
 </svelte:head>
 
 <main>       
-    <header>
-        <h1>{post.title}</h1>
-        <div class="info">
-            <div class="time">
-                <p>Created on {`${created.getDate()}.${created.getMonth()}.${created.getFullYear()}`}</p>
-                <p>Edited on {`${edited.getDate()}.${edited.getMonth()}.${edited.getFullYear()}`}</p>
+    {#if post.title}
+        <header>
+            <h1>{post.title}</h1>
+            <div class="info">
+                <div class="time">
+                    <p>Created on {`${created.getDate()}.${created.getMonth()}.${created.getFullYear()}`}</p>
+                    <p>Edited on {`${edited.getDate()}.${edited.getMonth()}.${edited.getFullYear()}`}</p>
+                </div>
+                <p>{comments.length} comment(s)</p>
             </div>
-            <p>{comments.length} comment(s)</p>
-        </div>
-        <hr>
-    </header>
+            <hr>
+        </header>
 
-    <SvelteMarkdown source={post.body} />
+        <SvelteMarkdown source={post.body} />
 
-    <footer>
-        <hr>
-        <h1>Comments</h1>
-        {#each comments as comment}
-            <div class="comment">
-                <p>{comment.body}</p>
-                <p class="userData">by {comment.user.login}</p>
-                <p class="userData">on {`${createDate(comment.created_at).getDate()}.${createDate(comment.created_at).getMonth()}.${created.getFullYear()}`}</p>
+        <footer>
+            <hr>
+            <h1>Comments</h1>
+            {#each comments as comment}
+                <div class="comment">
+                    <p>{comment.body}</p>
+                    <p class="userData">by {comment.user.login}</p>
+                    <p class="userData">on {`${createDate(comment.created_at).getDate()}.${createDate(comment.created_at).getMonth()}.${created.getFullYear()}`}</p>
+                </div>
+            {/each}
+            <div class="links">
+                <a href={post.html_url + "#issuecomment-new"} class="noUnderline" target="_blank">Leave a new comment!</a>
+                <a href="/blog" class="noUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a>
             </div>
-        {/each}
-        <div class="links">
-            <a href={post.html_url + "#issuecomment-new"} class="noUnderline" target="_blank">Leave a new comment!</a>
-            <a href="/blog" class="noUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a>
-        </div>
-    </footer>
+        </footer>
+    {:else}
+        <p>Post not found.</p>
+        <p>Error: {post.message}</p>
+    {/if}
 </main>
 
 <style>

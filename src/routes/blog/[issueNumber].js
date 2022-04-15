@@ -7,7 +7,6 @@ export async function get({ params }) {
             headers: GH_HEADER
         }
     );
-
     
     const commentsRes = await fetch(
         `https://api.github.com/repos/nickrtr/portfolio/issues/${params.issueNumber}/comments`,
