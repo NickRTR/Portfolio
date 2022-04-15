@@ -24,6 +24,7 @@
 
     footer p {
         margin: 0;
+        line-height: 1.3rem;
     }
     
     @media only screen and (max-width: 450px) {
