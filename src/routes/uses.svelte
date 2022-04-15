@@ -2,6 +2,10 @@
     import Heading from "$lib/components/Heading.svelte";    
 </script>
 
+<svelte:head>
+    <title>Nick Reutlinger - Uses</title>
+</svelte:head>
+
 <main>
     <article id="uses">
         <Heading text={["uses"]}/> 

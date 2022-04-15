@@ -10,6 +10,10 @@
     const createDate = (time) => new Date(time);
 </script>
 
+<svelte:head>
+    <title>Nick Reutlinger - Post</title>
+</svelte:head>
+
 <main>       
     <header>
         <h1>{post.title}</h1>

@@ -23,6 +23,10 @@
     export let weather;
 </script>
 
+<svelte:head>
+    <title>Nick Reutlinger</title>
+</svelte:head>
+
 <body>
     <Nav />
 

@@ -4,6 +4,10 @@
     export let posts;
 </script>
 
+<svelte:head>
+    <title>Nick Reutlinger - Blog</title>
+</svelte:head>
+
 <main>
     <Heading text={["Blog"]} />
 
