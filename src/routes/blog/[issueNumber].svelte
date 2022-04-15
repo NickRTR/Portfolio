@@ -46,7 +46,7 @@
         background-color: var(--yellow);
     }
     
-    p {
+    header p {
         margin: 0;
         opacity: .7;
     }
@@ -74,6 +74,10 @@
 
     .comment .userData {
         text-align: end;
+    }
+
+    .comment p {
+        margin: 0;
     }
 
     footer a {
