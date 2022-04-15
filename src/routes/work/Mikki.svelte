@@ -20,6 +20,9 @@
         <p>Interpreting markdown files was difficult to setup at first, but now it's working like a charm.</p>
         <p>We used <a href="https://www.npmjs.com/package/svelte-markdown" title="https://www.npmjs.com/package/svelte-markdown" target="_blank">svelte-markdown</a> as a solution and got it to work with our database.</p>
     </article>
+
+    <h1 id="try">Try it!</h1>
+    <iframe src="https://mikki.gq" title="Mikki" frameborder="0">Mikki</iframe>
 </main>
 
 <style>
@@ -34,5 +37,14 @@
     img {
         margin-top: .8rem;
         width: 4rem;
+    }
+
+    #try {
+        margin-top: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 600px;
     }
 </style>

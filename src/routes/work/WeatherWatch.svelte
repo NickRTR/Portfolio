@@ -32,6 +32,9 @@
         <p>This time, it was difficult to secure the API Key from the users.</p>
         <p>Therefore I used SvelteKit API routes and <a href="https://www.npmjs.com/package/dotenv" title="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a>.</p>
     </article>
+
+    <h1 id="try">Try it!</h1>
+    <iframe src="https://weatherwatch.vercel.app" title="WeatherWatch" frameborder="0">WeatherWatch</iframe>
 </main>
 
 <style>
@@ -46,5 +49,14 @@
     img {
         margin-top: .8rem;
         width: 4rem;
+    }
+
+    #try {
+        margin-top: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 600px;
     }
 </style>

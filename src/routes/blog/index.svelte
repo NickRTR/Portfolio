@@ -2,6 +2,8 @@
     import Heading from "$lib/components/Heading.svelte";
 
     export let posts;
+
+    let search = "";
 </script>
 
 <svelte:head>

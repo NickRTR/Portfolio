@@ -19,6 +19,9 @@
         <h2>Difficulties</h2>
         <p>It was difficult to display the state on an svg map, which I did the Svelte way: <code>class:active={"{condition}"}</code>.</p>
     </article>
+
+    <h1 id="try">Try it!</h1>
+    <iframe src="https://carify.vercel.app" title="Carify" frameborder="0">Carify</iframe>
 </main>
 
 <style>
@@ -33,5 +36,14 @@
     img {
         margin-top: .8rem;
         width: 4rem;
+    }
+
+    #try {
+        margin-top: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 600px;
     }
 </style>
