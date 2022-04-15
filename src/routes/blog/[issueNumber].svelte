@@ -121,4 +121,11 @@
     :global(ul) {
         padding-left: 1.3rem;
     }
+
+    @media only screen and (max-width: 450px) {
+        .links {
+            display: grid;
+            gap: 1rem;
+        }
+    }
 </style>
