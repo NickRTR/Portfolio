@@ -35,7 +35,10 @@
                 <p class="userData">on {`${createDate(comment.created_at).getDate()}.${createDate(comment.created_at).getMonth()}.${created.getFullYear()}`}</p>
             </div>
         {/each}
-        <a href={post.html_url + "#issuecomment-new"} class="noUnderline" target="_blank">Leave a new comment!</a>
+        <div class="links">
+            <a href={post.html_url + "#issuecomment-new"} class="noUnderline" target="_blank">Leave a new comment!</a>
+            <a href="/blog" class="noUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a>
+        </div>
     </footer>
 </main>
 
@@ -80,11 +83,16 @@
         margin: 0;
     }
 
-    footer a {
+    .links a {
         text-decoration: none;
         background-color: var(--yellow);
+        border: 2px solid var(--yellow);
         padding: .5rem 1rem;
         border-radius: 1rem;
+    }
+
+    .links a:focus, .links a:hover {
+        border: 2px solid var(--textDark);
     }
 
     :global(h2) {
