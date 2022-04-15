@@ -35,7 +35,7 @@
                 <p class="userData">on {`${createDate(comment.created_at).getDate()}.${createDate(comment.created_at).getMonth()}.${created.getFullYear()}`}</p>
             </div>
         {/each}
-        <a href={post.html_url + "#issuecomment-new"} class="noUnderline" target="_blank">Leave a comment!</a>
+        <a href={post.html_url + "#issuecomment-new"} class="noUnderline" target="_blank">Leave a new comment!</a>
     </footer>
 </main>
 
