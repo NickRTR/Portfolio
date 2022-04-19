@@ -25,6 +25,12 @@
         </div>
         <div class="software">
             <h1>Software</h1>
+            <ul>
+                <li>Code Editor: <a class="link" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+                <li>Browser: <a class="link" href="https://brave.com/de/" target="_blank">Brave</a></li>
+                <li>Operating System: Linux <a class="link" href="https://pop.system76.com/" target="_blank">(Pop!_OS)</a> / Windows</li>
+                <li>Password manager <a class="link" href="https://1password.com/de/" target="_blank">1Password</a></li>
+            </ul>
         </div>
     </article>
 </main>
