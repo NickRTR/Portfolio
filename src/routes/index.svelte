@@ -25,6 +25,15 @@
             </aside>
         </article>
     </section>
+    <div class="pageLinks">
+        <h2>More about me...</h2>
+        <ul>
+            <li><a href="/uses" sveltekit:prefetch>What am I using?</a></li>
+            <li><a href="/work" sveltekit:prefetch>What is my work?</a></li>
+            <li><a href="/blog" sveltekit:prefetch>What am I interested in?</a></li>
+            <li><a href="/contact" sveltekit:prefetch>Contact me!</a></li>
+        </ul>
+    </div>
 </main>
 
 <style>
@@ -64,6 +73,11 @@
     .links a:hover, a:focus {
         outline: none;
         opacity: .75;
+    }
+
+    h2 {
+        border: none !important;
+        margin-bottom: -.5rem;
     }
     
     @media only screen and (max-width: 600px) {
