@@ -10,7 +10,7 @@
 <main>
     <h1>Skills</h1>
 
-    <div class="banners">
+    <div class="banner">
         {#each skills as skill}
             <img src={skill.src} alt={skill.title} title={skill.title}>
         {/each}
@@ -18,10 +18,6 @@
 </main>
 
 <style>
-    .banners {
-        /* animation: slidingBanners 4s linear infinite; */
-    }
-
     @keyframes slidingBanners {
         0% {
             transform: translateX(-100%);

@@ -19,8 +19,17 @@
 <script>
     import Nav from "$lib/components/Nav.svelte";
     import Footer from "$lib/components/Footer.svelte";
+    import { browser } from "$app/env";
+    import { fade } from "svelte/transition";
+    import { showLoader } from "$lib/stores";
 
     export let weather;
+
+    // min loading time
+    setTimeout(() => {
+        // Remove loader if page is loaded AND minimum loading time is over 
+        if (browser) $showLoader = false;
+    }, 750)
 </script>
 
 <svelte:head>
@@ -28,6 +37,10 @@
 </svelte:head>
 
 <body>
+    {#if $showLoader}
+        <div class="loader" transition:fade></div>
+    {/if}
+
     <Nav />
 
     <main><slot></slot></main>
@@ -90,6 +103,41 @@
         src: url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap') format('woff2');
         font-display: swap;
     }
+
+    /* loader */
+
+    .loader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--textDark);
+        z-index: 10;
+	}
+
+	.loader::after {
+		content: "";
+        background-image: url("/me.jpg");
+        background-size: contain;
+		width: 15rem;
+		height: 15rem;
+        border: 1rem solid var(--yellow);
+		border-radius: 50%;
+		animation: loading 2.25s ease infinite;
+	}
+
+	@keyframes loading {
+		from {
+			transform: rotate(0turn);
+		}
+		to {
+			transform: rotate(1turn);
+		}
+	}
 
     /* scroll bar */
     ::-webkit-scrollbar {
