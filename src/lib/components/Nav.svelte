@@ -6,6 +6,7 @@
         {title: "Home", path: "/"},
         {title: "Work", path: "/work"},
         {title: "Uses", path: "/uses"},
+        {title: "Skills", path: "/skills"},
         {title: "Blog", path: "/blog"},
         {title: "Contact", path: "/contact"}
     ];
@@ -19,7 +20,7 @@
 <main>
     <nav>
         <a class="noUnderline" id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
-        {#if innerWidth >= 750}
+        {#if innerWidth >= 900}
             <div class="links">
                 {#each nav as link}
                     <a class="noUnderline" href={link.path} sveltekit:prefetch class:active=
@@ -125,7 +126,7 @@
         border-bottom: 3px solid var(--textDark) !important;
     }
 
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 900px) {
         nav {
             background-color: var(--yellow);
             border: none;
