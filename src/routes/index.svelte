@@ -1,5 +1,15 @@
 <script>
     import Heading from "$lib/components/Heading.svelte";    
+    import { browser } from "$app/env";
+    import { fade } from "svelte/transition";
+
+    let showLoader = true;
+
+    // min loading time
+    setTimeout(() => {
+        // Remove loader if page is loaded AND minimum loading time is over 
+        if (browser) showLoader = false;
+    }, 500)
 </script>
 
 <svelte:head>
@@ -7,11 +17,15 @@
 </svelte:head>
 
 <main>
+    {#if showLoader}
+        <div class="loader" transition:fade></div>
+    {/if}
+
     <section>
         <Heading text={["Hi, I'm Nick", "Reutlinger"]}/> 
         <article>
             <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img class="noUnderline" id="me" src="/me.jpg" alt="A picture of myself" title="A picture of myself">
+            <img class="noUnderline" id="me" src="/me.jpg" alt="A piture of myself" title="A picture of myself">
             <aside>
                 <p>
                     I'm a self-taught software engineer at the age of 16, located in <mark>Germany</mark>.<br>For the most part, I'm developing Web Apps with <mark>Sveltekit</mark> and <mark>Javascript</mark>. Additionally, I'm interested in anything that has to do with <mark>tech</mark>.
@@ -80,6 +94,41 @@
         margin-bottom: -.5rem;
     }
     
+    /* loader */
+
+    .loader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--textDark);
+        z-index: 10;
+	}
+
+	.loader::after, .loader img::after {
+		content: "";
+        background-image: url("/me.jpg");
+        background-size: contain;
+		width: 15rem;
+		height: 15rem;
+        border: 1rem solid var(--yellow);
+		border-radius: 50%;
+		animation: loading 2s ease infinite;
+	}
+
+	@keyframes loading {
+		from {
+			transform: rotate(0turn);
+		}
+		to {
+			transform: rotate(1turn);
+		}
+	}
+
     @media only screen and (max-width: 600px) {
         article {
             flex-direction: column;
