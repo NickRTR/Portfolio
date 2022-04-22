@@ -13,7 +13,7 @@
 
     {#if posts instanceof Array}
         {#each posts as post}
-            <h1><a href={"/blog/" + post.number} sveltekit:prefetch>{post.title}</a></h1>
+            <h1><a href={"/blog/" + post.number} rel="canonical" sveltekit:prefetch>{post.title}</a></h1>
         {/each}
     {:else}
         {posts.message}

@@ -23,7 +23,7 @@
         {#if innerWidth >= 900}
             <div class="links">
                 {#each nav as link}
-                    <a class="noUnderline" href={link.path} sveltekit:prefetch class:active=
+                    <a class="noUnderline" rel="canonical" href={link.path} sveltekit:prefetch class:active=
                     {
                         $page.url.pathname === link.path || 
                         ($page.url.pathname.includes("/work") && link.path === "/work") || 
@@ -46,7 +46,7 @@
                     ($page.url.pathname.includes("/work") && link.path === "/work") || 
                     ($page.url.pathname.includes("/blog") && link.path === "/blog")
                 } 
-                sveltekit:prefetch title={link.title} on:click={() => {showHamburger = false}}>{link.title}</a><br>
+                sveltekit:prefetch rel="canonical" title={link.title} on:click={() => {showHamburger = false}}>{link.title}</a><br>
             {/each}
         </div>
     {/if}

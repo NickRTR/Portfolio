@@ -42,7 +42,7 @@
             {/each}
             <div class="links">
                 <a href={post.html_url + "#issuecomment-new"} class="noUnderline" target="_blank">Leave a new comment!</a>
-                <a href="/blog" class="noUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a>
+                <a href="/blog" rel="canonical" class="noUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a>
             </div>
         </footer>
     {:else}

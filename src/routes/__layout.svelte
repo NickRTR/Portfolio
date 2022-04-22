@@ -33,7 +33,7 @@
 </script>
 
 <svelte:head>
-    <title>Nick Reutlinger</title>
+    <title>Nick Reutlinger - Portfolio</title>
 </svelte:head>
 
 <body>
