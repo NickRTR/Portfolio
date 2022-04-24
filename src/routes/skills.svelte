@@ -10,6 +10,8 @@
 <main>
     <h1>Skills</h1>
 
+    <p>(This page is under development)</p>
+
     <div class="banner">
         {#each skills as skill}
             <img src={skill.src} alt={skill.title} title={skill.title}>
