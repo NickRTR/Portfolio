@@ -39,13 +39,13 @@
 <body>
     {#if $showLoader}
         <div class="loader" transition:fade></div>
+    {:else}
+        <Nav />
+
+        <main><slot></slot></main>
+
+        <Footer {weather} />
     {/if}
-
-    <Nav />
-
-    <main><slot></slot></main>
-
-    <Footer {weather} />
 </body>
 
 <style>
