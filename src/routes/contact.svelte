@@ -62,6 +62,7 @@
         font-weight: bold;
         user-select: none;
         margin-top: .5rem;
+        cursor: pointer;
     }
 
     button:hover, button:focus {
