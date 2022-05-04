@@ -22,6 +22,7 @@
         display: inline-block;
         padding: 1rem 1.5rem;
         margin: .5rem;
+        transition: all .2s linear;
     }
 
     h1 {
@@ -29,5 +30,10 @@
         margin: 0;
         font-size: 2rem;
         user-select: none;
+        transition: all .2s linear;
+    }
+
+    .container:hover {
+        transform: scale(1.1) rotate(-5deg);
     }
 </style>

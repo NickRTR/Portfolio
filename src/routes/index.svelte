@@ -77,6 +77,10 @@
         user-select: none;
     }
 
+    .links a {
+        transition: all .2s linear;
+    }
+
     .links a:hover, a:focus {
         outline: none;
         opacity: .75;
