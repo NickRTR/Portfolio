@@ -35,7 +35,7 @@
         font-size: 1rem;
     }
 
-    textarea:focus, textarea:focus, input:hover, textarea:hover {
+    input:focus, textarea:focus, input:hover, textarea:hover {
         transition: .1s ease-in-out;
         border: 2px solid var(--yellow);
     }
