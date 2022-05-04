@@ -33,10 +33,10 @@
         border: 2px solid var(--textDark);
         padding: .5rem;
         font-size: 1rem;
+        transition: .1s ease-in-out;
     }
 
     input:focus, textarea:focus, input:hover, textarea:hover {
-        transition: .1s ease-in-out;
         border: 2px solid var(--yellow);
     }
 
