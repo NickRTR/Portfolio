@@ -37,7 +37,7 @@
             <label for="toggle"><img src="/menu.svg" alt="Menu"></label>
         {/if}
     </nav>
-    {#if showHamburger && innerWidth < 600}
+    {#if showHamburger && innerWidth < 900}
         <div class="hamburger" transition:slide>
             {#each nav as link}
                 <a href={link.path} class:active=
@@ -83,11 +83,11 @@
     }
 
     .links a:hover, a:not(#title):focus {
-        border-bottom: 3px solid var(--textDark);
+        border-bottom: 4px solid var(--textDark);
     }
 
     .active {
-        border-bottom: 3px solid var(--yellow) !important;
+        border-bottom: 4px solid var(--yellow) !important;
     }
 
     /* Hamburger */
