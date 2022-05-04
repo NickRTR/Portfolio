@@ -50,9 +50,15 @@
     
     #me {
         height: 200px;
+        width: 200px;
         border-radius: 100%;
-        margin-right: 1rem;
+        margin-right: 1.5rem;
         border: 5px solid var(--yellow);
+        transition: ease-in-out .25s;
+    }
+
+    #me:hover {
+        transform: scale(1.1);
     }
     
     p {
