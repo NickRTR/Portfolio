@@ -2,8 +2,8 @@
     <h1>Carify</h1>
 
     <article>
-        <a href="https://carify.vercel.app/" title="https://carify.vercel.app/" target="_blank">Visit Carify</a><br>
-        <a class="noUnderline" href="https://carify.vercel.app/" target="_blank"><img src="/work/Carify.svg" alt="Carify Logo" title="Carify Logo"></a>
+        <a class="underline" href="https://carify.vercel.app/" title="https://carify.vercel.app/" target="_blank">Visit Carify</a><br>
+        <a href="https://carify.vercel.app/" target="_blank"><img src="/work/Carify.svg" alt="Carify Logo" title="Carify Logo"></a>
         <p>
             Carify is a lexikon for number plates in Germany and Austria. 
             You can enter the location letters and press search or enter to get the spelled location. 

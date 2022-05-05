@@ -93,15 +93,18 @@
         color: var(--textDark);
     }
 
-    :global(a:not(.noUnderline)) {
+    :global(img) {
+        user-select: none;
+    }
+
+    :global(.underline) {
         text-decoration: none;
         border-bottom: 3px solid var(--yellow);
         padding-bottom: .1rem;
         position: relative;
-        user-select: none;
     }
 
-    :global(a:not(.noUnderline)::before) {
+    :global(.underline::before) {
         content: "";
         width: 100%;
         height: 3px;
@@ -113,7 +116,7 @@
         transition: 0.25s linear;
     }
 
-    :global(a:not(.noUnderline):hover::before) {
+    :global(.underline:hover::before) {
         transform: scale(1);
     }
 
