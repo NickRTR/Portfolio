@@ -111,5 +111,9 @@
         article {
             flex-direction: column;
         }
+
+        .bottom img {
+            display: none;
+        }
     }
 </style>

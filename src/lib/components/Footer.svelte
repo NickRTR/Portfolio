@@ -27,7 +27,7 @@
         line-height: 1.3rem;
     }
     
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 500px) {
         footer {
             flex-direction: column;
         }

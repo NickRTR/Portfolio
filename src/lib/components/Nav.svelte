@@ -107,7 +107,6 @@
     }
 
     .hamburger {
-        background-color: var(--yellow);
         padding-left: 1rem;
         padding-bottom: .5rem;
     }
@@ -115,16 +114,5 @@
     .hamburger a {
         line-height: 2.5rem;
         margin: 0;
-    }
-
-    .hamburger .active {
-        border-bottom: 3px solid var(--textDark) !important;
-    }
-
-    @media only screen and (max-width: 900px) {
-        nav {
-            background-color: var(--yellow);
-            border: none;
-        }
     }
 </style>
