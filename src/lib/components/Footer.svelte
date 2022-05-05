@@ -15,7 +15,6 @@
 
 <style>
     footer {
-        /* background-color: var(--yellow); */
         padding: .6rem;
         display: flex;
         align-items: center;
