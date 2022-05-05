@@ -98,6 +98,7 @@
         border-bottom: 3px solid var(--yellow);
         padding-bottom: .1rem;
         position: relative;
+        user-select: none;
     }
 
     :global(a:not(.noUnderline)::before) {
