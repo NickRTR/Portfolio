@@ -11,7 +11,7 @@
         <Heading text={["Hi, I'm Nick", "Reutlinger"]}/> 
         <article>
             <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img id="me" src="/me.jpg" alt="A piture of myself" title="A picture of myself">
+            <img class="me" src="/me.jpg" alt="A piture of myself" title="A picture of myself">
             <aside>
                 <p>
                     I'm a self-taught software engineer at the age of 16, located in <mark>Germany</mark>.<br>For the most part, I'm developing Web Apps with <mark>Sveltekit</mark> and <mark>Javascript</mark>. Additionally, I'm interested in anything that has to do with <mark>tech</mark>.
@@ -37,7 +37,7 @@
             </ul>
         </div>
         <aside>
-            <img id="me" src="/me2.jpg" alt="A piture of myself" title="A picture of myself">
+            <img class="me" src="/me2.jpg" alt="A piture of myself" title="A picture of myself">
         </aside>
     </section>
 </main>
@@ -45,17 +45,16 @@
 <style>
     article {
         font-size: 1.2rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         display: flex;
         align-items: center;
     }
 
     img {
         user-select: none;
-
     }
     
-    #me {
+    .me {
         height: 200px;
         width: 200px;
         border-radius: 100%;
@@ -64,7 +63,7 @@
         transition: ease-in-out .25s;
     }
 
-    #me:hover {
+    .me:hover {
         transform: scale(1.1);
     }
     

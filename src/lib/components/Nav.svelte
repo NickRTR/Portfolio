@@ -53,15 +53,10 @@
 </main>
 
 <style>
-    main {
-        margin-bottom: 1rem;
-    }
-
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 7px solid var(--yellow);
         padding: 1rem;
     }
     

@@ -16,8 +16,9 @@
     }
 
     .container {
-        background-color: var(--textDark);
-        color: var(--yellow);
+        color: var(--textDark);
+        border: 8px solid var(--yellow);
+        border-radius: .5rem;
         transform: rotate(-5deg);
         display: inline-block;
         padding: 1rem 1.5rem;
