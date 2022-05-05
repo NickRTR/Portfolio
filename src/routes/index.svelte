@@ -25,16 +25,21 @@
             </aside>
         </article>
     </section>
-    <div class="pageLinks">
-        <h2>More about me...</h2>
-        <ul>
-            <li><a class="underline" href="/work" rel="canonical" sveltekit:prefetch>What is my work?</a></li>
-            <li><a class="underline" href="/uses" rel="canonical" sveltekit:prefetch>What am I using?</a></li>
-            <li><a class="underline" href="/skills" rel="canonical" sveltekit:prefetch>What are my skills?</a></li>
-            <li><a class="underline" href="/blog" rel="canonical" sveltekit:prefetch>What am I interested in?</a></li>
-            <li><a class="underline" href="/contact" rel="canonical" sveltekit:prefetch>Contact me!</a></li>
-        </ul>
-    </div>
+    <section class="bottom">
+        <div class="pageLinks">
+            <h2>More about me...</h2>
+            <ul>
+                <li><a class="underline" href="/work" rel="canonical" sveltekit:prefetch>What am I working on?</a></li>
+                <li><a class="underline" href="/uses" rel="canonical" sveltekit:prefetch>What am I using?</a></li>
+                <li><a class="underline" href="/skills" rel="canonical" sveltekit:prefetch>What are my skills?</a></li>
+                <li><a class="underline" href="/blog" rel="canonical" sveltekit:prefetch>What am I interested in?</a></li>
+                <li><a class="underline" href="/contact" rel="canonical" sveltekit:prefetch>Contact me!</a></li>
+            </ul>
+        </div>
+        <aside>
+            <img id="me" src="/me2.jpg" alt="A piture of myself" title="A picture of myself">
+        </aside>
+    </section>
 </main>
 
 <style>
@@ -47,6 +52,7 @@
 
     img {
         user-select: none;
+
     }
     
     #me {
@@ -71,6 +77,17 @@
         background-color: var(--yellow);
         padding: .5rem;
         border-radius: 1rem;
+    }
+
+    .bottom {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bottom h2 {
+        margin: 0;
     }
 
     .links {
