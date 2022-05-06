@@ -10,13 +10,13 @@
     <Heading text={["Work"]} />
 
     <ul>
-        <li><a class="underline" href="/work/Mikki" sveltekit:prefetch title="-> Mikki">Mikki</a></li>
+        <li><a href="/work/Mikki" sveltekit:prefetch title="-> Mikki">Mikki</a></li>
             <ul><li>An assembler wiki created in SvelteKit</li></ul>
-        <li><a class="underline" href="/work/WeatherWatch" sveltekit:prefetch title="-> WeatherWatch">WeatherWatch</a></li>
+        <li><a href="/work/WeatherWatch" sveltekit:prefetch title="-> WeatherWatch">WeatherWatch</a></li>
             <ul><li>Weather forecast and daily advice</li></ul>
-        <li><a class="underline" href="/work/Schoppy" sveltekit:prefetch title="-> Schoppy">Schoppy</a></li>
+        <li><a href="/work/Schoppy" sveltekit:prefetch title="-> Schoppy">Schoppy</a></li>
             <ul><li>A simple yet powerful shopping list with themes, quantity, category icons, multiply languages and much more.</li></ul>
-        <li><a class="underline" href="/work/Carify" sveltekit:prefetch title="-> Carify">Carify</a></li>
+        <li><a href="/work/Carify" sveltekit:prefetch title="-> Carify">Carify</a></li>
             <ul><li>Identify the origin of any car owner, in Germany and Austria, by the car's number plate.</li></ul>
     </ul>
 </main> 

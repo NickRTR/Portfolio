@@ -19,11 +19,11 @@
 
 <main>
     <nav>
-        <a class="noUnderline" id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
+        <a class="noYellowUnderline" id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
         {#if innerWidth >= 900}
             <div class="links">
                 {#each nav as link}
-                    <a class="noUnderline" rel="canonical" href={link.path} sveltekit:prefetch class:active=
+                    <a class="noYellowUnderline" rel="canonical" href={link.path} sveltekit:prefetch class:active=
                     {
                         $page.url.pathname === link.path || 
                         ($page.url.pathname.includes("/work") && link.path === "/work") || 
@@ -40,7 +40,7 @@
     {#if showHamburger && innerWidth < 900}
         <div class="hamburger" transition:slide>
             {#each nav as link}
-                <a href={link.path} class:active=
+                <a class="noYellowUnderline" href={link.path} class:active=
                 {
                     $page.url.pathname === link.path || 
                     ($page.url.pathname.includes("/work") && link.path === "/work") || 
@@ -75,6 +75,7 @@
         margin: 0 .5rem;
         outline: none;
         user-select: none;
+        transition: linear .125s;
     }
 
     .links a:hover, a:not(#title):focus {

@@ -97,27 +97,16 @@
         user-select: none;
     }
 
-    :global(.underline) {
+    :global(a:not(.noYellowUnderline)) {
         text-decoration: none;
-        border-bottom: 3px solid var(--yellow);
+        border-bottom: 3px solid rgba(255, 198, 0, .6);
         padding-bottom: .1rem;
         position: relative;
+        transition: ease-in-out .2s;
     }
 
-    :global(.underline::before) {
-        content: "";
-        width: 100%;
-        height: 3px;
-        background-color: var(--textDark);
-        position: absolute;
-        bottom: -3px; /* this is to match where the border is */
-        transform-origin: left; 
-        transform: scale(0);
-        transition: 0.25s linear;
-    }
-
-    :global(.underline:hover::before) {
-        transform: scale(1);
+    :global(a:not(.noYellowUnderline):hover) {
+        border-bottom: 4px solid rgba(255, 198, 0, 1);
     }
 
     @font-face {

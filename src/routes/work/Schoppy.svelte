@@ -2,8 +2,8 @@
     <h1>Schoppy</h1>
 
     <article>
-        <a class="underline" href="https://schoppy.vercel.app/" title="https://schoppy.vercel.app/" target="_blank">Visit Schoppy</a><br>
-        <a href="https://schoppy.vercel.app/" target="_blank"><img src="/work/Schoppy.png" alt="Schoppy Logo" title="Schoppy Logo"></a>
+        <a href="https://schoppy.vercel.app/" title="https://schoppy.vercel.app/" target="_blank">Visit Schoppy</a><br>
+        <a class="noYellowUnderline" href="https://schoppy.vercel.app/" target="_blank"><img src="/work/Schoppy.png" alt="Schoppy Logo" title="Schoppy Logo"></a>
         <p>
             Schoppy is a shopping list, I created for my family and afterwards adapted to access a larger target group.
             The App is created in SvelteKit with Supabase as backend.
@@ -23,7 +23,7 @@
         </ul>
         <h2>Difficulties</h2>
         <p>Creating a component to sort the categories and make it accessable to touch was very hard to implement.</p>
-        <p>However after an intense search, I found a component called <a class="underline" href="https://www.npmjs.com/package/svelte-dragdroplist" title="https://www.npmjs.com/package/svelte-dragdroplist" target="_blank">svelte-dragdroplist</a> which made the job a lot easier.</p>
+        <p>However after an intense search, I found a component called <a href="https://www.npmjs.com/package/svelte-dragdroplist" title="https://www.npmjs.com/package/svelte-dragdroplist" target="_blank">svelte-dragdroplist</a> which made the job a lot easier.</p>
         <p>
             In general the category system brought me a lot of headache.
             But it was worth the effort, because it is bringing an enourmous time saving to the users in the grocery stores.

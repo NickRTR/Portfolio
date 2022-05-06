@@ -13,9 +13,16 @@
 
     {#if posts instanceof Array}
         {#each posts as post}
-            <h1><a class="underline" href={"/blog/" + post.number} rel="canonical" sveltekit:prefetch>{post.title}</a></h1>
+            <h1><a href={"/blog/" + post.number} rel="canonical" sveltekit:prefetch>{post.title}</a></h1>
         {/each}
     {:else}
         {posts.message}
     {/if}
 </main>
+
+<style>
+    h1 {
+        margin-block: 1rem;
+        line-height: 2.5rem;
+    }
+</style>

@@ -17,10 +17,10 @@
                     I'm a self-taught software engineer at the age of 16, located in <mark>Germany</mark>.<br>For the most part, I'm developing Web Apps with <mark>Sveltekit</mark> and <mark>Javascript</mark>. Additionally, I'm interested in anything that has to do with <mark>tech</mark>.
                 </p>
                 <div class="links">
-                    <a href="https://twitter.com/nickrtrrtr" target="_blank"><img class="socialLink" src="/social/twitter.svg" alt="twitter" title="twitter"></a>
-                    <a href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img class="socialLink" src="/social/linkedin.svg" alt="linkedin" title="linkedin"></a>
-                    <a href="https://github.com/NickRTR" target="_blank"><img class="socialLink" src="/social/github.svg" alt="github" title="github"></a>
-                    <a href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img class="socialLink" src="/social/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
+                    <a class="noYellowUnderline" href="https://twitter.com/nickrtrrtr" target="_blank"><img class="socialLink" src="/social/twitter.svg" alt="twitter" title="twitter"></a>
+                    <a class="noYellowUnderline" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img class="socialLink" src="/social/linkedin.svg" alt="linkedin" title="linkedin"></a>
+                    <a class="noYellowUnderline" href="https://github.com/NickRTR" target="_blank"><img class="socialLink" src="/social/github.svg" alt="github" title="github"></a>
+                    <a class="noYellowUnderline" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img class="socialLink" src="/social/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
                 </div>
             </aside>
         </article>
@@ -29,11 +29,11 @@
         <div class="pageLinks">
             <h2>More about me...</h2>
             <ul>
-                <li><a class="underline" href="/work" rel="canonical" sveltekit:prefetch>What am I working on?</a></li>
-                <li><a class="underline" href="/uses" rel="canonical" sveltekit:prefetch>What am I using?</a></li>
-                <li><a class="underline" href="/skills" rel="canonical" sveltekit:prefetch>What are my skills?</a></li>
-                <li><a class="underline" href="/blog" rel="canonical" sveltekit:prefetch>What am I interested in?</a></li>
-                <li><a class="underline" href="/contact" rel="canonical" sveltekit:prefetch>Contact me!</a></li>
+                <li><a href="/work" rel="canonical" sveltekit:prefetch>What am I working on?</a></li>
+                <li><a href="/uses" rel="canonical" sveltekit:prefetch>What am I using?</a></li>
+                <li><a href="/skills" rel="canonical" sveltekit:prefetch>What are my skills?</a></li>
+                <li><a href="/blog" rel="canonical" sveltekit:prefetch>What am I interested in?</a></li>
+                <li><a href="/contact" rel="canonical" sveltekit:prefetch>Contact me!</a></li>
             </ul>
         </div>
         <aside>
