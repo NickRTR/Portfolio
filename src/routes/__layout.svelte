@@ -126,7 +126,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: var(--textDark);
+		background: var(--textLight);
         z-index: 10;
 	}
 
@@ -158,11 +158,12 @@
     
     /* Track */
     ::-webkit-scrollbar-track {
-        border: 5px solid var(--textDark)
+        border: 5px solid var(--textLight)
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
         background: var(--yellow);
+        border-radius: 1rem;
     }
 </style>
