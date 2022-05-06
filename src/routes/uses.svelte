@@ -32,6 +32,16 @@
                 <li>Password manager: <a href="https://1password.com/de/" target="_blank">1Password</a></li>
             </ul>
         </div>
+        <div class="services">
+            <h1>Services</h1>
+            <ul>
+                <li>Icons: <a href="https://www.reshot.com/free-svg-icons/" target="_blank">Reshot</a> & <a href="https://simpleicons.org/" target="_blank">SimpleIcons</a></li>
+                <li>Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+                <li>Database: <a href="https://supabase.com/" target="_blank">Supabase</a></li>
+                <li>Hosting: <a href="https://vercel.com/" target="_blank">Vercel</a></li>
+                <li>Design: <a href="https://www.figma.com/" target="_blank">Figma</a></li>
+            </ul>
+        </div>
     </article>
 </main>
 
