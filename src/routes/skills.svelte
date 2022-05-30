@@ -7,7 +7,7 @@
             { sectionName: "Languages" },
             { title: "Javascript", src: "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" },
             { title: "Svelte", src: "https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00" },
-            { title: "HTML ;)", src: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" },
+            { title: "HTML", src: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" },
             { title: "CSS", src: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" },
             { title: "Markdown", src: "https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" },
             { title: "Java", src: "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" },
@@ -18,7 +18,7 @@
         // framworks
         [
             { sectionName: "Frameworks" },
-            { title: "SvelteKit", src: "https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&amp;logo=Svelte&amp;logoColor=white" },
+            { title: "SvelteKit", src: "https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white" },
             { title: "Tauri", src: "https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=Tauri&logoColor=white" },
             { title: "Node.js", src: "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" },
             { title: "Tailwind CSS", src: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" },
@@ -34,7 +34,10 @@
         [
             { sectionName: "Design" },
             { title: "Figma", src: "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" },
+            { title: "Unsplash", src: "https://img.shields.io/badge/Unsplash-000000?style=for-the-badge&logo=Unsplash&logoColor=white" },
+            { title: "Dribbble", src: "https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white" },
             { title: "Gimp", src: "https://img.shields.io/badge/gimp-5C5543?style=for-the-badge&logo=gimp&logoColor=white" },
+            { title: "Inkscape", src: "https://img.shields.io/badge/Inkscape-000000?style=for-the-badge&logo=Inkscape&logoColor=white" },
         ],
         // tooling
         [
@@ -60,7 +63,7 @@
             { title: "Microsoft Office", src: "https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" },
             { title: "Libre Office", src: "https://img.shields.io/badge/LibreOffice-18A303?style=for-the-badge&logo=LibreOffice&logoColor=white" },
             { title: "Notion", src: "https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" },
-            { title: "Obsidian", src: "https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&amp;logo=Obsidian&amp;logoColor=white" },
+            { title: "Obsidian", src: "https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=Obsidian&logoColor=white" },
         ],
         // further / other
         [
