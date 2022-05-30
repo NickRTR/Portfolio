@@ -103,9 +103,15 @@
         padding: .5rem;
         line-height: 0; /* remove padding at bottom */
     }
-
+    
     img {
         margin: .25rem;
+        transition: all .2s linear;
+        border-radius: .25rem;
+    }
+
+    img:hover {
+        transform: scale(1.05);
     }
 
     @keyframes slidingBanners {
