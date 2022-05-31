@@ -99,14 +99,14 @@
 
     :global(a:not(.noYellowUnderline)) {
         text-decoration: none;
-        border-bottom: 3px solid rgba(255, 198, 0, .65);
+        border-bottom: 3px solid #ffcc00A6;
         padding-bottom: .1rem;
         position: relative;
         transition: ease-in-out .2s;
     }
 
     :global(a:not(.noYellowUnderline):hover) {
-        border-bottom: 4px solid rgba(255, 198, 0, 1);
+        border-bottom: 4px solid var(--yellow);
     }
 
     @font-face {
