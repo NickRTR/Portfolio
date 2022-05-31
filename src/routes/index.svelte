@@ -25,7 +25,7 @@
             </aside>
         </article>
     </section>
-    <section class="bottom">
+    <!-- <section class="bottom">
         <div class="pageLinks">
             <h2>More about me...</h2>
             <ul>
@@ -39,7 +39,7 @@
         <aside>
             <img class="me" src="/me2.jpg" alt="A piture of myself" title="A picture of myself">
         </aside>
-    </section>
+    </section> -->
 </main>
 
 <style>
@@ -78,7 +78,7 @@
         border-radius: 1rem;
     }
 
-    .bottom {
+    /* .bottom {
         margin-top: 2rem;
         display: flex;
         align-items: center;
@@ -87,7 +87,7 @@
 
     .bottom h2 {
         margin: 0;
-    }
+    } */
 
     .links {
         user-select: none;
@@ -102,18 +102,18 @@
         opacity: .75;
     }
 
-    h2 {
+    /* h2 {
         border: none !important;
         margin-bottom: -.5rem;
-    }
+    } */
 
     @media only screen and (max-width: 600px) {
         article {
             flex-direction: column;
         }
 
-        .bottom img {
+        /* .bottom img {
             display: none;
-        }
+        } */
     }
 </style>
