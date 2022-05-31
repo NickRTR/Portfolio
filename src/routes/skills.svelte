@@ -18,7 +18,7 @@
         // framworks
         [
             { sectionName: "Frameworks" },
-            { title: "SvelteKit", src: "https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white" },
+            { title: "SvelteKit", src: "https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" },
             { title: "Tauri", src: "https://img.shields.io/badge/Tauri-FFC131?style=for-the-badge&logo=Tauri&logoColor=white" },
             { title: "Node.js", src: "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" },
             { title: "Tailwind CSS", src: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" },
@@ -63,7 +63,7 @@
             { title: "Microsoft Office", src: "https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" },
             { title: "Libre Office", src: "https://img.shields.io/badge/LibreOffice-18A303?style=for-the-badge&logo=LibreOffice&logoColor=white" },
             { title: "Notion", src: "https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" },
-            { title: "Obsidian", src: "https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=Obsidian&logoColor=white" },
+            { title: "Obsidian", src: "https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white" },
         ],
         // further / other
         [
