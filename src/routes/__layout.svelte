@@ -75,7 +75,7 @@
     /* Variables */
 
     :global(:root) {
-        --yellow: #FFC600;
+        --yellow: #ffcc00;
         --textLight: white;
         --textDark: black;
         --dots: #d2d6d9;
