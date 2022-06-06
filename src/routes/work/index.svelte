@@ -10,6 +10,8 @@
     <Heading text={["Work"]} />
 
     <ul>
+        <li><a href="/work/Profile-Badge-Generator" sveltekit:prefetch title="-> Profile Badge Generator">Profile Badge Generator</a></li>
+            <ul><li>A website to generate brand banners for your profile.</li></ul>
         <li><a href="/work/Mikki" sveltekit:prefetch title="-> Mikki">Mikki</a></li>
             <ul><li>An assembler wiki created in SvelteKit</li></ul>
         <li><a href="/work/WeatherWatch" sveltekit:prefetch title="-> WeatherWatch">WeatherWatch</a></li>
