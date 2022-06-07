@@ -56,6 +56,7 @@
             { title: "Ubuntu", src: "https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" },
             { title: "Manjaro", src: "https://img.shields.io/badge/manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white" },
             { title: "Fedora", src: "https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white" },
+            { title: "KDE", src: "https://img.shields.io/badge/kde-1D99F3?style=for-the-badge&logo=kde&logoColor=FFFFFF" },
         ],
         // office
         [
