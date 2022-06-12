@@ -61,11 +61,11 @@
         border-radius: 100%;
         margin-right: 1.5rem;
         border: 5px solid var(--yellow);
-        transition: ease-in-out .25s;
+        transition: 1.5s ease;
     }
 
     .me:hover {
-        transform: scale(1.1);
+        transform: rotate(360deg);
     }
     
     p {
