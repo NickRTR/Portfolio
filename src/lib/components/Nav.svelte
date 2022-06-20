@@ -7,7 +7,6 @@
         { title: "Work", path: "/work" },
         { title: "Uses", path: "/uses" },
         { title: "Skills", path: "/skills" },
-        { title: "FFC600", path: "/FFC600" },
         { title: "Blog", path: "/blog" },
         { title: "Contact", path: "/contact" }
     ];

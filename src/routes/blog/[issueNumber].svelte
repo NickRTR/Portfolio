@@ -52,6 +52,10 @@
 </main>
 
 <style>
+    :global(*) {
+        max-width: 100%;
+    }
+
     hr {
         height: 5px;
         border: none;
