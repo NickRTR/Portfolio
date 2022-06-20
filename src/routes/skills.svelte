@@ -99,6 +99,7 @@
 <style>
     h2 {
         margin-bottom: .4rem;
+        border-bottom: none;
     }
 
     .banner {
