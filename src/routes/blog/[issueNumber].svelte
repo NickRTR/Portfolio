@@ -28,7 +28,7 @@
             <hr>
         </header>
 
-        <SvelteMarkdown source={post.body} />
+        <article><SvelteMarkdown source={post.body} /></article>
 
         <footer>
             <hr>
