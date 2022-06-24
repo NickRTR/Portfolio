@@ -8,6 +8,8 @@
     <title>Nick Reutlinger - Blog</title>
 </svelte:head>
 
+<!-- TODO: Revise Blog Post overview -->
+
 <main>
     <Heading text={["Blog"]} />
 
