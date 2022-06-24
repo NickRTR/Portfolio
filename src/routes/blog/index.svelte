@@ -66,7 +66,7 @@
     }
 
     input {
-        scroll-margin-block: 1rem;
+        margin-block: 1rem;
         border-radius: 5px;
         outline: none;
         border: 2px solid var(--textDark);
