@@ -110,4 +110,8 @@
         font-size: 1.25rem;
         margin-inline: .5rem;
     }
+
+    a {
+        word-break: break-word;
+    }
 </style>
