@@ -86,6 +86,12 @@
         gap: 1rem;
     }
 
+    @media only screen and (max-width: 550px) {
+        .cardGrid {
+            grid-template-columns: 1fr;
+        }
+    }
+
     .card {
         border: 5px solid var(--yellow);
         border-radius: 1rem;
