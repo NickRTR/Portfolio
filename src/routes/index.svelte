@@ -26,7 +26,7 @@
             </aside>
         </article>
     </section>
-    <!-- <section class="bottom">
+    <section class="bottom">
         <div class="pageLinks">
             <h2>More about me...</h2>
             <ul>
@@ -40,7 +40,7 @@
         <aside>
             <img class="me" src="/me2.jpg" alt="A piture of myself" title="A picture of myself">
         </aside>
-    </section> -->
+    </section>
 </main>
 
 <style>
