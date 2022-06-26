@@ -127,6 +127,10 @@
         padding-left: 1.3rem;
     }
 
+    :global(strong) {
+        font-weight: 800;
+    }
+
     @media only screen and (max-width: 450px) {
         .links {
             display: grid;
