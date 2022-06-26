@@ -37,9 +37,10 @@
                 <li><a href="/contact" rel="canonical" sveltekit:prefetch>Contact me!</a></li>
             </ul>
         </div>
-        <aside>
+        
+        <!-- <aside>
             <img class="me" src="/me2.jpg" alt="A piture of myself" title="A picture of myself">
-        </aside>
+        </aside> -->
     </section>
 </main>
 
