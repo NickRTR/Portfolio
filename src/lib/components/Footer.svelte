@@ -4,7 +4,7 @@
 
 <main>
     <footer>
-        <p>©2022, Nick Reutlinger</p>
+        <p>©2022 Nick Reutlinger</p>
         <p>📍Germany, Stuttgart
             {#if weather}
                  {Math.round(weather.current.temp_c)}°C / {Math.round(weather.current.temp_f)}°F
