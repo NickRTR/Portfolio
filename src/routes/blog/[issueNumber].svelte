@@ -129,6 +129,7 @@
 
     :global(strong) {
         font-weight: 800;
+        font-size: 1.1rem;
     }
 
     @media only screen and (max-width: 450px) {
