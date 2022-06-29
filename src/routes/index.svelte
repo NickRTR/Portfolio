@@ -21,7 +21,7 @@
                     <a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin.svg" alt="linkedin" title="linkedin"></a>
                     <a class="noYellowUnderline socialLink" href="https://github.com/NickRTR" target="_blank"><img src="/social/github.svg" alt="github" title="github"></a>
                     <a class="noYellowUnderline socialLink" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img src="/social/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
-                    <a class="noYellowUnderline socialLink" href="https://www.twitch.tv/nickrtr" target="_blank"><img src="/social/twitch.svg" alt="twitch" title="twitch"></a>
+                    <!-- <a class="noYellowUnderline socialLink" href="https://www.twitch.tv/nickrtr" target="_blank"><img src="/social/twitch.svg" alt="twitch" title="twitch"></a> -->
                 </div>
             </aside>
         </article>
