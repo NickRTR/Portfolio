@@ -3,7 +3,7 @@
 
     <article>
         <a href="profilebadgegenerator.vercel.app" title="profilebadgegenerator.vercel.app" target="_blank">Visit ProfileBadgeGenerator</a><br>
-        <a class="noYellowUnderline" href="profilebadgegenerator.vercel.app" target="_blank"><img src="/work/Profile-Badge-Generator.png" alt="Profile Badge Generator Logo" title="Profile Badge Generator Logo"></a>
+        <a class="noYellowUnderline" href="https://profilebadgegenerator.vercel.app" target="_blank"><img src="/work/Profile-Badge-Generator.png" alt="Profile Badge Generator Logo" title="Profile Badge Generator Logo"></a>
         <p>
             I created the Profile Badge Generator to simplify the process of creating badge for your profile or social media.
             You can experience the badges on <a href="/skills" target="_blank">my skills page</a> 
