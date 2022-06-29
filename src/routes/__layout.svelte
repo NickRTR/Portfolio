@@ -76,6 +76,7 @@
 
     :global(:root) {
         --yellow: #ffc600;
+        --blue: cornflowerblue;
         --textLight: white;
         --textDark: black;
         --dots: #d2d6d9;
@@ -99,14 +100,14 @@
 
     :global(a:not(.noYellowUnderline)) {
         text-decoration: none;
-        border-bottom: 3px solid #ffc600A6;
+        border-bottom: 3px solid var(--yellow);
         padding-bottom: .1rem;
         position: relative;
         transition: ease-in-out .2s;
     }
 
     :global(a:not(.noYellowUnderline):hover) {
-        border-bottom: 4px solid var(--yellow);
+        border-bottom: 3px solid var(--blue);
     }
 
     @font-face {

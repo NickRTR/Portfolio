@@ -14,7 +14,7 @@
     <title>Nick Reutlinger - Post</title>
 </svelte:head>
 
-<main>       
+<main class="post">       
     {#if post.title}
         <header>
             <h1>{post.title}</h1>
@@ -109,8 +109,16 @@
         border: 2px solid var(--textDark);
     }
 
-    :global(h2) {
-        border-bottom: 3px solid lightgray;
+    :global(.post article h1) {
+        border-bottom: 5px solid var(--blue);
+    }
+
+    :global(.post article h2) {
+        border-bottom: 4px solid var(--blue);
+    }
+
+    :global(.post article h3) {
+        border-bottom: 3px solid var(--blue);
     }
 
     :global(a) {
@@ -129,7 +137,6 @@
 
     :global(strong) {
         font-weight: 800;
-        font-size: 1.1rem;
     }
 
     @media only screen and (max-width: 450px) {

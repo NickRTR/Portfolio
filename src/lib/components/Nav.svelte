@@ -79,7 +79,7 @@
     }
 
     .links a:hover, a:not(#title):focus {
-        border-bottom: 4px solid var(--textDark);
+        border-bottom: 4px solid var(--blue);
     }
 
     .active {
