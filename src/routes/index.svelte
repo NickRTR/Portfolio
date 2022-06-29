@@ -16,12 +16,12 @@
                 <p>
                     I'm a self-taught software engineer at the age of 16, located in <mark>Germany</mark>.<br>For the most part, I'm developing Web Apps with <mark>Sveltekit</mark> and <mark>Javascript</mark>. Additionally, I'm interested in anything that has to do with <mark>tech</mark>.
                 </p>
-                <div class="links">
-                    <a class="noYellowUnderline" href="https://twitter.com/nickrtrrtr" target="_blank"><img class="socialLink" src="/social/twitter.svg" alt="twitter" title="twitter"></a>
-                    <a class="noYellowUnderline" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img class="socialLink" src="/social/linkedin.svg" alt="linkedin" title="linkedin"></a>
-                    <a class="noYellowUnderline" href="https://github.com/NickRTR" target="_blank"><img class="socialLink" src="/social/github.svg" alt="github" title="github"></a>
-                    <a class="noYellowUnderline" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img class="socialLink" src="/social/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
-                    <a class="noYellowUnderline" href="https://www.twitch.tv/nickrtr" target="_blank"><img class="socialLink" src="/social/twitch.svg" alt="twitch" title="twitch"></a>
+                <div class="socialLinks">
+                    <a class="noYellowUnderline socialLink" href="https://twitter.com/nickrtrrtr" target="_blank"><img src="/social/twitter.svg" alt="twitter" title="twitter"></a>
+                    <a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin.svg" alt="linkedin" title="linkedin"></a>
+                    <a class="noYellowUnderline socialLink" href="https://github.com/NickRTR" target="_blank"><img src="/social/github.svg" alt="github" title="github"></a>
+                    <a class="noYellowUnderline socialLink" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img src="/social/stackoverflow.svg" alt="stackoverflow" title="stackoverflow"></a>
+                    <a class="noYellowUnderline socialLink" href="https://www.twitch.tv/nickrtr" target="_blank"><img src="/social/twitch.svg" alt="twitch" title="twitch"></a>
                 </div>
             </aside>
         </article>
@@ -73,41 +73,44 @@
         margin-bottom: .5rem;
     }
 
+    .socialLinks {
+        user-select: none;
+    }
+    
     .socialLink {
+        outline: none;
+    }
+
+    .socialLink img  {
         width: 2rem;
         background-color: var(--yellow);
         padding: .5rem;
         border-radius: 1rem;
+        transition: .25s;
+        outline: none;
+    }
+    
+    .socialLink:hover img, .socialLink:focus img {
+        background-color: var(--blue);
     }
 
-    /* .bottom {
+    .bottom {
         margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .bottom h2 {
         margin: 0;
-    } */
-
-    .links {
+    }
+    
+    .pageLinks a {
+        transition: all .2s linear;
         user-select: none;
     }
 
-    .links a {
-        transition: all .2s linear;
-    }
-
-    .links a:hover, a:focus {
+    .pageLinks a:hover, .pageLinks a:focus {
         outline: none;
-        opacity: .75;
+        border-color: var(--blue);
     }
-
-    /* h2 {
-        border: none !important;
-        margin-bottom: -.5rem;
-    } */
 
     @media only screen and (max-width: 600px) {
         article {
