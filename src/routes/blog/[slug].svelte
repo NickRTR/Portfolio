@@ -1,6 +1,5 @@
 <script>
     export let post;
-    export let comments;
 
     let created = new Date(post.createdAt);
     let edited = new Date(post.updatedAt);
@@ -21,7 +20,7 @@
                     <p>Created on {`${created.getDate()}.${created.getMonth() + 1}.${created.getFullYear()}`}</p>
                     <p>Edited on {`${edited.getDate()}.${edited.getMonth() + 1}.${edited.getFullYear()}`}</p>
                 </div>
-                <p>{comments.length} comment(s)</p>
+                <p>{post.comments.length} comment(s)</p>
             </div>
             <hr>
         </header>
@@ -31,11 +30,11 @@
         <footer>
             <hr>
             <h1>Comments</h1>
-            {#each comments as comment}
+            {#each post.comments as comment}
                 <div class="comment">
                     <p>{comment.body}</p>
-                    <p class="userData">by {comment.user.login}</p>
-                    <p class="userData">on {`${createDate(comment.created_at).getDate()}.${createDate(comment.created_at).getMonth()}.${created.getFullYear()}`}</p>
+                    <p class="userData">by {comment.author}</p>
+                    <p class="userData">on {`${createDate(comment.created).getDate()}.${createDate(comment.created).getMonth() + 1}.${createDate(comment.created).getFullYear()}`}</p>
                 </div>
             {/each}
             <div class="links">

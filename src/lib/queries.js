@@ -19,6 +19,11 @@ export const postQuery = gql`
             body {
                 html
             },
+            comments {
+                author
+                body
+                created
+            }
         }
     }
 `
