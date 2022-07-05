@@ -5,6 +5,8 @@
     let edited = new Date(post.updatedAt);
 
     const createDate = (time) => new Date(time);
+
+    console.log(post.body);
 </script>
 
 <svelte:head>
@@ -53,6 +55,11 @@
         scroll-behavior: smooth;
         max-width: 100%;
         object-fit: cover;
+    }
+
+    :global(img) {
+        width: unset;
+        height: unset;
     }
 
     hr {
