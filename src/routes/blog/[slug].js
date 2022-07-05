@@ -7,7 +7,6 @@ export async function get({ params }) {
     return {
         body: {
             post,
-            comments: []
         }
     }
 }
