@@ -1,4 +1,7 @@
-import { API_KEY } from "$lib/api";
+import dotenv from 'dotenv';
+dotenv.config();
+
+export const API_KEY = process.env.API_KEY;
 
 export async function get() {
     let result;
