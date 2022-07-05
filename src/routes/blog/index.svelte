@@ -44,7 +44,7 @@
             {#each filteredPosts as post}
                 <div class="card">
                     <p>{`${new Date(post.created_at).getDate()}.${new Date(post.created_at).getMonth()}.${new Date(post.created_at).getFullYear()}`}</p>
-                    <h2><a href={"/blog/" + post.number} rel="canonical" sveltekit:prefetch>{post.title}</a></h2>
+                    <h2><a href={"/blog/" + post.slug} rel="canonical" sveltekit:prefetch>{post.title}</a></h2>
                 </div>
             {/each}
         </div>
