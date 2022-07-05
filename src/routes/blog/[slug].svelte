@@ -2,8 +2,8 @@
     export let post;
     export let comments;
 
-    let created = new Date(post.created_at);
-    let edited = new Date(post.updated_at);
+    let created = new Date(post.createdAt);
+    let edited = new Date(post.updatedAt);
 
     const createDate = (time) => new Date(time);
 </script>
@@ -18,8 +18,8 @@
             <h1>{post.title}</h1>
             <div class="info">
                 <div class="time">
-                    <p>Created on {`${created.getDate()}.${created.getMonth()}.${created.getFullYear()}`}</p>
-                    <p>Edited on {`${edited.getDate()}.${edited.getMonth()}.${edited.getFullYear()}`}</p>
+                    <p>Created on {`${created.getDate()}.${created.getMonth() + 1}.${created.getFullYear()}`}</p>
+                    <p>Edited on {`${edited.getDate()}.${edited.getMonth() + 1}.${edited.getFullYear()}`}</p>
                 </div>
                 <p>{comments.length} comment(s)</p>
             </div>
