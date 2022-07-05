@@ -1,6 +1,4 @@
 <script>
-    import SvelteMarkdown from "svelte-markdown";
-
     export let post;
     export let comments;
 
@@ -28,7 +26,7 @@
             <hr>
         </header>
 
-        <article><SvelteMarkdown source={post.body} /></article>
+        <article>{@html post.body.html}</article>
 
         <footer>
             <hr>
@@ -55,6 +53,7 @@
     :global(*) {
         scroll-behavior: smooth;
         max-width: 100%;
+        object-fit: cover;
     }
 
     hr {

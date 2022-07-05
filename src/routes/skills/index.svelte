@@ -1,0 +1,55 @@
+<script>
+    import Heading from "$lib/components/Heading.svelte";
+
+    export let skillSections;
+</script>
+
+<main>
+    <Heading text={["Skills"]} />
+
+    {#each skillSections as skillSection}
+        <section>
+            <h2>{skillSection.title}</h2>
+            
+            <div class="banner">
+                {#each skillSection.skills as skill}
+                    <img src={skill.url} alt={skill.title} title={skill.title}>
+                {/each}
+            </div>
+        </section>
+    {/each}
+</main>
+
+<style>
+    h2 {
+        margin-bottom: .4rem;
+        border-bottom: none;
+    }
+
+    .banner {
+        border-radius: .5rem;
+        border: 4px solid var(--yellow);
+        padding: .5rem;
+        line-height: 0; /* remove padding at bottom */
+    }
+    
+    img {
+        margin: .25rem;
+        transition: all .2s linear;
+        border-radius: .25rem;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    @keyframes slidingBanners {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+</style>
