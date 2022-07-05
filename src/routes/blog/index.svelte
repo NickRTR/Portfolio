@@ -15,7 +15,7 @@
             }
         }
 
-        // more wider search if no fitting post was found
+        // wider search if no fitting post was found
         if (filteredPosts.length === 0) {
             for (let i in posts) {
                 let post = posts[i];
