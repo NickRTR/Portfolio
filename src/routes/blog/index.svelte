@@ -3,6 +3,8 @@
 
     export let posts;
 
+    const createdAt = new Date(posts[0].createdAt);
+
     let filter = "";
     let filteredPosts = posts;
 
@@ -43,7 +45,7 @@
         <div class="cardGrid">
             {#each filteredPosts as post}
                 <div class="card">
-                    <p>{`${new Date(post.created_at).getDate()}.${new Date(post.created_at).getMonth()}.${new Date(post.created_at).getFullYear()}`}</p>
+                    <p>{`${createdAt.getDate()}.${createdAt.getMonth() + 1}.${createdAt.getFullYear()}`}</p>
                     <h2><a href={"/blog/" + post.slug} rel="canonical" sveltekit:prefetch>{post.title}</a></h2>
                 </div>
             {/each}
