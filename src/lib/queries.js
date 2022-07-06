@@ -13,17 +13,30 @@ export const postsQuery = gql`
 export const postQuery = gql`
     query post($slug: String!) {
         post(where: {slug: $slug}) {
-            title,
+            id
+            slug
+            title
             createdAt
             updatedAt
             body {
                 html
             },
-            comments {
+            blogComments {
                 author
                 body
-                created
+                createdAt
             }
+        }
+    }
+`
+
+export const commentQuery = gql`
+    mutation comment($author: String!, $body: String!, $id: ID!) {
+        updatePost(
+            data: {blogComments: {create: {body: $body, author: $author}}}
+            where: {id: $id}
+        ) {
+            id
         }
     }
 `
