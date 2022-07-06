@@ -9,7 +9,7 @@ export async function post({ request }) {
         return {
             status: 200,
             body: {
-                message: `Thanks for posting, ${commentAuthor} your comment will appear as soon as it's approved.`
+                message: `Thanks for posting, ${commentAuthor}. Your comment will appear as soon as it's approved.`
             }
         }
     } catch (error) {
