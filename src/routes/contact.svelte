@@ -11,10 +11,10 @@
 
     <form action="https://formsubmit.co/nickrtrrtr@gmail.com" method="POST">
         <label for="email">email</label>
-        <input type="email" name="email" id="email" required>
+        <input class="border" type="email" name="email" id="email" required>
         <label for="message">message</label>
-        <textarea name="message" id="message" required></textarea>
-        <button type="submit">Submit</button>
+        <textarea class="border" name="message" id="message" required></textarea>
+        <button class="border" type="submit">Submit</button>
         <input type="hidden" name="_subject" value="New submission!">
         <input type="hidden" name="_next" value="https://nickreutlinger.vercel.app/thanks">
     </form>
@@ -28,26 +28,13 @@
     }
 
     textarea, input {
-        border-radius: 5px;
-        outline: none;
-        border: 2px solid var(--textDark);
         padding: .5rem;
         font-size: 1rem;
-        transition: .1s ease-in-out;
-    }
-
-    input:focus, textarea:focus, input:hover, textarea:hover {
-        border: 2px solid var(--yellow);
-    }
-
-    input {
-        margin-bottom: .5rem;
         width: 400px;
+        margin-bottom: .5rem;
     }
 
     textarea {
-        margin-bottom: .4rem;
-        width: 400px;
         height: 200px;
         resize: none;
     }
@@ -55,7 +42,6 @@
     button {
         background-color: var(--yellow);
         color: var(--textDark);
-        border: 2px solid var(--yellow);
         border-radius: 1rem;
         padding: .25rem .5rem;
         font-size: 1.2rem;
@@ -63,11 +49,6 @@
         user-select: none;
         margin-top: .5rem;
         cursor: pointer;
-    }
-
-    button:hover, button:focus {
-        transition: .1s ease-in-out;
-        border: 2px solid var(--textDark);
     }
 
     @media only screen and (max-width: 900px) {
