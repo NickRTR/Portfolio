@@ -1,12 +1,37 @@
-<script>
+<script>   
     export let post;
+    
+    const created = new Date(post.createdAt);
+    const edited = new Date(post.updatedAt);
+    
+    let commentAuthor = "";
+    let commentBody = "";
 
-    let created = new Date(post.createdAt);
-    let edited = new Date(post.updatedAt);
+    let commentSubmitMessage = "";
+    
+    async function postComment() {
+        const res = await fetch("/api/blog/postComment", {
+			method: 'POST',
+			body: JSON.stringify({
+				commentAuthor,
+                commentBody,
+                id: post.id
+			})
+		})
+
+		const data = await res.json();
+
+        if (data.error) {
+            alert(data.error);
+        } else {
+            commentSubmitMessage = data.message;
+        }
+
+        commentAuthor = "";
+        commentBody = "";
+    }
 
     const createDate = (time) => new Date(time);
-
-    console.log(post.body);
 </script>
 
 <svelte:head>
@@ -22,7 +47,7 @@
                     <p>Created on {`${created.getDate()}.${created.getMonth() + 1}.${created.getFullYear()}`}</p>
                     <p>Edited on {`${edited.getDate()}.${edited.getMonth() + 1}.${edited.getFullYear()}`}</p>
                 </div>
-                <p>{post.comments.length} comment(s)</p>
+                <p>{post.blogComments.length} comment(s)</p>
             </div>
             <hr>
         </header>
@@ -32,15 +57,22 @@
         <footer>
             <hr>
             <h1>Comments</h1>
-            {#each post.comments as comment}
+            {#each post.blogComments as comment}
                 <div class="comment">
                     <p>{comment.body}</p>
                     <p class="userData">by {comment.author}</p>
-                    <p class="userData">on {`${createDate(comment.created).getDate()}.${createDate(comment.created).getMonth() + 1}.${createDate(comment.created).getFullYear()}`}</p>
+                    <p class="userData">on {`${createDate(comment.createdAt).getDate()}.${createDate(comment.createdAt).getMonth() + 1}.${createDate(comment.createdAt).getFullYear()}`}</p>
                 </div>
             {/each}
             <div class="links">
-                <a href={post.html_url + "#issuecomment-new"} class="noYellowUnderline" target="_blank">Leave a new comment!</a>
+                <form>
+                    {#if commentSubmitMessage !== ""}
+                        <p>{commentSubmitMessage}</p>
+                    {/if}
+                    <input type="text" placeholder="Your Name" bind:value={commentAuthor}>
+                    <input type="text" placeholder="Your Comment" bind:value={commentBody}>
+                    <button type="submit" on:click|preventDefault={postComment}>Comment</button>
+                </form>
                 <a href="/blog" rel="canonical" class="noYellowUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a>
             </div>
         </footer>
@@ -105,13 +137,14 @@
     .links a {
         text-decoration: none;
         background-color: var(--yellow);
-        border: 2px solid var(--yellow);
+        border: 3px solid var(--yellow);
         padding: .5rem 1rem;
         border-radius: 1rem;
+        transition: all ease .2s;
     }
 
     .links a:focus, .links a:hover {
-        border: 2px solid var(--textDark);
+        border: 3px solid var(--blue);
     }
 
     :global(.post article h1) {
