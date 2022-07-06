@@ -69,11 +69,11 @@
                     {#if commentSubmitMessage !== ""}
                         <p>{commentSubmitMessage}</p>
                     {/if}
-                    <input type="text" placeholder="Your Name" bind:value={commentAuthor}>
-                    <input type="text" placeholder="Your Comment" bind:value={commentBody}>
-                    <button type="submit" on:click|preventDefault={postComment}>Comment</button>
+                    <input class="border" type="text" placeholder="Your Name" bind:value={commentAuthor}>
+                    <textarea class="border" placeholder="Your Comment" bind:value={commentBody} maxlength={500} />
                 </form>
-                <a href="/blog" rel="canonical" class="noYellowUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a>
+                <button class="border" type="submit" on:click|preventDefault={postComment}>Comment</button>
+                <button class="border" type="button"><a href="/blog" rel="canonical" class="noYellowUnderline" sveltekit:prefetch title="back to blog posts">Continue reading...</a></button>
             </div>
         </footer>
     {:else}
@@ -87,11 +87,6 @@
         scroll-behavior: smooth;
         max-width: 100%;
         object-fit: cover;
-    }
-
-    :global(img) {
-        width: unset;
-        height: unset;
     }
 
     hr {
@@ -136,15 +131,47 @@
 
     .links a {
         text-decoration: none;
-        background-color: var(--yellow);
-        border: 3px solid var(--yellow);
-        padding: .5rem 1rem;
-        border-radius: 1rem;
-        transition: all ease .2s;
     }
 
-    .links a:focus, .links a:hover {
-        border: 3px solid var(--blue);
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    textarea, input {
+        padding: .5rem;
+        font-size: 1rem;
+        transition: .1s ease-in-out;
+        width: unset !important;
+        margin-bottom: .5rem;
+    }
+
+    textarea {
+        height: 100px !important;
+        resize: none;
+    }
+
+    button {
+        background-color: var(--yellow);
+        color: var(--textDark);
+        border-radius: 1rem;
+        padding: .25rem .5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        user-select: none;
+        margin-top: .5rem;
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 900px) {
+        input, textarea {
+            width: 300px;
+        }
+
+        textarea {
+            height: 150px;
+        }
     }
 
     :global(.post article h1) {
@@ -175,6 +202,11 @@
 
     :global(strong) {
         font-weight: 800;
+    }
+
+    :global(img) {
+        width: unset;
+        height: unset;
     }
 
     @media only screen and (max-width: 450px) {

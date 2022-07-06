@@ -4,7 +4,7 @@ import { commentQuery } from "$lib/queries";
 export async function post({ request }) {
     const { commentAuthor, commentBody, id } = await request.json();
     try {
-        if (commentAuthor.length === 0 || commentBody.length === 0) throw new Error("Please enter your name and your comment.")
+        if (commentAuthor.length === 0 || commentBody.length === 0) throw new Error("Please enter your name and comment.")
         await graphcms.request(commentQuery, {author: commentAuthor, body: commentBody, id});
         return {
             status: 200,
@@ -13,11 +13,11 @@ export async function post({ request }) {
             }
         }
     } catch (error) {
-        console.log(error.message);
+        let errorMessage = error.message.split(":");
         return {
             status: 400,
             body: {
-                error: error.message
+                error: errorMessage[0]
             }
         }
     }

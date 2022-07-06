@@ -90,6 +90,17 @@
         background-color: var(--yellow);
     }
 
+    :global(.border) {
+        border-radius: 5px;
+        outline: none;
+        border: 3px solid var(--yellow);
+        transition: .1s ease-in-out;
+    }
+
+    :global(.border:hover, .border:focus) {
+        border: 3px solid var(--blue);
+    }
+
     :global(a) {
         color: var(--textDark);
     }

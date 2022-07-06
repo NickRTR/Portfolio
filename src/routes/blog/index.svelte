@@ -36,7 +36,7 @@
 <main>
     <header>
         <Heading text={["Blog"]} />
-        <input type="text" placeholder="filter" bind:value={filter} on:input={filterPosts}>
+        <input class="border" type="text" placeholder="filter" bind:value={filter} on:input={filterPosts}>
     </header>
 
     <div class="divider"></div>
@@ -69,16 +69,9 @@
 
     input {
         margin-block: 1rem;
-        border-radius: 5px;
-        outline: none;
-        border: 2px solid var(--textDark);
         padding: .25rem .5rem;
         font-size: 1rem;
         transition: .1s ease-in-out;
-    }
-
-    input:focus, input:hover {
-        border: 2px solid var(--yellow);
     }
 
     .cardGrid {
