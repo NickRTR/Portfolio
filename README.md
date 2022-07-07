@@ -3,3 +3,4 @@ My personal web page, showcasing my work. In future my goal is to complete my Po
 ## Todos
 
 TODO: Exclusively fetch published blog comments
+TODO: Add /uses to CMS
