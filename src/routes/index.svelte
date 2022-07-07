@@ -83,6 +83,7 @@
 
     .socialLink img  {
         width: 2rem;
+        height: 2rem;
         background-color: var(--yellow);
         padding: .5rem;
         border-radius: 1rem;

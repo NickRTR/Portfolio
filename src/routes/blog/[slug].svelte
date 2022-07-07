@@ -83,7 +83,7 @@
 </main>
 
 <style>
-    :global(*) {
+    :global(.post *) {
         scroll-behavior: smooth;
         max-width: 100%;
         object-fit: cover;
@@ -186,25 +186,25 @@
         border-bottom: 3px solid var(--blue);
     }
 
-    :global(a) {
+    :global(.post a) {
         word-break: break-all;
     }
 
-    :global(blockquote) {
+    :global(.post blockquote) {
         border-left: 3px solid var(--yellow);
         margin-left: 0;
         padding-left: .6rem;
     }
 
-    :global(ul) {
+    :global(.post ul) {
         padding-left: 1.3rem;
     }
 
-    :global(strong) {
+    :global(.post strong) {
         font-weight: 800;
     }
 
-    :global(img) {
+    :global(.post img) {
         width: unset;
         height: unset;
     }

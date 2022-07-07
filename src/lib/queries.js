@@ -52,3 +52,24 @@ export const skillSectionsQuery = gql`
         }
     }
 `
+
+export const projectsQuery = gql`
+    query projects {
+        projects {
+            slug
+            shortDescription
+            projectName
+        }
+    }
+`
+
+export const projectQuery = gql`
+    query project($slug: String!) {
+        project(where: {slug: $slug}) {
+            projectName
+            body {
+                html
+            },
+        }
+    }
+`
