@@ -98,7 +98,7 @@
     }
 
     :global(.border:hover, .border:focus) {
-        border: 3px solid var(--blue);
+        border-color: var(--blue);
     }
 
     :global(a) {
@@ -118,7 +118,7 @@
     }
 
     :global(a:not(.noYellowUnderline):hover) {
-        border-bottom: 3px solid var(--blue);
+        border-bottom-color: var(--blue);
     }
 
     @font-face {
