@@ -86,6 +86,12 @@
         background-color: var(--yellow);
     }
 
+    :global(code) {
+        background-color: gainsboro;
+        padding: .2rem;
+        border-radius: .25rem;
+    }
+
     :global(*::selection ) {
         background-color: var(--yellow);
     }
