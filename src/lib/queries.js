@@ -42,7 +42,7 @@ export const commentQuery = gql`
 `
 
 export const skillSectionsQuery = gql`
-    query allSkillSections {
+    query skillsSections {
         skillSections {
             title
             skills {
@@ -70,6 +70,19 @@ export const projectQuery = gql`
             body {
                 html
             },
+        }
+    }
+`
+
+export const usesSectionsQuery = gql`
+    query usesSkillSections {
+        usesSections {
+            sectionTitle
+            uses {
+                use {
+                    html
+                }
+            }
         }
     }
 `
