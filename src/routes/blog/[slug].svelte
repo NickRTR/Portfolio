@@ -47,7 +47,7 @@
                     <p>Created on {`${created.getDate()}.${created.getMonth() + 1}.${created.getFullYear()}`}</p>
                     <p>Edited on {`${edited.getDate()}.${edited.getMonth() + 1}.${edited.getFullYear()}`}</p>
                 </div>
-                <p>{post.blogComments.length} comment(s)</p>
+                <p>{post.documentInStages[0].blogComments.length} comment(s)</p>
             </div>
             <hr>
         </header>
@@ -57,7 +57,7 @@
         <footer>
             <hr>
             <h1>Comments</h1>
-            {#each post.blogComments as comment}
+            {#each post.documentInStages[0].blogComments as comment}
                 <div class="comment">
                     <p>{comment.body}</p>
                     <p class="userData">by {comment.author}</p>

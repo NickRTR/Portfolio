@@ -21,10 +21,12 @@ export const postQuery = gql`
             body {
                 html
             },
-            blogComments {
-                author
-                body
-                createdAt
+            documentInStages {
+                blogComments {
+                    author
+                    body
+                    createdAt
+                }
             }
         }
     }
