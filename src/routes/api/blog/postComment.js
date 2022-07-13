@@ -1,11 +1,11 @@
-import graphcms from "$lib/graphcms";
+import hygraph from "$lib/hygraph";
 import { commentQuery } from "$lib/queries";
 
 export async function post({ request }) {
     const { commentAuthor, commentBody, id } = await request.json();
     try {
         if (commentAuthor.length === 0 || commentBody.length === 0) throw new Error("Please enter your name and comment.")
-        await graphcms.request(commentQuery, {author: commentAuthor, body: commentBody, id});
+        await hygraph.request(commentQuery, {author: commentAuthor, body: commentBody, id});
         return {
             status: 200,
             body: {

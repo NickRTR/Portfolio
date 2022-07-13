@@ -1,8 +1,8 @@
-import graphcms from "$lib/graphcms";
+import hygraph from "$lib/hygraph";
 import { skillSectionsQuery } from "$lib/queries";
 
 export async function get() {
-    const { skillSections } = await graphcms.request(skillSectionsQuery);
+    const { skillSections } = await hygraph.request(skillSectionsQuery);
     
     return {
         body: {
