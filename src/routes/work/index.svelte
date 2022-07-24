@@ -1,30 +1,32 @@
 <script>
-    import Heading from "$lib/components/Heading.svelte";
+	import Heading from "$lib/components/Heading.svelte";
 
-    export let projects;
+	export let projects;
 </script>
 
 <svelte:head>
-    <title>Nick Reutlinger - Work</title>
+	<title>Nick Reutlinger - Work</title>
 </svelte:head>
 
 <main>
-    <Heading text={["Work"]} />
+	<Heading text={["Work"]} />
 
-    <ul>
-        {#each projects as project}
-            <li><a href="/work/{project.slug}" sveltekit:prefetch title="-> {project.projectName}">{project.projectName}</a></li>
-            <ul><li>{project.shortDescription}</li></ul>
-        {/each}
-    </ul>
-</main> 
+	<ul>
+		{#each projects as project}
+			<li>
+				<a href="/work/{project.slug}" sveltekit:prefetch title="-> {project.projectName}">{project.projectName}</a>
+			</li>
+			<ul><li>{project.shortDescription}</li></ul>
+		{/each}
+	</ul>
+</main>
 
 <style>
-    main {
-        font-size: 1.2rem;
-    }
+	main {
+		font-size: 1.2rem;
+	}
 
-    ul {
-        margin: .25rem 0;
-    }
+	ul {
+		margin: 0.25rem 0;
+	}
 </style>

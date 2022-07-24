@@ -1,119 +1,125 @@
 <script>
-    import { page } from "$app/stores";
-    import { slide } from "svelte/transition";
+	import { page } from "$app/stores";
+	import { slide } from "svelte/transition";
 
-    const nav = [
-        { title: "Home", path: "/" },
-        { title: "Work", path: "/work" },
-        { title: "Uses", path: "/uses" },
-        { title: "Skills", path: "/skills" },
-        { title: "Blog", path: "/blog" },
-        { title: "Contact", path: "/contact" }
-    ];
+	const nav = [
+		{ title: "Home", path: "/" },
+		{ title: "Work", path: "/work" },
+		{ title: "Uses", path: "/uses" },
+		{ title: "Skills", path: "/skills" },
+		{ title: "Blog", path: "/blog" },
+		{ title: "Contact", path: "/contact" }
+	];
 
-    let innerWidth;
-    let showHamburger = false;
+	let innerWidth;
+	let showHamburger = false;
 </script>
 
 <svelte:window bind:innerWidth />
 
 <main>
-    <nav>
-        <a class="noYellowUnderline" id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
-        {#if innerWidth >= 900}
-            <div class="links">
-                {#each nav as link}
-                    <a class="noYellowUnderline" rel="canonical" href={link.path} sveltekit:prefetch class:active=
-                    {
-                        $page.url.pathname === link.path || 
-                        ($page.url.pathname.includes("/work") && link.path === "/work") || 
-                        ($page.url.pathname.includes("/blog") && link.path === "/blog")
-                    } 
-                    title={"-> " + link.title}>{link.title}</a>
-                {/each} 
-            </div>
-        {:else}
-            <input type="checkbox" id="toggle" bind:checked={showHamburger}>
-            <label for="toggle"><img src="/menu.svg" alt="Menu"></label>
-        {/if}
-    </nav>
-    {#if showHamburger && innerWidth < 900}
-        <div class="hamburger" transition:slide>
-            {#each nav as link}
-                <a class="noYellowUnderline" href={link.path} class:active=
-                {
-                    $page.url.pathname === link.path || 
-                    ($page.url.pathname.includes("/work") && link.path === "/work") || 
-                    ($page.url.pathname.includes("/blog") && link.path === "/blog")
-                } 
-                sveltekit:prefetch rel="canonical" title={link.title} on:click={() => {showHamburger = false}}>{link.title}</a><br>
-            {/each}
-        </div>
-    {/if}
+	<nav>
+		<a class="noYellowUnderline" id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
+		{#if innerWidth >= 900}
+			<div class="links">
+				{#each nav as link}
+					<a
+						class="noYellowUnderline"
+						rel="canonical"
+						href={link.path}
+						sveltekit:prefetch
+						class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work") || ($page.url.pathname.includes("/blog") && link.path === "/blog")}
+						title={"-> " + link.title}>{link.title}</a
+					>
+				{/each}
+			</div>
+		{:else}
+			<input type="checkbox" id="toggle" bind:checked={showHamburger} />
+			<label for="toggle"><img src="/menu.svg" alt="Menu" /></label>
+		{/if}
+	</nav>
+	{#if showHamburger && innerWidth < 900}
+		<div class="hamburger" transition:slide>
+			{#each nav as link}
+				<a
+					class="noYellowUnderline"
+					href={link.path}
+					class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work") || ($page.url.pathname.includes("/blog") && link.path === "/blog")}
+					sveltekit:prefetch
+					rel="canonical"
+					title={link.title}
+					on:click={() => {
+						showHamburger = false;
+					}}>{link.title}</a
+				><br />
+			{/each}
+		</div>
+	{/if}
 </main>
 
 <style>
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-    }
-    
-    #title {
-        font-size: 1.8rem;
-        margin: 0;
-    }
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+	}
 
-    .links {
-        display: flex;
-    }
+	#title {
+		font-size: 1.8rem;
+		margin: 0;
+	}
 
-    a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        margin: 0 .5rem;
-        outline: none;
-        user-select: none;
-        transition: linear .125s;
-    }
+	.links {
+		display: flex;
+	}
 
-    .links a:hover, a:not(#title):focus {
-        border-bottom: 4px solid var(--blue);
-    }
+	a {
+		text-decoration: none;
+		font-size: 1.5rem;
+		margin: 0 0.5rem;
+		outline: none;
+		user-select: none;
+		transition: linear 0.125s;
+	}
 
-    .active {
-        border-bottom: 4px solid var(--yellow) !important;
-    }
+	.links a:hover,
+	a:not(#title):focus {
+		border-bottom: 4px solid var(--blue);
+	}
 
-    /* Hamburger */
+	.active {
+		border-bottom: 4px solid var(--yellow) !important;
+	}
 
-    img {
-        width: 3rem;
-        margin-bottom: -1rem;
-        margin-top: -.5rem;
-    }
+	/* Hamburger */
 
-    #toggle {
-        display: none;
-    }
+	img {
+		width: 3rem;
+		margin-bottom: -1rem;
+		margin-top: -0.5rem;
+	}
 
-    #toggle + label {
-        transition: 500ms ease all;
-    }
+	#toggle {
+		display: none;
+	}
 
-    #toggle:checked + label {
-        transform: rotate(-90deg);
-        transition: 500ms ease all;
-    }
+	#toggle + label {
+		transition: 500ms ease all;
+	}
 
-    .hamburger {
-        padding-left: 1rem;
-        padding-bottom: .5rem;
-    }
+	#toggle:checked + label {
+		transform: rotate(-90deg);
+		transition: 500ms ease all;
+	}
 
-    .hamburger a {
-        line-height: 2.5rem;
-        margin: 0;
-    }
+	.hamburger {
+		padding-left: 1rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.hamburger a {
+		line-height: 2.5rem;
+		margin: 0;
+	}
 </style>

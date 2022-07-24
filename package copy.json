@@ -1,22 +1,22 @@
 {
-  "name": "portfolio",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "package": "svelte-kit package",
-    "preview": "vite preview",
-    "prepare": "svelte-kit sync"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "graphql": "^16.5.0",
-    "graphql-request": "^4.3.0",
-    "svelte": "^3.44.0"
-  },
-  "type": "module",
-  "dependencies": {
-    "dotenv": "^16.0.0"
-  }
+	"name": "portfolio",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"graphql": "^16.5.0",
+		"graphql-request": "^4.3.0",
+		"svelte": "^3.44.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"dotenv": "^16.0.0"
+	}
 }

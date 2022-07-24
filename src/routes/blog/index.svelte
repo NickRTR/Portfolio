@@ -1,112 +1,114 @@
 <script>
-    import Heading from "$lib/components/Heading.svelte";
+	import Heading from "$lib/components/Heading.svelte";
 
-    export let posts;
+	export let posts;
 
-    const createdAt = new Date(posts[0].createdAt);
+	const createdAt = new Date(posts[0].createdAt);
 
-    let filter = "";
-    let filteredPosts = posts;
+	let filter = "";
+	let filteredPosts = posts;
 
-    function filterPosts() {
-        filteredPosts = [];
-        for (let i in posts) {
-            let post = posts[i];
-            if (post.title.toLowerCase().startsWith(filter.toLowerCase())) {
-                filteredPosts = [...filteredPosts, post];
-            }
-        }
+	function filterPosts() {
+		filteredPosts = [];
+		for (let i in posts) {
+			let post = posts[i];
+			if (post.title.toLowerCase().startsWith(filter.toLowerCase())) {
+				filteredPosts = [...filteredPosts, post];
+			}
+		}
 
-        // wider search if no fitting post was found
-        if (filteredPosts.length === 0) {
-            for (let i in posts) {
-                let post = posts[i];
-                if (post.title.toLowerCase().includes(filter.toLocaleLowerCase())) {
-                    filteredPosts = [...filteredPosts, post];
-                }
-            }
-        }
-    }
+		// wider search if no fitting post was found
+		if (filteredPosts.length === 0) {
+			for (let i in posts) {
+				let post = posts[i];
+				if (post.title.toLowerCase().includes(filter.toLocaleLowerCase())) {
+					filteredPosts = [...filteredPosts, post];
+				}
+			}
+		}
+	}
 </script>
 
 <svelte:head>
-    <title>Nick Reutlinger - Blog</title>
+	<title>Nick Reutlinger - Blog</title>
 </svelte:head>
 
 <main>
-    <header>
-        <Heading text={["Blog"]} />
-        <input class="border" type="text" placeholder="filter" bind:value={filter} on:input={filterPosts}>
-    </header>
+	<header>
+		<Heading text={["Blog"]} />
+		<input class="border" type="text" placeholder="filter" bind:value={filter} on:input={filterPosts} />
+	</header>
 
-    <div class="divider"></div>
+	<div class="divider" />
 
-    {#if posts instanceof Array}
-        <div class="cardGrid">
-            {#each filteredPosts as post}
-                <div class="card">
-                    <p>{`${createdAt.getDate()}.${createdAt.getMonth() + 1}.${createdAt.getFullYear()}`}</p>
-                    <h2><a href={"/blog/" + post.slug} rel="canonical" sveltekit:prefetch>{post.title}</a></h2>
-                </div>
-            {/each}
-        </div>
-    {:else}
-        {posts.message}
-    {/if}
+	{#if posts instanceof Array}
+		<div class="cardGrid">
+			{#each filteredPosts as post}
+				<div class="card">
+					<p>{`${createdAt.getDate()}.${createdAt.getMonth() + 1}.${createdAt.getFullYear()}`}</p>
+					<h2>
+						<a href={"/blog/" + post.slug} rel="canonical" sveltekit:prefetch>{post.title}</a>
+					</h2>
+				</div>
+			{/each}
+		</div>
+	{:else}
+		{posts.message}
+	{/if}
 </main>
 
 <style>
-    header {
-        text-align: center;
-    }
+	header {
+		text-align: center;
+	}
 
-    .divider {
-        height: 10px;
-        border-radius: 2rem;
-        width: 100%;
-        background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
-    }
+	.divider {
+		height: 10px;
+		border-radius: 2rem;
+		width: 100%;
+		background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+	}
 
-    input {
-        margin-block: 1rem;
-        padding: .25rem .5rem;
-        font-size: 1rem;
-        transition: .1s ease-in-out;
-    }
+	input {
+		margin-block: 1rem;
+		padding: 0.25rem 0.5rem;
+		font-size: 1rem;
+		transition: 0.1s ease-in-out;
+	}
 
-    .cardGrid {
-        margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+	.cardGrid {
+		margin-top: 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
 
-    @media only screen and (max-width: 550px) {
-        .cardGrid {
-            grid-template-columns: 1fr;
-        }
-    }
+	@media only screen and (max-width: 550px) {
+		.cardGrid {
+			grid-template-columns: 1fr;
+		}
+	}
 
-    .card {
-        border: 5px solid var(--yellow);
-        border-radius: 1rem;
-        text-align: center;
-    }
-    
-    .card p {
-        padding-inline: .5rem;
-        background-color: var(--yellow);
-        margin: 0;
-    }
+	.card {
+		border: 5px solid var(--yellow);
+		border-radius: 1rem;
+		text-align: center;
+	}
 
-    .card h2 {
-        word-break: keep-all;
-        border-bottom: none;
-        font-size: 1.25rem;
-        margin-inline: .5rem;
-    }
+	.card p {
+		padding-inline: 0.5rem;
+		background-color: var(--yellow);
+		margin: 0;
+	}
 
-    a {
-        word-break: break-word;
-    }
+	.card h2 {
+		word-break: keep-all;
+		border-bottom: none;
+		font-size: 1.25rem;
+		margin-inline: 0.5rem;
+	}
+
+	a {
+		word-break: break-word;
+	}
 </style>
