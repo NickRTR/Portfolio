@@ -3,7 +3,7 @@ dotenv.config();
 
 export const API_KEY = process.env.API_KEY;
 
-export async function get() {
+export async function GET() {
 	let result;
 	try {
 		result = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Stuttgart`);
