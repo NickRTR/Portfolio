@@ -85,11 +85,3 @@ export const usesSectionsQuery = gql`
 		}
 	}
 `;
-
-export const stuttgartWeather = gql`
-	query stuttgartWeather($title: String) {
-		values: weatherData(where: { title: $title }) {
-			data
-		}
-	}
-`;
