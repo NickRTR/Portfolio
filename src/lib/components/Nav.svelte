@@ -7,7 +7,7 @@
 		{ title: "Work", path: "/work" },
 		{ title: "Uses", path: "/uses" },
 		{ title: "Skills", path: "/skills" },
-		{ title: "Blog", path: "/blog" },
+		{ title: "Blog", path: "https://blog.nickreutlinger.de" },
 		{ title: "Contact", path: "/contact" }
 	];
 
@@ -23,14 +23,7 @@
 		{#if innerWidth >= 900}
 			<div class="links">
 				{#each nav as link}
-					<a
-						class="noYellowUnderline"
-						rel="canonical"
-						href={link.path}
-						sveltekit:prefetch
-						class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work") || ($page.url.pathname.includes("/blog") && link.path === "/blog")}
-						title={"-> " + link.title}>{link.title}</a
-					>
+					<a class="noYellowUnderline" rel="canonical" href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")} title={"-> " + link.title}>{link.title}</a>
 				{/each}
 			</div>
 		{:else}
@@ -44,7 +37,7 @@
 				<a
 					class="noYellowUnderline"
 					href={link.path}
-					class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work") || ($page.url.pathname.includes("/blog") && link.path === "/blog")}
+					class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")}
 					sveltekit:prefetch
 					rel="canonical"
 					title={link.title}
