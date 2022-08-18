@@ -1,13 +1,13 @@
 <script>
 	import Heading from "$lib/components/Heading.svelte";
 
-	export let skillSections;
+	export let data;
 </script>
 
 <main>
 	<Heading text={["Skills"]} />
 
-	{#each skillSections as skillSection}
+	{#each data.skillSections as skillSection}
 		<section>
 			<h2>{skillSection.title}</h2>
 

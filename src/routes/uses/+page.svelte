@@ -1,9 +1,7 @@
 <script>
 	import Heading from "$lib/components/Heading.svelte";
 
-	export let usesSections;
-
-	console.log(usesSections);
+	export let data;
 </script>
 
 <svelte:head>
@@ -14,7 +12,7 @@
 	<article id="uses">
 		<Heading text={["uses"]} />
 
-		{#each usesSections as usesSection}
+		{#each data.usesSections as usesSection}
 			<div id={usesSection.sectionTitle}>
 				<h1>{usesSection.sectionTitle}</h1>
 				<ul>

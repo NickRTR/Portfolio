@@ -1,12 +1,10 @@
 import hygraph from "$lib/hygraph";
 import { projectsQuery } from "$lib/queries";
 
-export async function GET() {
+export async function load() {
 	const { projects } = await hygraph.request(projectsQuery);
 
 	return {
-		body: {
-			projects
-		}
+		projects
 	};
 }

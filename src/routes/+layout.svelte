@@ -1,21 +1,3 @@
-<script context="module">
-	export async function load({ fetch }) {
-		let res = await fetch("/api/weather.json");
-		if (res.ok) {
-			const data = await res.json();
-			return {
-				props: {
-					weather: data
-				}
-			};
-		} else {
-			return {
-				status: 301
-			};
-		}
-	}
-</script>
-
 <script>
 	import Nav from "$lib/components/Nav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
@@ -23,7 +5,7 @@
 	import { fade } from "svelte/transition";
 	import { showLoader } from "$lib/stores";
 
-	export let weather;
+	export let data;
 
 	// min loading time
 	setTimeout(() => {
@@ -44,7 +26,7 @@
 
 		<main><slot /></main>
 
-		<Footer {weather} />
+		<Footer weather={data.weather} />
 	{/if}
 </body>
 

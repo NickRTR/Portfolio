@@ -1,14 +1,14 @@
 <script>
-	export let project;
+	export let data;
 </script>
 
 <svelte:head>
-	<title>Nick Reutlinger - {project.projectName}</title>
+	<title>Nick Reutlinger - {data.project.projectName}</title>
 </svelte:head>
 
 <main>
 	<article class="project">
-		{@html project.body.html}
+		{@html data.project.body.html}
 	</article>
 </main>
 

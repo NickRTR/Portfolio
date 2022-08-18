@@ -1,7 +1,7 @@
 <script>
 	import Heading from "$lib/components/Heading.svelte";
 
-	export let projects;
+	export let data;
 </script>
 
 <svelte:head>
@@ -12,7 +12,7 @@
 	<Heading text={["Work"]} />
 
 	<ul>
-		{#each projects as project}
+		{#each data.projects as project}
 			<li>
 				<a href="/work/{project.slug}" sveltekit:prefetch title="-> {project.projectName}">{project.projectName}</a>
 			</li>
