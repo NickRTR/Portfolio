@@ -26,9 +26,10 @@
 </main>
 
 <style>
-	ul {
+	li {
 		font-size: 1.2rem;
-		line-height: 0.8rem;
+		margin-block: -0.75rem;
+		line-height: 1.6rem;
 	}
 
 	h1 {
