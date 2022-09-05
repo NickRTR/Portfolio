@@ -4,9 +4,11 @@
 
 <main>
 	<div class="container">
-		{#each text as title}
-			<h1>{title}</h1>
-		{/each}
+		<div class="nestedContainer">
+			{#each text as title}
+				<h1>{title}</h1>
+			{/each}
+		</div>
 	</div>
 </main>
 
@@ -17,21 +19,28 @@
 
 	.container {
 		color: var(--textDark);
-		border: 8px solid var(--yellow);
 		border-radius: 0.5rem;
 		transform: rotate(-5deg);
 		display: inline-block;
-		padding: 1rem 1.5rem;
-		margin: 0.5rem;
-		transition: all 0.2s linear;
+		margin-block: 0.5rem;
+		transition: transform 0.2s linear;
+		background: var(--gradient);
+	}
+
+	.nestedContainer {
+		margin: 8px;
+		padding: 1rem 0.75rem;
+		background-color: var(--background);
 	}
 
 	h1 {
+		line-height: 1.7rem;
 		transform: rotate(5deg);
 		margin: 0;
 		font-size: 2rem;
 		user-select: none;
 		transition: all 0.2s linear;
+		padding: 0.25rem;
 	}
 
 	.container:hover {
