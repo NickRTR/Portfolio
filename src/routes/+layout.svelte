@@ -1,7 +1,7 @@
 <script>
 	import Nav from "$lib/components/Nav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
 	import { fade } from "svelte/transition";
 	import { showLoader } from "$lib/stores";
 

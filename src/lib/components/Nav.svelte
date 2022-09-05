@@ -19,11 +19,13 @@
 
 <main>
 	<nav>
-		<a class="noYellowUnderline" id="title" tabindex="-1" href="/" sveltekit:prefetch>Nick Reutlinger</a>
+		<a class="noYellowUnderline" id="title" tabindex="-1" href="/" data-sveltekit-prefetch>Nick Reutlinger</a>
 		{#if innerWidth >= 900}
 			<div class="links">
 				{#each nav as link}
-					<a class="noYellowUnderline" rel="canonical" href={link.path} sveltekit:prefetch class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")} title={"-> " + link.title}>{link.title}</a>
+					<a class="noYellowUnderline" rel="canonical" href={link.path} data-sveltekit-prefetch class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")} title={"-> " + link.title}
+						>{link.title}</a
+					>
 				{/each}
 			</div>
 		{:else}
@@ -38,7 +40,7 @@
 					class="noYellowUnderline"
 					href={link.path}
 					class:active={$page.url.pathname === link.path || ($page.url.pathname.includes("/work") && link.path === "/work")}
-					sveltekit:prefetch
+					data-sveltekit-prefetch
 					rel="canonical"
 					title={link.title}
 					on:click={() => {

@@ -32,11 +32,11 @@
 		<div class="pageLinks">
 			<h2>More about me...</h2>
 			<ul>
-				<li><a href="/work" rel="canonical" sveltekit:prefetch>What am I working on?</a></li>
-				<li><a href="/uses" rel="canonical" sveltekit:prefetch>What am I using?</a></li>
-				<li><a href="/skills" rel="canonical" sveltekit:prefetch>What are my skills?</a></li>
-				<li><a href="/blog" rel="canonical" sveltekit:prefetch>What am I interested in?</a></li>
-				<li><a href="/contact" rel="canonical" sveltekit:prefetch>Contact me!</a></li>
+				<li><a href="/work" rel="canonical" data-sveltekit-prefetch>What am I working on?</a></li>
+				<li><a href="/uses" rel="canonical" data-sveltekit-prefetch>What am I using?</a></li>
+				<li><a href="/skills" rel="canonical" data-sveltekit-prefetch>What are my skills?</a></li>
+				<li><a href="/blog" rel="canonical" data-sveltekit-prefetch>What am I interested in?</a></li>
+				<li><a href="/contact" rel="canonical" data-sveltekit-prefetch>Contact me!</a></li>
 			</ul>
 		</div>
 
