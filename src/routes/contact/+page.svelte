@@ -11,7 +11,9 @@
 	<Divider />
 
 	<form action="https://formsubmit.co/nickrtrrtr@gmail.com" method="POST">
+		<label for="email">email</label>
 		<input class="border" type="email" name="email" id="email" placeholder="Your email" required />
+		<label for="message">message</label>
 		<textarea class="border" name="message" id="message" placeholder="Your message" required />
 		<button class="border" type="submit">Submit</button>
 		<input type="hidden" name="_subject" value="New submission!" />
@@ -20,6 +22,11 @@
 </main>
 
 <style>
+	form {
+		max-width: 400px;
+		margin: auto;
+	}
+
 	h1 {
 		margin-bottom: 0;
 	}
@@ -27,7 +34,12 @@
 	form {
 		display: flex;
 		flex-direction: column;
-		margin-top: 1rem;
+		margin-top: 2rem;
+	}
+
+	label {
+		padding-block: 0.5rem;
+		color: var(--contrast);
 	}
 
 	textarea,
