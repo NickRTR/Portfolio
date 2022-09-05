@@ -80,4 +80,10 @@
 	.socialLink:focus img {
 		background: var(--yellow);
 	}
+
+	@media only screen and (max-width: 550px) {
+		article {
+			flex-direction: column;
+		}
+	}
 </style>
