@@ -19,7 +19,7 @@
 
 <main>
 	<nav>
-		<a class="noYellowUnderline" id="title" tabindex="-1" href="/" data-sveltekit-prefetch>Nick Reutlinger</a>
+		<a id="title" tabindex="-1" href="/" data-sveltekit-prefetch>Nick Reutlinger</a>
 		{#if innerWidth >= 900}
 			<div class="links">
 				{#each nav as link}
@@ -30,7 +30,7 @@
 			</div>
 		{:else}
 			<input type="checkbox" id="toggle" bind:checked={showHamburger} />
-			<label for="toggle"><img src="/menu.svg" alt="Menu" /></label>
+			<label for="toggle"><img src="/menu_white.svg" alt="Menu" /></label>
 		{/if}
 	</nav>
 	{#if showHamburger && innerWidth < 900}
@@ -57,11 +57,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 1rem;
+		padding-block: 1rem;
 	}
 
 	#title {
-		font-size: 1.8rem;
+		color: var(--yellow);
 		margin: 0;
 	}
 
@@ -70,27 +70,23 @@
 	}
 
 	a {
-		text-decoration: none;
-		font-size: 1.5rem;
-		margin: 0 0.5rem;
-		outline: none;
-		user-select: none;
-		transition: linear 0.125s;
+		font-weight: bold;
+		font-size: 1.2rem;
 	}
 
-	.links a:hover,
-	a:not(#title):focus {
-		border-bottom: 4px solid var(--blue);
+	.links a {
+		margin-right: 0.5rem;
 	}
 
 	.active {
-		border-bottom: 4px solid var(--yellow) !important;
+		text-decoration: underline;
 	}
 
 	/* Hamburger */
 
 	img {
-		width: 3rem;
+		width: 2.75rem;
+		height: 2.75rem;
 		margin-bottom: -1rem;
 		margin-top: -0.5rem;
 	}
@@ -109,12 +105,11 @@
 	}
 
 	.hamburger {
-		padding-left: 1rem;
-		padding-bottom: 0.5rem;
+		padding-left: 0.5rem;
+		border-left: 4px solid var(--yellow);
 	}
 
 	.hamburger a {
 		line-height: 2.5rem;
-		margin: 0;
 	}
 </style>
