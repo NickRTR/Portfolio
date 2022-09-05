@@ -1,1 +1,1 @@
-My personal web page, showcasing my work. In future my goal is to complete my Portfolio with a blog.
+This is my personal web page, where I showcase the work I did. I additionally have a connected personal blog at https://blog.nickreutlinger.de.
