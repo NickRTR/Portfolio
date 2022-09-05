@@ -17,7 +17,7 @@
 		<textarea class="border" name="message" id="message" placeholder="Your message" required />
 		<button class="border" type="submit">Submit</button>
 		<input type="hidden" name="_subject" value="New submission!" />
-		<input type="hidden" name="_next" value="https://nickreutlinger.vercel.app/thanks" />
+		<input type="hidden" name="_next" value="https://nickreutlinger.de/thanks" />
 	</form>
 </main>
 

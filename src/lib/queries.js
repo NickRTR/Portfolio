@@ -26,6 +26,7 @@ export const projectQuery = gql`
 	query project($slug: String!) {
 		project(where: { slug: $slug }) {
 			projectName
+			url
 			body {
 				html
 			}

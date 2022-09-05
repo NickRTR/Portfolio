@@ -1,4 +1,6 @@
 <script>
+	import Divider from "../../../lib/components/Divider.svelte";
+
 	export let data;
 </script>
 
@@ -10,6 +12,11 @@
 	<article class="project">
 		{@html data.project.body.html}
 	</article>
+
+	<div class="divider"><Divider /></div>
+
+	<a href="/work"><button type="button" title="More projects">More projects</button></a>
+	<a href={data.project.url}><button type="button" title="Visit {data.project.projectName}">Visit {data.project.projectName}</button></a>
 </main>
 
 <style>
@@ -36,5 +43,15 @@
 	:global(.project iframe) {
 		width: 100%;
 		height: 600px;
+	}
+
+	.divider {
+		margin-top: 2rem;
+	}
+
+	button {
+		margin-block: -2rem;
+		margin-left: 0;
+		padding-left: 0;
 	}
 </style>
