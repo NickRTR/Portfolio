@@ -28,6 +28,10 @@
 </main>
 
 <style>
+	h1 {
+		margin-top: 0.5rem;
+	}
+
 	span {
 		color: var(--yellow);
 	}
