@@ -7,8 +7,8 @@
 </article>
 
 <style>
-	article {
-		max-width: 350px;
+	p {
+		font-size: 1.2rem;
 	}
 
 	mark {
