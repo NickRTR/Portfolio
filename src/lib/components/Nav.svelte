@@ -61,7 +61,6 @@
 	}
 
 	#title {
-		color: var(--yellow);
 		margin: 0;
 	}
 
