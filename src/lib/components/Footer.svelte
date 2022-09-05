@@ -2,39 +2,58 @@
 	export let weather;
 </script>
 
-<main>
-	<footer>
-		<p>©2022 Nick Reutlinger</p>
+<footer>
+	<hr />
+	<nav>
+		<a href="/" title="Home" data-sveltekit-prefetch>Home</a>
+		<a href="/work" title="Work" data-sveltekit-prefetch>Work</a>
+		<a href="/Uses" title="Uses" data-sveltekit-prefetch>Uses</a>
+		<a href="/Skills" title="Skills" data-sveltekit-prefetch>Skills</a>
+		<a href="/Contact" title="Contact" data-sveltekit-prefetch>Contact</a>
+		<a href="/https://blog.nickreutlinger.de" title="Blog">Blog</a>
+	</nav>
+	<section>
+		<p>©2022 Nick Reutlinger 🚀</p>
 		<p>
-			📍Germany, Stuttgart
+			Germany, Stuttgart
 			{#if weather}
 				{Math.round(weather.current.temp_c)}°C / {Math.round(weather.current.temp_f)}°F
 			{/if}
 		</p>
-	</footer>
-</main>
+	</section>
+</footer>
 
 <style>
-	footer {
-		padding: 0.6rem;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		user-select: none;
+	hr {
+		margin-top: 2rem;
+		height: 1px;
+		background-color: var(--grey);
+		border: none;
 	}
 
-	footer p {
-		margin: 0;
-		line-height: 1.3rem;
+	nav {
+		display: flex;
+		flex-direction: column;
+		line-height: 2rem;
+	}
+
+	section {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	p {
+		margin-top: 1rem;
 	}
 
 	@media only screen and (max-width: 500px) {
-		footer {
-			flex-direction: column;
+		section {
+			flex-direction: column-reverse;
+			flex-wrap: nowrap;
 		}
 
-		footer p {
-			margin: 0.1rem 0;
+		section p {
+			margin: 0.3rem 0;
 		}
 	}
 </style>
