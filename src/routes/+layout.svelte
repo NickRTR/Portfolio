@@ -33,7 +33,7 @@
 <style>
 	body {
 		border: 0.1px solid transparent;
-		max-width: 900px;
+		max-width: 700px;
 		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 		padding-inline: 0.5rem;
 		background-color: var(--background);
