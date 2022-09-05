@@ -1,9 +1,9 @@
 <script>
-	import Nav from "$lib/components/Nav.svelte";
-	import Footer from "$lib/components/Footer.svelte";
 	import { browser } from "$app/environment";
 	import { fade } from "svelte/transition";
 	import { showLoader } from "$lib/stores";
+	import Nav from "$lib/components/Nav.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 
 	export let data;
 
@@ -31,37 +31,81 @@
 </body>
 
 <style>
-	* {
-		margin: 0;
-		font-family: "Work Sans", sans-serif;
-		font-weight: bold;
-		color: var(--textDark);
-		line-height: 1.9rem;
-	}
-
-	:global(body) {
-		background-color: var(--textLight);
-		background-image: radial-gradient(var(--dots) 1px, transparent 1px);
-		background-size: 10px 10px;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-	}
-
-	main {
-		max-width: 37.5rem;
+	body {
+		border: 0.1px solid transparent;
+		max-width: 900px;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		padding-inline: 0.5rem;
+		background-color: var(--background);
+		color: var(--color);
 		margin: auto;
-		padding: 1rem;
 	}
 
-	/* Variables */
+	:global(*) {
+		scroll-behavior: smooth;
+	}
 
 	:global(:root) {
+		--background: #04151f;
+		--color: #c8c8c8;
+		--contrast: white;
+		--grey: grey;
 		--yellow: #ffc600;
-		--blue: cornflowerblue;
-		--textLight: white;
-		--textDark: black;
-		--dots: #d2d6d9;
+		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
+	}
+
+	:global(*:focus) {
+		outline: 2px solid var(--yellow);
+		border-radius: 0.1rem;
+	}
+
+	:global(*::selection) {
+		background: var(--yellow);
+		color: var(--background);
+	}
+
+	:global(a) {
+		color: var(--contrast);
+		text-decoration: none;
+	}
+
+	:global(a:hover) {
+		text-decoration: underline;
+		color: var(--yellow);
+	}
+
+	:global(h1, h2, h3) {
+		color: var(--contrast);
+	}
+
+	:global(img, iframe, button) {
+		user-select: none;
+	}
+
+	:global(textarea, input) {
+		background-color: var(--background);
+		color: var(--color);
+		border: 2px solid var(--color);
+		border-radius: 0.5rem;
+	}
+
+	:global(textarea:hover, input:hover) {
+		border-color: var(--yellow);
+	}
+
+	:global(button) {
+		background-color: var(--background);
+		color: var(--contrast);
+		border-radius: 1rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-block: 1rem;
+		cursor: pointer;
+	}
+
+	:global(button:hover) {
+		text-decoration: underline;
+		color: var(--yellow);
 	}
 
 	:global(mark) {
@@ -74,45 +118,8 @@
 		border-radius: 0.25rem;
 	}
 
-	:global(*::selection) {
-		background-color: var(--yellow);
-	}
-
-	:global(.border) {
-		border-radius: 5px;
-		outline: none;
-		border: 3px solid var(--yellow);
-		transition: 0.1s ease-in-out;
-	}
-
-	:global(.border:hover, .border:focus) {
-		border-color: var(--blue);
-	}
-
-	:global(a) {
-		color: var(--textDark);
-	}
-
 	:global(img) {
 		user-select: none;
-	}
-
-	:global(a:not(.noYellowUnderline)) {
-		text-decoration: none;
-		border-bottom: 3px solid var(--yellow);
-		padding-bottom: 0.1rem;
-		position: relative;
-		transition: ease-in-out 0.2s;
-	}
-
-	:global(a:not(.noYellowUnderline):hover) {
-		border-bottom-color: var(--blue);
-	}
-
-	@font-face {
-		font-family: "Work Sans", sans-serif;
-		src: url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap") format("woff2");
-		font-display: swap;
 	}
 
 	/* loader */
