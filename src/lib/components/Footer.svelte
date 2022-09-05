@@ -7,9 +7,9 @@
 	<nav>
 		<a href="/" title="Home" data-sveltekit-prefetch>Home</a>
 		<a href="/work" title="Work" data-sveltekit-prefetch>Work</a>
-		<a href="/Uses" title="Uses" data-sveltekit-prefetch>Uses</a>
-		<a href="/Skills" title="Skills" data-sveltekit-prefetch>Skills</a>
-		<a href="/Contact" title="Contact" data-sveltekit-prefetch>Contact</a>
+		<a href="/uses" title="Uses" data-sveltekit-prefetch>Uses</a>
+		<a href="/skills" title="Skills" data-sveltekit-prefetch>Skills</a>
+		<a href="/contact" title="Contact" data-sveltekit-prefetch>Contact</a>
 		<a href="/https://blog.nickreutlinger.de" title="Blog">Blog</a>
 	</nav>
 	<section>
