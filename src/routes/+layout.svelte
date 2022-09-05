@@ -78,6 +78,10 @@
 		color: var(--contrast);
 	}
 
+	:global(h2:hover, h3:hover) {
+		color: var(--yellow);
+	}
+
 	:global(img, iframe, button) {
 		user-select: none;
 	}
@@ -101,15 +105,12 @@
 		font-weight: bold;
 		margin-block: 1rem;
 		cursor: pointer;
+		border: none;
 	}
 
 	:global(button:hover) {
 		text-decoration: underline;
 		color: var(--yellow);
-	}
-
-	:global(mark) {
-		background-color: var(--yellow);
 	}
 
 	:global(code) {
