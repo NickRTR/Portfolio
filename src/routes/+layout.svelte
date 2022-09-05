@@ -115,6 +115,7 @@
 
 	:global(code) {
 		background-color: gainsboro;
+		color: var(--background);
 		padding: 0.2rem;
 		border-radius: 0.25rem;
 	}
