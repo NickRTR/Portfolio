@@ -1,5 +1,5 @@
 <script>
-	import Heading from "$lib/components/Heading.svelte";
+	import Divider from "$lib/components/Divider.svelte";
 </script>
 
 <svelte:head>
@@ -7,13 +7,12 @@
 </svelte:head>
 
 <main>
-	<Heading text={["Contact"]} />
+	<h1>Contact</h1>
+	<Divider />
 
 	<form action="https://formsubmit.co/nickrtrrtr@gmail.com" method="POST">
-		<label for="email">email</label>
-		<input class="border" type="email" name="email" id="email" required />
-		<label for="message">message</label>
-		<textarea class="border" name="message" id="message" required />
+		<input class="border" type="email" name="email" id="email" placeholder="Your email" required />
+		<textarea class="border" name="message" id="message" placeholder="Your message" required />
 		<button class="border" type="submit">Submit</button>
 		<input type="hidden" name="_subject" value="New submission!" />
 		<input type="hidden" name="_next" value="https://nickreutlinger.vercel.app/thanks" />
@@ -21,6 +20,10 @@
 </main>
 
 <style>
+	h1 {
+		margin-bottom: 0;
+	}
+
 	form {
 		display: flex;
 		flex-direction: column;
@@ -31,46 +34,24 @@
 	input {
 		padding: 0.5rem;
 		font-size: 1rem;
-		width: 400px;
+		transition: 0.1s ease-in-out;
+		width: unset !important;
 		margin-bottom: 0.5rem;
 	}
 
 	textarea {
-		height: 200px;
+		height: 100px !important;
 		resize: none;
 	}
 
-	button {
-		background-color: var(--yellow);
-		color: var(--textDark);
-		border-radius: 1rem;
-		padding: 0.25rem 0.5rem;
-		font-size: 1.2rem;
-		font-weight: bold;
-		user-select: none;
-		margin-top: 0.5rem;
-		cursor: pointer;
-	}
-
 	@media only screen and (max-width: 900px) {
-		input {
+		input,
+		textarea {
 			width: 300px;
 		}
 
 		textarea {
-			width: 300px;
 			height: 150px;
-		}
-	}
-
-	@media only screen and (max-width: 400px) {
-		input {
-			width: 200px;
-		}
-
-		textarea {
-			width: 200px;
-			height: 100px;
 		}
 	}
 </style>

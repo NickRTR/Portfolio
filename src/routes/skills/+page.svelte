@@ -1,11 +1,16 @@
 <script>
-	import Heading from "$lib/components/Heading.svelte";
+	import Divider from "$lib/components/Divider.svelte";
 
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Nick Reutlinger - Skills</title>
+</svelte:head>
+
 <main>
-	<Heading text={["Skills"]} />
+	<h1>Skills</h1>
+	<Divider />
 
 	{#each data.skillSections as skillSection}
 		<section>
@@ -21,6 +26,10 @@
 </main>
 
 <style>
+	h1 {
+		margin-bottom: 0;
+	}
+
 	h2 {
 		margin-bottom: 0.4rem;
 		border-bottom: none;
