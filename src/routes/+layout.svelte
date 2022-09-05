@@ -120,10 +120,6 @@
 		border-radius: 0.25rem;
 	}
 
-	:global(img) {
-		user-select: none;
-	}
-
 	/* loader */
 
 	.loader {
