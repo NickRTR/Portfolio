@@ -49,6 +49,7 @@
 	article {
 		margin-top: 2rem;
 		display: flex;
+		align-items: center;
 	}
 
 	aside {
@@ -61,11 +62,11 @@
 		padding: 0.5rem;
 		height: 225px;
 		width: 225px;
-		transition: 1.5s ease;
+		transition: transform 0.75s ease;
 	}
 
 	.me:hover {
-		transform: rotate(360deg);
+		transform: rotate(20deg);
 	}
 
 	.socialLinks {
