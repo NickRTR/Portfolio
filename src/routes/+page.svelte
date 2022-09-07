@@ -96,5 +96,9 @@
 		article {
 			flex-direction: column;
 		}
+
+		article img {
+			margin-bottom: 0.75rem;
+		}
 	}
 </style>
