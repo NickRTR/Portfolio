@@ -11,19 +11,19 @@
 <main>
 	<Header title="Work" />
 
-	<ul>
-		{#each data.projects as project}
-			<li>
-				<a href="/work/{project.slug}" data-sveltekit-prefetch title="-> {project.projectName}">{project.projectName}</a>
-			</li>
-			<ul><li>{project.shortDescription}</li></ul>
-		{/each}
-	</ul>
+	{#each data.projects as project}
+		<h3><a href="/work/{project.slug}" data-sveltekit-prefetch title="-> {project.projectName}">{project.projectName}</a></h3>
+		<ul><li>{project.shortDescription}</li></ul>
+	{/each}
 </main>
 
 <style>
+	h3 {
+		margin-block: 0.75rem;
+	}
+
 	ul {
 		font-size: 1.2rem;
-		margin: 0.25rem 0;
+		margin-block: 0.25rem;
 	}
 </style>
