@@ -15,7 +15,7 @@
 		<section>
 			<h2>{skillSection.title}</h2>
 
-			<div class="banner">
+			<div class="badges">
 				{#each skillSection.skills as skill}
 					<img src={skill.url} alt={skill.title} title={skill.title} />
 				{/each}
@@ -30,7 +30,7 @@
 		border-bottom: none;
 	}
 
-	.banner {
+	.badges {
 		border-radius: 0.5rem;
 		border: 4px solid var(--yellow);
 		padding: 0.5rem;
@@ -45,15 +45,5 @@
 
 	img:hover {
 		transform: scale(1.05);
-	}
-
-	@keyframes slidingBanners {
-		0% {
-			transform: translateX(-100%);
-		}
-
-		100% {
-			transform: translateX(100%);
-		}
 	}
 </style>
