@@ -1,8 +1,8 @@
 <script>
 	import About from "$lib/components/About.svelte";
 	import Heading from "$lib/components/Heading.svelte";
-	import Badge from "../lib/components/Badge.svelte";
-	import Header from "../lib/components/Header.svelte";
+	import Badge from "$lib/components/Badge.svelte";
+	import Header from "$lib/components/Header.svelte";
 </script>
 
 <svelte:head>
