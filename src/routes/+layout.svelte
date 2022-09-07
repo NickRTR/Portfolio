@@ -124,7 +124,7 @@
 		border-radius: 1rem;
 	}
 
-	@media only screen and (min-width: 1400px) {
+	@media only screen and (min-width: 2000px) {
 		:global(*) {
 			font-size: 24px;
 		}
