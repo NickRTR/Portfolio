@@ -123,4 +123,23 @@
 		background: var(--yellow);
 		border-radius: 1rem;
 	}
+
+	@media only screen and (min-width: 1400px) {
+		:global(*) {
+			font-size: 24px;
+		}
+		body {
+			max-width: 1000px;
+		}
+	}
+
+	@media only screen and (min-width: 2560px) {
+		:global(*) {
+			font-size: 32px;
+		}
+
+		body {
+			max-width: 1200px;
+		}
+	}
 </style>
