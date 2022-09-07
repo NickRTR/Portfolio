@@ -1,5 +1,5 @@
 <script>
-	import Divider from "$lib/components/Divider.svelte";
+	import Header from "$lib/components/Header.svelte";
 </script>
 
 <svelte:head>
@@ -7,8 +7,7 @@
 </svelte:head>
 
 <main>
-	<h1>Contact</h1>
-	<Divider />
+	<Header title="Contact" />
 
 	<form action="https://formsubmit.co/nickrtrrtr@gmail.com" method="POST">
 		<label for="email">email</label>
@@ -27,14 +26,9 @@
 		margin: auto;
 	}
 
-	h1 {
-		margin-bottom: 0;
-	}
-
 	form {
 		display: flex;
 		flex-direction: column;
-		margin-top: 2rem;
 	}
 
 	label {

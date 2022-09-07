@@ -1,5 +1,5 @@
 <script>
-	import Divider from "$lib/components/Divider.svelte";
+	import Header from "$lib/components/Header.svelte";
 
 	export let data;
 </script>
@@ -9,8 +9,7 @@
 </svelte:head>
 
 <main>
-	<h1>Work</h1>
-	<Divider />
+	<Header title="Work" />
 
 	<ul>
 		{#each data.projects as project}
@@ -23,10 +22,6 @@
 </main>
 
 <style>
-	h1 {
-		margin-bottom: 0;
-	}
-
 	ul {
 		font-size: 1.2rem;
 		margin: 0.25rem 0;
