@@ -1,5 +1,6 @@
 <script>
 	import Header from "$lib/components/Header.svelte";
+	import Badge from "$lib/components/Badge.svelte";
 
 	export let data;
 </script>
@@ -17,7 +18,7 @@
 
 			<div class="badges">
 				{#each skillSection.skills as skill}
-					<img src={skill.url} alt={skill.title} title={skill.title} />
+					<Badge url={skill.url} alt={skill.title} />
 				{/each}
 			</div>
 		</section>
@@ -35,15 +36,5 @@
 		border: 4px solid var(--yellow);
 		padding: 0.5rem;
 		line-height: 0; /* remove padding at bottom */
-	}
-
-	img {
-		margin: 0.25rem;
-		transition: all 0.2s linear;
-		border-radius: 0.25rem;
-	}
-
-	img:hover {
-		transform: scale(1.05);
 	}
 </style>
