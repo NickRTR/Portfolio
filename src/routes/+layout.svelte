@@ -1,17 +1,8 @@
 <script>
-	import { browser } from "$app/environment";
-	import { fade } from "svelte/transition";
-	import { showLoader } from "$lib/stores";
 	import Nav from "$lib/components/Nav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 
 	export let data;
-
-	// min loading time
-	setTimeout(() => {
-		// Remove loader if page is loaded AND minimum loading time is over
-		if (browser) $showLoader = false;
-	}, 750);
 </script>
 
 <svelte:head>
@@ -19,15 +10,11 @@
 </svelte:head>
 
 <body>
-	{#if $showLoader}
-		<div class="loader" transition:fade />
-	{:else}
-		<Nav />
+	<Nav />
 
-		<main><slot /></main>
+	<main><slot /></main>
 
-		<Footer weather={data.weather} />
-	{/if}
+	<Footer weather={data.weather} />
 </body>
 
 <style>
@@ -118,41 +105,6 @@
 		color: var(--background);
 		padding: 0.2rem;
 		border-radius: 0.25rem;
-	}
-
-	/* loader */
-
-	.loader {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: var(--textLight);
-		z-index: 10;
-	}
-
-	.loader::after {
-		content: "";
-		background-image: url("/me.jpg");
-		background-size: contain;
-		width: 15rem;
-		height: 15rem;
-		border: 1rem solid var(--yellow);
-		border-radius: 50%;
-		animation: loading 2.25s ease infinite;
-	}
-
-	@keyframes loading {
-		from {
-			transform: rotate(0turn);
-		}
-		to {
-			transform: rotate(1turn);
-		}
 	}
 
 	/* scroll bar */
