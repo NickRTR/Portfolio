@@ -39,6 +39,7 @@
 
 <style>
 	.badges {
+		margin-top: -0.25rem;
 		margin-bottom: 2rem;
 		text-align: center;
 		display: flex;
