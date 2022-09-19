@@ -3,6 +3,8 @@
 	import Heading from "$lib/components/Heading.svelte";
 	import Badge from "$lib/components/Badge.svelte";
 	import Header from "$lib/components/Header.svelte";
+
+	import { theme } from "$lib/stores";
 </script>
 
 <svelte:head>
@@ -27,10 +29,10 @@
 		<aside>
 			<About />
 			<div class="socialLinks">
-				<a class="noYellowUnderline socialLink" href="https://twitter.com/nick_reutlinger" target="_blank"><img src="/social/twitter.svg" alt="twitter" title="twitter" /></a>
-				<a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin.svg" alt="linkedin" title="linkedin" /></a>
-				<a class="noYellowUnderline socialLink" href="https://github.com/NickRTR" target="_blank"><img src="/social/github.svg" alt="github" title="github" /></a>
-				<a class="noYellowUnderline socialLink" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img src="/social/stackoverflow.svg" alt="stackoverflow" title="stackoverflow" /></a>
+				<a class="noYellowUnderline socialLink" href="https://twitter.com/nick_reutlinger" target="_blank"><img src="/social/twitter_{$theme}.svg" alt="twitter" title="twitter" /></a>
+				<a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin_{$theme}.svg" alt="linkedin" title="linkedin" /></a>
+				<a class="noYellowUnderline socialLink" href="https://github.com/NickRTR" target="_blank"><img src="/social/github_{$theme}.svg" alt="github" title="github" /></a>
+				<a class="noYellowUnderline socialLink" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img src="/social/stackoverflow_{$theme}.svg" alt="stackoverflow" title="stackoverflow" /></a>
 				<!-- <a class="noYellowUnderline socialLink" href="https://www.twitch.tv/nickrtr" target="_blank"><img src="/social/twitch.svg" alt="twitch" title="twitch"></a> -->
 			</div>
 		</aside>
@@ -85,6 +87,11 @@
 		border-radius: 1rem;
 		background: var(--contrast);
 		transition: all 0.2s ease-in;
+	}
+
+	:global(svg) {
+		-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+		filter: invert(100%);
 	}
 
 	.socialLink:hover img,

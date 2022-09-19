@@ -1,6 +1,7 @@
 <script>
 	import { page } from "$app/stores";
 	import { slide } from "svelte/transition";
+	import { theme, toggleTheme } from "$lib/stores";
 
 	const nav = [
 		{ title: "Home", path: "/" },
@@ -27,12 +28,35 @@
 						>{link.title}</a
 					>
 				{/each}
+				<div class="toggleAppeareance button" title="light/dark mode">
+					<input type="checkbox" name="toggleAppeareance" id="toggleAppeareance" on:change={toggleTheme} />
+					<label for="toggleAppeareance">
+						{#if $theme === "light"}
+							<p>🌞</p>
+						{:else if $theme === "dark"}
+							<p>🌙</p>
+						{/if}
+					</label>
+				</div>
 			</div>
 		{:else}
-			<input type="checkbox" id="toggle" bind:checked={showHamburger} />
-			<label for="toggle"><img src="/menu_white.svg" alt="Menu" /></label>
+			<aside>
+				<div class="toggleAppeareance button" title="light/dark mode">
+					<input type="checkbox" name="toggleAppeareance" id="toggleAppeareance" on:change={toggleTheme} />
+					<label for="toggleAppeareance">
+						{#if $theme === "light"}
+							<p>🌞</p>
+						{:else if $theme === "dark"}
+							<p>🌙</p>
+						{/if}
+					</label>
+				</div>
+				<input type="checkbox" id="toggle" bind:checked={showHamburger} />
+				<label for="toggle"><img src="/menu_{$theme}.svg" alt="Menu" /></label>
+			</aside>
 		{/if}
 	</nav>
+
 	{#if showHamburger && innerWidth < 900}
 		<div class="hamburger" transition:slide>
 			{#each nav as link}
@@ -66,6 +90,7 @@
 
 	.links {
 		display: flex;
+		align-items: center;
 	}
 
 	a {
@@ -82,12 +107,18 @@
 		text-decoration: underline;
 	}
 
+	aside {
+		display: flex;
+		align-items: center;
+	}
+
 	/* Hamburger */
 
 	img {
 		width: 2.75rem;
 		height: 2.75rem;
 		margin-bottom: -1rem;
+		padding-bottom: 0.2rem;
 		margin-top: -0.5rem;
 	}
 
@@ -111,5 +142,20 @@
 
 	.hamburger a {
 		line-height: 2.5rem;
+	}
+
+	/* Theme button */
+
+	.button input {
+		display: none;
+	}
+
+	.button p {
+		padding-bottom: 0.1rem;
+		margin: 0;
+		border-radius: 100%;
+		font-size: 1.6rem;
+		user-select: none;
+		cursor: pointer;
 	}
 </style>

@@ -1,24 +1,52 @@
 <script>
 	import Nav from "$lib/components/Nav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
+	import { theme } from "$lib/stores";
 
 	export let data;
+
+	$: color = $theme === "dark" ? "#c8c8c8" : "#4d4d4d";
+	$: background = $theme === "dark" ? "#04151f" : "white";
+	$: contrast = $theme === "dark" ? "white" : "black";
 </script>
 
 <svelte:head>
 	<title>Nick Reutlinger - Portfolio</title>
 </svelte:head>
 
-<body>
-	<Nav />
+<body style="--color: {color}; --background: {background}; --contrast: {contrast};">
+	<main>
+		<Nav />
 
-	<main><slot /></main>
+		<slot />
 
-	<Footer weather={data.weather} />
+		<Footer weather={data.weather} />
+	</main>
 </body>
 
 <style>
-	body {
+	:global(:root) {
+		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
+		--yellow: #ffc600;
+	}
+
+	:global(body) {
+		background-color: var(--background);
+		color: var(--color);
+		margin: 0;
+		min-height: 100vh;
+	}
+
+	main {
+		/* remove borders at top and bottom of mobile screens */
+		border: 0.1px solid transparent;
+		max-width: 700px;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		padding-inline: 0.5rem;
+		margin: auto;
+	}
+
+	/* body {
 		border: 0.1px solid transparent;
 		max-width: 700px;
 		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -26,20 +54,20 @@
 		background-color: var(--background);
 		color: var(--color);
 		margin: auto;
-	}
+	} */
 
 	:global(*) {
 		scroll-behavior: smooth;
 	}
 
-	:global(:root) {
+	/* :global(:root) {
 		--background: #04151f;
 		--color: #c8c8c8;
 		--contrast: white;
 		--grey: grey;
 		--yellow: #ffc600;
 		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
-	}
+	} */
 
 	:global(*:focus) {
 		outline: 2px solid var(--yellow);

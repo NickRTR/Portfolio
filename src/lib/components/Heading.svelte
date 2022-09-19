@@ -18,7 +18,6 @@
 	}
 
 	.container {
-		color: var(--textDark);
 		border-radius: 0.5rem;
 		transform: rotate(-5deg);
 		display: inline-block;

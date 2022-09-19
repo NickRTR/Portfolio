@@ -27,7 +27,7 @@
 	hr {
 		margin-top: 2rem;
 		height: 1px;
-		background-color: var(--grey);
+		background-color: var(--color);
 		border: none;
 	}
 
