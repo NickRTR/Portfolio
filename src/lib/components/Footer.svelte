@@ -10,7 +10,7 @@
 		<a href="/uses" title="Uses" data-sveltekit-prefetch>Uses</a>
 		<a href="/skills" title="Skills" data-sveltekit-prefetch>Skills</a>
 		<a href="/contact" title="Contact" data-sveltekit-prefetch>Contact</a>
-		<a href="/https://blog.nickreutlinger.de" title="Blog">Blog</a>
+		<a href="https://blog.nickreutlinger.de" title="Blog">Blog</a>
 	</nav>
 	<section>
 		<p>©2022 Nick Reutlinger 🚀</p>
