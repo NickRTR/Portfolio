@@ -15,11 +15,11 @@
 	<Header title="Nick Reutlinger - " highlight="Portfolio" />
 
 	<div class="badges">
-		<Badge url="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=000000" alt="Javascript" />
-		<Badge url="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=Svelte&logoColor=FFFFFF" alt="Svelte" />
-		<Badge url="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=Supabase&logoColor=000000" alt="Supabase" />
-		<Badge url="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=FFFFFF" alt="Node.js" />
-		<Badge url="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=FFFFFF" alt="GitHub" />
+		<a href="https://de.wikipedia.org/wiki/JavaScript" target="_blank"><Badge url="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=000000" alt="Javascript" /></a>
+		<a href="https://svelte.dev" target="_blank"><Badge url="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=Svelte&logoColor=FFFFFF" alt="Svelte" /></a>
+		<a href="https://supabase.com" target="_blank"><Badge url="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=Supabase&logoColor=000000" alt="Supabase" /></a>
+		<a href="https://nodejs.org" target="_blank"><Badge url="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=FFFFFF" alt="Node.js" /></a>
+		<a href="https://github.com" target="_blank"><Badge url="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=FFFFFF" alt="GitHub" /></a>
 	</div>
 
 	<Heading text={["Hi, I'm Nick", "Reutlinger 👋"]} />
