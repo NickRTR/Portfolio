@@ -25,7 +25,7 @@
 	<Heading text={["Hi, I'm Nick", "Reutlinger 👋"]} />
 
 	<article>
-		<img class="me" src="/me.jpg" alt="A picture of myself" title="A picture of myself" />
+		<img class="me" src="/me.jpg" alt="Myself" title="A picture of myself" />
 		<aside>
 			<About />
 			<div class="socialLinks">
