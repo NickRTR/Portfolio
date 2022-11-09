@@ -24,9 +24,6 @@
 	form {
 		max-width: 400px;
 		margin: auto;
-	}
-
-	form {
 		display: flex;
 		flex-direction: column;
 	}
