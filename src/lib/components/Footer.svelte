@@ -37,6 +37,14 @@
 		line-height: 2rem;
 	}
 
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
 	section {
 		display: flex;
 		justify-content: space-between;

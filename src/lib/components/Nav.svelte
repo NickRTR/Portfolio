@@ -97,6 +97,11 @@
 		font-weight: bold;
 		font-size: 1.2rem;
 		user-select: none;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
 	}
 
 	.links a {

@@ -46,28 +46,9 @@
 		margin: auto;
 	}
 
-	/* body {
-		border: 0.1px solid transparent;
-		max-width: 700px;
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		padding-inline: 0.5rem;
-		background-color: var(--background);
-		color: var(--color);
-		margin: auto;
-	} */
-
 	:global(*) {
 		scroll-behavior: smooth;
 	}
-
-	/* :global(:root) {
-		--background: #04151f;
-		--color: #c8c8c8;
-		--contrast: white;
-		--grey: grey;
-		--yellow: #ffc600;
-		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
-	} */
 
 	:global(*:focus) {
 		outline: 2px solid var(--yellow);
@@ -81,14 +62,12 @@
 
 	:global(a) {
 		color: var(--contrast);
-		text-decoration: none;
 	}
 
 	:global(a:hover) {
-		text-decoration: underline;
 		color: var(--yellow);
 	}
-
+	
 	:global(h1, h2, h3) {
 		color: var(--contrast);
 	}
