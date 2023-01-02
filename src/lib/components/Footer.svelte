@@ -13,7 +13,7 @@
 		<a href="https://blog.nickreutlinger.de" title="Blog">Blog</a>
 	</nav>
 	<section>
-		<p>©2022 Nick Reutlinger 🚀</p>
+		<p>©2023 Nick Reutlinger 🚀</p>
 		<p>
 			Germany, Stuttgart
 			{#if weather}
