@@ -67,7 +67,7 @@
 	:global(a:hover) {
 		color: var(--yellow);
 	}
-	
+
 	:global(h1, h2, h3) {
 		color: var(--contrast);
 	}
