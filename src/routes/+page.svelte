@@ -1,11 +1,15 @@
 <main>
-    <h1>Nick Reutlinger</h1>
+	<hero>
+		<h1>Nick Reutlinger</h1>
+	</hero>
 </main>
 
 <style>
-    h1 {
-        text-align: center;
-        text-decoration: underline;
-        text-decoration-color: var(--accent);
-    }
+	hero {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 3rem;
+	}
 </style>
