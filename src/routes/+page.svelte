@@ -13,7 +13,7 @@
 
 <style>
 	div {
-		height: 90vh;
+		height: 82vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -21,9 +21,8 @@
 
 	hero h1 {
 		user-select: none;
-		font-size: 3rem;
+		font-size: 4rem;
 		margin: 0;
-		margin-top: 5vh;
 		padding: 2rem;
 		transition: all 0.5s ease-in-out;
 		text-decoration: underline;
@@ -31,7 +30,7 @@
 	}
 
 	hero h1:hover {
-		font-size: 5rem;
+		font-size: 6rem;
 		color: var(--background);
 		background-color: var(--text);
 	}

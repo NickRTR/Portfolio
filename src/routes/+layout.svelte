@@ -1,9 +1,15 @@
+<script>
+	import Nav from "$lib/components/Nav.svelte";
+</script>
+
 <body>
+	<Nav />
 	<slot />
 </body>
 
 <style>
 	:global(*) {
+		text-align: center;
 		background-color: #000000;
 		color: #ffffff;
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
