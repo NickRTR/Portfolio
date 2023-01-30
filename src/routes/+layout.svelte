@@ -10,7 +10,8 @@
 			Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	}
 
-	:global(body) {
+	body {
+		min-height: 100vh;
 		margin: 0;
 	}
 
