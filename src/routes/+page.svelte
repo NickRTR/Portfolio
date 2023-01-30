@@ -7,15 +7,11 @@
 		<div>
 			<h1>Nick Reutlinger</h1>
 		</div>
-		<ScrollIndicator></ScrollIndicator>
+		<ScrollIndicator />
 	</hero>
 </main>
 
 <style>
-	hero {
-		background-image: url("https://media.tenor.com/9vRAkntogEMAAAAC/background.gif") !important;
-	}
-	
 	div {
 		height: 90vh;
 		display: flex;
@@ -24,6 +20,7 @@
 	}
 
 	hero h1 {
+		user-select: none;
 		font-size: 3rem;
 		margin: 0;
 		margin-top: 5vh;
