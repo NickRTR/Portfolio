@@ -9,11 +9,15 @@
 		</div>
 		<ScrollIndicator />
 	</hero>
+
+	<article id="About">
+		<h1 id="about">About me</h1>
+	</article>
 </main>
 
 <style>
 	div {
-		height: 82vh;
+		height: 80vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -31,6 +35,7 @@
 
 	hero h1:hover {
 		font-size: 6rem;
+		text-decoration-color: transparent;
 		color: var(--background);
 		background-color: var(--text);
 	}

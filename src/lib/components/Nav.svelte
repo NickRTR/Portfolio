@@ -1,4 +1,5 @@
 <nav>
+	<a href="/" title="Home">Home</a>
 	<a href="/work" title="Work">Work</a>
 	<a href="/skills" title="Skills">Skills</a>
 	<a href="/uses" title="Uses">Uses</a>
@@ -11,7 +12,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 4rem;
-		height: 8vh;
+		height: 10vh;
 	}
 
 	nav a {
