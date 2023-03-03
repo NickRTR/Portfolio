@@ -3,6 +3,7 @@
 	<a href="/work" title="Work">Work</a>
 	<a href="/skills" title="Skills">Skills</a>
 	<a href="/uses" title="Uses">Uses</a>
+	<a href="https://blog.nickreutlinger.de" title="Blog -> https://blog.nickreutlinger.de">Blog</a>
 	<a href="/contact" title="Contact">Contact</a>
 </nav>
 
