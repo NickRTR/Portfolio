@@ -20,6 +20,7 @@
 		font-size: 1.2rem;
 		text-decoration-color: transparent;
 		user-select: none;
+		font-weight: bold;
 	}
 
 	nav a:hover {
