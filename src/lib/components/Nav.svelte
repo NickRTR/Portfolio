@@ -19,6 +19,7 @@
 	nav a {
 		font-size: 1.2rem;
 		text-decoration-color: transparent;
+		user-select: none;
 	}
 
 	nav a:hover {

@@ -32,7 +32,7 @@
 	}
 
 	section {
-		border: 5px solid white;
+		border: 5px solid var(--text);
 		border-radius: 1rem;
 		padding: 1rem;
 		padding-top: 0;
