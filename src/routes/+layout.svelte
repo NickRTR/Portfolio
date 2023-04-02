@@ -32,5 +32,6 @@
 		--text: white;
 		--background: black;
 		--accent: #ffff00;
+		/* --accent: #00ff15; */
 	}
 </style>
