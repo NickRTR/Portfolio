@@ -2,6 +2,8 @@
 	import Nav from "$lib/components/Nav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 
+	export let data;
+
 	import { theme } from "$lib/stores";
 
 	$: color = $theme === "dark" ? "#e6e6e6" : "#2b2b2b";
@@ -13,7 +15,7 @@
 	<main>
 		<Nav />
 		<slot />
-		<Footer />
+		<Footer weather={data.weather} />
 	</main>
 </body>
 
