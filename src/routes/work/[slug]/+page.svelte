@@ -16,7 +16,11 @@
 	<div class="divider"><Divider /></div>
 
 	<a href="/work"><button type="button" title="More projects">More projects</button></a>
-	<a href={data.project.url}><button type="button" title="Visit {data.project.projectName}">Visit {data.project.projectName}</button></a>
+	<a href={data.project.url}
+		><button type="button" title="Visit {data.project.projectName}"
+			>Visit {data.project.projectName}</button
+		></a
+	>
 </main>
 
 <style>
