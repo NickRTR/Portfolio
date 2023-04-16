@@ -14,7 +14,7 @@ export const skillSectionsQuery = gql`
 
 export const projectsQuery = gql`
 	query projects {
-		projects {
+		projects(orderBy: publishedAt_DESC) {
 			slug
 			shortDescription
 			projectName
