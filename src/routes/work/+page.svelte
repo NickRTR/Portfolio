@@ -9,7 +9,7 @@
 </svelte:head>
 
 <main>
-	<Header title="Work" />
+	<Header title="Work (Featured Projects)" />
 
 	{#each data.projects as project}
 		<h3><a href="/work/{project.slug}" data-sveltekit-prefetch title="-> {project.projectName}">{project.projectName}</a></h3>
