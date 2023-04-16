@@ -15,6 +15,8 @@
 		<h3><a href="/work/{project.slug}" data-sveltekit-prefetch title="-> {project.projectName}">{project.projectName}</a></h3>
 		<ul><li>{project.shortDescription}</li></ul>
 	{/each}
+	<h3><a href="https://github.com/NickRTR?tab=repositories" title="GitHub Repositories" target="_blank">GitHub Repositories</a></h3>
+	<ul><li>Additional Projects</li></ul>
 </main>
 
 <style>
