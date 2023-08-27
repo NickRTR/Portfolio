@@ -1,15 +1,9 @@
 <script>
+	import { browser } from "$app/environment";
+
 	import Carousel from "svelte-carousel";
 
 	export let data;
-
-	import { browser } from "$app/environment";
-
-	let carousel; // for calling methods of the carousel instance
-
-	const handleNextClick = () => {
-		carousel.goToNext();
-	};
 </script>
 
 <svelte:head>
@@ -31,8 +25,6 @@
 							{/each}
 						</ul>
 					</section>
-					<!-- <img src="/uses/{usesSection.sectionTitle}.png" width="100%" alt="" />
-                <div /> -->
 				{/each}
 			</Carousel>
 		</article>
@@ -54,14 +46,12 @@
 		font-size: 1.2rem;
 		margin-block: -0.75rem;
 		line-height: 1.6rem;
+		margin-left: -0.6rem;
 	}
 
 	article {
 		width: 450px;
 		margin: auto;
-	}
-
-	article {
 		border: 3px solid var(--accent);
 		border-radius: 2rem;
 		padding: 1rem;
