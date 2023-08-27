@@ -24,14 +24,18 @@
 	body {
 		margin: 0;
 		background-color: var(--background);
-		background-image: url("background1.jpg");
-		background-size: cover;
+		/* background-image: url("background1.jpg");
+		background-size: cover; */
+	}
+
+	:global(a:hover, a:focus) {
+		color: var(--accent);
 	}
 
 	:global(:root) {
 		--text: white;
 		--background: black;
 		--accent: #ffff00;
-		/* --accent: #00ff15; */
+		--accent: #00ff15;
 	}
 </style>

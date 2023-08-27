@@ -4,6 +4,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Nick Reutlinger - Skills</title>
+</svelte:head>
+
 <main>
 	<h1>Skills</h1>
 
