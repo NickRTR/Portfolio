@@ -8,7 +8,7 @@
 
 <body>
 	<Nav />
-	<slot />
+	<div class="slot"><slot /></div>
 </body>
 
 <style>

@@ -5,12 +5,12 @@
 </script>
 
 <main>
-	<hero>
-		<div>
+	<div class="hero">
+		<div class="container">
 			<h1>Nick Reutlinger</h1>
 		</div>
 		<ScrollIndicator />
-	</hero>
+	</div>
 
 	<article id="about">
 		<h1>About me</h1>
@@ -20,14 +20,19 @@
 </main>
 
 <style>
-	div {
-		height: 80vh;
+	.hero {
+		background-image: url("background1.jpg");
+		background-size: cover;
+	}
+
+	.container {
+		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
-	hero h1 {
+	h1 {
 		user-select: none;
 		font-size: 4rem;
 		margin: 0;
@@ -37,7 +42,7 @@
 		text-decoration-color: var(--accent);
 	}
 
-	hero h1:hover {
+	h1:hover {
 		font-size: 6rem;
 		text-decoration-color: transparent;
 		color: var(--background);

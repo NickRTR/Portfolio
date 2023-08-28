@@ -32,6 +32,10 @@
 </main>
 
 <style>
+	main {
+		margin-top: 10vh;
+	}
+
 	:global(p) {
 		text-align: left;
 	}

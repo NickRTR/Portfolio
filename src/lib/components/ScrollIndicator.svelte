@@ -8,6 +8,9 @@
 
 <style>
 	#scrollIndicator {
+		position: fixed;
+		width: 100%;
+		bottom: 2vh;
 		height: 10vh;
 		display: flex;
 		justify-content: center;
