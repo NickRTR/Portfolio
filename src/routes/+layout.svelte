@@ -32,6 +32,10 @@
 		color: var(--accent);
 	}
 
+	:global(main) {
+		margin-top: 10vh;
+	}
+
 	:global(:root) {
 		--text: white;
 		--background: black;

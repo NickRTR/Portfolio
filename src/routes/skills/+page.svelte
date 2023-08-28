@@ -27,10 +27,6 @@
 </main>
 
 <style>
-	main {
-		margin-top: 10vh;
-	}
-
 	article {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

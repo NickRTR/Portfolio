@@ -20,29 +20,34 @@
 </main>
 
 <style>
+	main {
+		margin-top: 0;
+	}
+
 	.hero {
 		background-image: url("background1.jpg");
 		background-size: cover;
 	}
 
 	.container {
-		height: 100vh;
+		height: 90vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
-	h1 {
+	.container h1 {
 		user-select: none;
 		font-size: 4rem;
 		margin: 0;
 		padding: 2rem;
+		margin-top: 5vh;
 		transition: all 0.5s ease-in-out;
 		text-decoration: underline;
 		text-decoration-color: var(--accent);
 	}
 
-	h1:hover {
+	.container h1:hover {
 		font-size: 6rem;
 		text-decoration-color: transparent;
 		color: var(--background);
@@ -60,6 +65,10 @@
 	#about img {
 		width: 300px;
 		border-radius: 50%;
+	}
+
+	article {
+		padding-top: 1rem;
 	}
 
 	section {
