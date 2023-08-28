@@ -4,6 +4,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Nick Reutlinger</title>
+</svelte:head>
+
 <main>
 	<div class="hero">
 		<div class="container">

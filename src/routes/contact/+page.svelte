@@ -25,6 +25,7 @@
 	}
 
 	label {
+		text-align: left;
 		font-weight: bold;
 		font-size: 1.1rem;
 		padding-block: 0.5rem;
@@ -36,18 +37,18 @@
 		border-radius: 1rem;
 		outline: none;
 		transition: 0.1s ease-in-out;
+		background-color: var(--text);
+		color: var(--background);
 	}
 
 	textarea,
 	input {
 		text-align: left;
-		background-color: var(--text);
-		color: var(--background);
-		border: 2px solid var(--text);
 		padding: 0.5rem;
 		font-size: 1rem;
 		width: unset !important;
 		margin-bottom: 0.5rem;
+		border: 2px solid var(--text);
 	}
 
 	textarea {
@@ -59,16 +60,14 @@
 	input:hover,
 	textarea:focus,
 	input:focus {
-		border-color: var(--background);
+		border-color: var(--accent);
 	}
 
 	button {
 		margin-top: 1rem;
 		font-weight: bold;
 		font-size: 1rem;
-		background-color: var(--text);
-		border: 2px solid var(--background);
-		color: var(--background);
+		border: none;
 		padding: 0.5rem;
 		cursor: pointer;
 	}
