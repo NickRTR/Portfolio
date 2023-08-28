@@ -68,8 +68,10 @@
 		font-weight: bold;
 		font-size: 1rem;
 		border: none;
-		padding: 0.5rem;
+		padding: 0.4rem;
 		cursor: pointer;
+		border: 3px solid var(--accent);
+		background-color: var(--text);
 	}
 
 	button:hover,

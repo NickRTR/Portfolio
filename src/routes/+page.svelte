@@ -16,7 +16,7 @@
 		<ScrollIndicator />
 	</div>
 
-	<article id="about">
+	<article>
 		<h1>About me</h1>
 		<img src="me.jpg" alt="myself" />
 		<section>{@html data.aboutPreview.about.text.html}</section>
@@ -29,7 +29,7 @@
 	}
 
 	.hero {
-		background-image: url("background1.jpg");
+		background-image: url("background2.jpg");
 		background-size: cover;
 	}
 
@@ -53,26 +53,22 @@
 
 	.container h1:hover {
 		font-size: 6rem;
-		text-decoration-color: transparent;
 		color: var(--background);
 		background-color: var(--text);
 	}
 
-	#about {
+	article {
 		min-height: 100vh;
+		padding-top: 1rem;
 	}
 
-	#about h1 {
+	article h1 {
 		font-size: 2rem;
 	}
 
-	#about img {
+	article img {
 		width: 300px;
 		border-radius: 50%;
-	}
-
-	article {
-		padding-top: 1rem;
 	}
 
 	section {
