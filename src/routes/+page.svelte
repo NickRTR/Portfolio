@@ -16,7 +16,7 @@
 		<ScrollIndicator />
 	</div>
 
-	<article>
+	<article id="about">
 		<h1>About me</h1>
 		<img src="me.jpg" alt="myself" />
 		<section>{@html data.aboutPreview.about.text.html}</section>
@@ -29,7 +29,7 @@
 	}
 
 	.hero {
-		background-image: url("background2.jpg");
+		background-image: url("backgrounds/background2.jpg");
 		background-size: cover;
 	}
 
