@@ -42,6 +42,10 @@
 		padding-top: 0;
 	}
 
+	section:hover {
+		border-color: var(--accent);
+	}
+
 	h3 {
 		text-decoration: underline;
 		text-decoration-color: var(--accent);

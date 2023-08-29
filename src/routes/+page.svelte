@@ -29,7 +29,7 @@
 	}
 
 	.hero {
-		background-image: url("backgrounds/background2.jpg");
+		background-image: url("backgrounds/background1.jpg");
 		background-size: cover;
 	}
 

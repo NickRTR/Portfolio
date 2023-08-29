@@ -28,8 +28,8 @@
 	:global(:root) {
 		--text: white;
 		--background: black;
-		--accent: #ffff00;
 		--accent: #00ff15;
+		/* --accent: #ffff00; */
 	}
 
 	:global(a:hover, a:focus) {
