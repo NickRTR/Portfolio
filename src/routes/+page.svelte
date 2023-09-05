@@ -18,8 +18,9 @@
 
 	<article id="about">
 		<h1>About me</h1>
-		<img src="me.jpg" alt="myself" />
+		<img id="me" src="me.jpg" alt="myself" />
 		<section>{@html data.aboutPreview.about.text.html}</section>
+		<img src="Spine.gif" style="width:100%; max-width: 600px;" alt="" />
 	</article>
 </main>
 
@@ -60,13 +61,14 @@
 	article {
 		min-height: 100vh;
 		padding-top: 1rem;
+		text-align: center;
 	}
 
 	article h1 {
 		font-size: 2rem;
 	}
 
-	article img {
+	article #me {
 		width: 300px;
 		border-radius: 50%;
 	}
@@ -74,5 +76,9 @@
 	section {
 		max-width: 500px;
 		margin: auto;
+	}
+
+	section :global(p) {
+		text-align: left;
 	}
 </style>
