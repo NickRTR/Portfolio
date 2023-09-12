@@ -1,5 +1,15 @@
 import { gql } from "graphql-request";
 
+export const aboutPreviewQuery = gql`
+	query Assets {
+		about(where: { type: "preview" }) {
+			text {
+				html
+			}
+		}
+	}
+`;
+
 export const skillSectionsQuery = gql`
 	query skillsSections {
 		skillSections {

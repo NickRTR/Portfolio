@@ -5,6 +5,8 @@
 	import Header from "$lib/components/Header.svelte";
 
 	import { theme } from "$lib/stores";
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -27,7 +29,7 @@
 	<article>
 		<img class="me" src="/me.jpg" alt="Myself" title="A picture of myself" />
 		<aside>
-			<About />
+			<About content={data.aboutPreview.about.text.html} />
 			<div class="socialLinks">
 				<a class="noYellowUnderline socialLink" href="https://twitter.com/nick_reutlinger" target="_blank"><img src="/social/twitter_{$theme}.svg" alt="twitter" title="twitter" /></a>
 				<a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin_{$theme}.svg" alt="linkedin" title="linkedin" /></a>
