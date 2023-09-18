@@ -6,12 +6,11 @@
 
 	import { theme } from "$lib/stores";
 
-	$: color = $theme === "dark" ? "#e6e6e6" : "#2b2b2b";
+	$: color = $theme === "dark" ? "white" : "black";
 	$: background = $theme === "dark" ? "#04151f" : "white";
-	$: contrast = $theme === "dark" ? "white" : "black";
 </script>
 
-<body style="--color: {color}; --background: {background}; --contrast: {contrast};">
+<body style="--color: {color}; --background: {background};">
 	<main>
 		<Nav />
 		<slot />
@@ -36,7 +35,8 @@
 		/* remove borders at top and bottom of mobile screens */
 		border: 0.1px solid transparent;
 		max-width: 800px;
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		font-family: monospace;
+		font-size: 16px;
 		padding-inline: 0.5rem;
 		margin: auto;
 	}
@@ -52,16 +52,12 @@
 
 	:global(a) {
 		outline: none !important;
-		color: var(--contrast);
+		color: var(--color);
 	}
 
 	:global(a:hover, a:focus) {
 		text-decoration: underline;
 		color: var(--yellow);
-	}
-
-	:global(h1, h2, h3) {
-		color: var(--contrast);
 	}
 
 	:global(img, iframe, button) {
@@ -84,7 +80,7 @@
 	:global(button) {
 		border: none;
 		background-color: var(--background);
-		color: var(--contrast);
+		color: var(--color);
 		border-radius: 1rem;
 		font-size: 1.2rem;
 		font-weight: bold;

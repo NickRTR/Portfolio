@@ -30,7 +30,6 @@
 
 	label {
 		padding-block: 0.5rem;
-		color: var(--contrast);
 	}
 
 	textarea,

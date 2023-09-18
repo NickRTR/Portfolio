@@ -87,7 +87,7 @@
 		height: 2rem;
 		padding: 0.5rem;
 		border-radius: 1rem;
-		background: var(--contrast);
+		background: var(--color);
 		transition: all 0.2s ease-in;
 	}
 
