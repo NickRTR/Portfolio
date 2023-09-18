@@ -35,7 +35,6 @@
 				<a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin_{$theme}.svg" alt="linkedin" title="linkedin" /></a>
 				<a class="noYellowUnderline socialLink" href="https://github.com/NickRTR" target="_blank"><img src="/social/github_{$theme}.svg" alt="github" title="github" /></a>
 				<a class="noYellowUnderline socialLink" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img src="/social/stackoverflow_{$theme}.svg" alt="stackoverflow" title="stackoverflow" /></a>
-				<!-- <a class="noYellowUnderline socialLink" href="https://www.twitch.tv/nickrtr" target="_blank"><img src="/social/twitch.svg" alt="twitch" title="twitch"></a> -->
 			</div>
 		</aside>
 	</article>
@@ -58,7 +57,7 @@
 	}
 
 	aside {
-		margin-left: 1rem;
+		margin-left: 1.5rem;
 	}
 
 	.me {
