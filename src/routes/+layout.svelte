@@ -37,7 +37,7 @@
 		max-width: 800px;
 		font-family: monospace;
 		font-size: 16px;
-		padding-inline: 0.5rem;
+		padding-inline: 1rem;
 		margin: auto;
 	}
 

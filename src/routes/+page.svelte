@@ -100,13 +100,17 @@
 		background: var(--yellow);
 	}
 
-	@media only screen and (max-width: 550px) {
+	@media only screen and (max-width: 700px) {
 		article {
 			flex-direction: column;
 		}
 
 		article img {
 			margin-bottom: 0.75rem;
+		}
+
+		aside {
+			margin: 0;
 		}
 	}
 </style>
