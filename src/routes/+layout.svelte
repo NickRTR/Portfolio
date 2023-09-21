@@ -21,7 +21,7 @@
 <style>
 	:global(:root) {
 		--gradient: linear-gradient(90deg, rgb(255, 15, 123) 0%, rgb(248, 156, 42) 100%);
-		--yellow: #ffc600;
+		--accent: #ffc600;
 	}
 
 	:global(body) {
@@ -46,7 +46,7 @@
 	}
 
 	:global(*::selection) {
-		background: var(--yellow);
+		background: var(--accent);
 		color: black;
 	}
 
@@ -57,7 +57,7 @@
 
 	:global(a:hover, a:focus) {
 		text-decoration: underline;
-		color: var(--yellow);
+		color: var(--accent);
 	}
 
 	:global(img, iframe, button) {
@@ -73,7 +73,7 @@
 	}
 
 	:global(textarea:hover, input:hover, textarea:focus, input:focus) {
-		border-color: var(--yellow);
+		border-color: var(--accent);
 		border-radius: 0.5rem;
 	}
 
@@ -90,7 +90,7 @@
 
 	:global(button:hover) {
 		text-decoration: underline;
-		color: var(--yellow);
+		color: var(--accent);
 	}
 
 	/* scroll bar */
@@ -106,7 +106,7 @@
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		background: var(--yellow);
+		background: var(--accent);
 		border-radius: 1rem;
 	}
 </style>

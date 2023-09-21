@@ -97,7 +97,7 @@
 
 	.socialLink:hover img,
 	.socialLink:focus img {
-		background: var(--yellow);
+		background: var(--accent);
 	}
 
 	@media only screen and (max-width: 700px) {

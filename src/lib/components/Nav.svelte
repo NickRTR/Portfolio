@@ -142,7 +142,7 @@
 
 	.hamburger {
 		padding-left: 0.5rem;
-		border-left: 4px solid var(--yellow);
+		border-left: 4px solid var(--accent);
 	}
 
 	.hamburger a {

@@ -27,7 +27,7 @@
 	:global(.project h1) {
 		margin-top: 0;
 		line-height: 3rem;
-		border-bottom: 4px solid var(--yellow);
+		border-bottom: 4px solid var(--accent);
 	}
 
 	:global(.project img) {

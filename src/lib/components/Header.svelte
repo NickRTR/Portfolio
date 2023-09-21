@@ -21,6 +21,6 @@
 	}
 
 	span {
-		color: var(--yellow);
+		color: var(--accent);
 	}
 </style>
