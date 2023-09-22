@@ -54,11 +54,11 @@
 
 	@media only screen and (min-width: 600px) {
 		.left {
-			margin-top: -1rem;
 			margin-right: -5rem;
 		}
 
 		.right {
+			margin-bottom: -1rem;
 			margin-left: -5rem;
 		}
 	}
