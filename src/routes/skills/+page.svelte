@@ -27,26 +27,11 @@
 	</article>
 </main>
 
-<!-- <style>
-	h2 {
-		margin-bottom: 0.4rem;
-		border-bottom: none;
-	}
-
-	.badges {
-		border-radius: 0.5rem;
-		border: 4px solid var(--accent);
-		padding: 0.5rem;
-		line-height: 0; /* remove padding at bottom */
-	}
-</style> -->
-
 <style>
 	article {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		width: 100%;
-		margin-inline: auto;
 		gap: 1rem;
 	}
 
@@ -69,6 +54,7 @@
 
 	@media only screen and (min-width: 600px) {
 		.left {
+			margin-top: -1rem;
 			margin-right: -5rem;
 		}
 
