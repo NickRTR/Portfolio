@@ -14,5 +14,6 @@
 
 	img:hover {
 		transform: scale(1.05);
+		box-shadow: 0 0 1rem var(--accent);
 	}
 </style>

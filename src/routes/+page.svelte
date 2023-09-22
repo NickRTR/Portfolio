@@ -50,6 +50,11 @@
 		flex-wrap: wrap;
 	}
 
+	:global(.badges img) {
+		box-shadow: 0 0rem 0.7rem var(--accent);
+		margin-inline: 0.3rem;
+	}
+
 	article {
 		margin-top: 2rem;
 		display: flex;
