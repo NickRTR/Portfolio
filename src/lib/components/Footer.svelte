@@ -15,7 +15,7 @@
 	<section>
 		<p>©2023 Nick Reutlinger 🚀</p>
 		<p>
-			Germany, Stuttgart
+			Stuttgart, Germany
 			{#if weather}
 				{Math.round(weather.current.temp_c)}°C / {Math.round(weather.current.temp_f)}°F
 			{/if}
