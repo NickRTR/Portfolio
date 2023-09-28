@@ -9,7 +9,7 @@
 <main>
 	<Header title="Contact" />
 
-	<form action="https://formsubmit.co/nickrtrrtr@gmail.com" method="POST">
+	<form action="https://formsubmit.co/contact@nickreutlinger.de" method="POST">
 		<label for="email">email</label>
 		<input class="border" type="email" name="email" id="email" placeholder="Your email" required />
 		<label for="message">message</label>
