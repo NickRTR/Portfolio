@@ -29,6 +29,7 @@
 		color: var(--color);
 		margin: 0;
 		min-height: 100vh;
+		transition: background-color 0.2s;
 	}
 
 	main {
