@@ -31,9 +31,9 @@
 		<aside>
 			<About content={data.aboutPreview.about.text.html} />
 			<div class="socialLinks">
-				<a class="noYellowUnderline socialLink" href="https://twitter.com/nick_reutlinger" target="_blank"><img src="/social/twitter_{$theme}.svg" alt="twitter" title="twitter" /></a>
-				<a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin_{$theme}.svg" alt="linkedin" title="linkedin" /></a>
 				<a class="noYellowUnderline socialLink" href="https://github.com/NickRTR" target="_blank"><img src="/social/github_{$theme}.svg" alt="github" title="github" /></a>
+				<a class="noYellowUnderline socialLink" href="https://www.linkedin.com/in/nick-reutlinger-9a89ab236/" target="_blank"><img src="/social/linkedin_{$theme}.svg" alt="linkedin" title="linkedin" /></a>
+				<a class="noYellowUnderline socialLink" href="https://twitter.com/nick_reutlinger" target="_blank"><img src="/social/twitter_{$theme}.svg" alt="twitter" title="twitter" /></a>
 				<a class="noYellowUnderline socialLink" href="https://stackoverflow.com/users/17878912/nickrtr" target="_blank"><img src="/social/stackoverflow_{$theme}.svg" alt="stackoverflow" title="stackoverflow" /></a>
 			</div>
 		</aside>
