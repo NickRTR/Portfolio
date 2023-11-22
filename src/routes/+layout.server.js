@@ -1,9 +1,5 @@
 import { error } from "@sveltejs/kit";
 import dotenv from "dotenv";
-import { dev } from "$app/environment";
-import { inject } from "@vercel/analytics";
-
-inject({ mode: dev ? "development" : "production" });
 
 dotenv.config();
 
