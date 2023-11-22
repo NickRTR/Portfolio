@@ -1,6 +1,8 @@
 <script>
 	export let weather;
 
+	console.log(weather);
+
 	const weatherConditions = {
 		sun: ["☀️", 1000],
 		"partly cloudy": ["⛅", 1003, 1249],
@@ -13,7 +15,7 @@
 	};
 
 	function getWeatherIcon(condition) {
-		if (weather.current.is_day !== 0) return "🌙";
+		if (weather.current.is_day === 0) return "🌙";
 
 		for (const key in weatherConditions) {
 			if (weatherConditions[key].includes(condition)) {
