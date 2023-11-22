@@ -40,6 +40,7 @@
 		border-radius: 1rem;
 		padding: 1rem;
 		padding-top: 0;
+		z-index: 1;
 	}
 
 	section:hover {
