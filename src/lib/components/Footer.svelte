@@ -1,8 +1,6 @@
 <script>
 	export let weather;
 
-	console.log(weather);
-
 	const weatherConditions = {
 		sun: ["☀️", 1000],
 		"partly cloudy": ["⛅", 1003, 1249],
