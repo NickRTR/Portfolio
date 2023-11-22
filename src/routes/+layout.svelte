@@ -1,11 +1,6 @@
 <script>
 	import Nav from "$lib/components/Nav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
-	import { dev } from "$app/environment";
-	import { inject } from "@vercel/analytics";
-
-	// Inject the Analytics functionality
-	inject({ mode: dev ? "development" : "production" });
 
 	export let data;
 
