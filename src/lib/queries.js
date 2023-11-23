@@ -14,7 +14,7 @@ export const skillSectionsQuery = gql`
 	query skillsSections {
 		skillSections {
 			title
-			skills {
+			skills(first: 100) {
 				title
 				url
 			}
