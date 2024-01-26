@@ -36,7 +36,7 @@
 		<a href="https://blog.nickreutlinger.de" title="Blog">Blog</a>
 	</nav>
 	<section>
-		<p>©2023 Nick Reutlinger 🚀</p>
+		<p>©{new Date().getFullYear()} Nick Reutlinger 🚀</p>
 		<p>
 			📌 Stuttgart
 			{#if weather}
