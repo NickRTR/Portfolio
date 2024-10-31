@@ -20,7 +20,8 @@
 		<a href="https://go.dev/" target="_blank"><Badge url="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF" alt="Go" /></a>
 		<a href="https://de.wikipedia.org/wiki/JavaScript" target="_blank"><Badge url="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=000000" alt="Javascript" /></a>
 		<a href="https://svelte.dev" target="_blank"><Badge url="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=Svelte&logoColor=FFFFFF" alt="Svelte" /></a>
-		<a href="https://supabase.com" target="_blank"><Badge url="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=Supabase&logoColor=000000" alt="Supabase" /></a>
+		<a href="https://vuejs.org" target="_blank"><Badge url="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=Vue.js&logoColor=000000" alt="Vue.js" /></a>
+		<a href="https://laravel.com" target="_blank"><Badge url="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=Laravel&logoColor=FFFFFF" alt="Laravel" /></a>
 		<a href="https://bun.sh" target="_blank"><Badge url="https://img.shields.io/badge/bun-FFFFFF?style=for-the-badge&logo=bun&logoColor=000000" alt="Bun" /></a>
 	</div>
 

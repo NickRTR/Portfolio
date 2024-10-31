@@ -46,7 +46,7 @@ export const projectQuery = gql`
 
 export const usesSectionsQuery = gql`
 	query usesSkillSections {
-		usesSections {
+		usesSections(orderBy: sectionTitle_ASC) {
 			sectionTitle
 			uses {
 				use {

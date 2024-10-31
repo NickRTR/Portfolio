@@ -35,5 +35,6 @@
 	h2 {
 		text-decoration: underline;
 		text-decoration-color: var(--accent);
+		margin-block: 2rem;
 	}
 </style>
