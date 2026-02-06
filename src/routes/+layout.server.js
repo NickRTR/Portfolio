@@ -10,7 +10,7 @@ export async function load() {
 	try {
 		result = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Stuttgart`);
 	} catch (err) {
-		throw error(500, err);
+		error(500, err);
 	}
 
 	if (result.ok) {
@@ -19,6 +19,6 @@ export async function load() {
 			weather: data
 		};
 	} else {
-		throw error(500, "Not able to fetch Weather data.");
+		error(500, "Not able to fetch Weather data.");
 	}
 }

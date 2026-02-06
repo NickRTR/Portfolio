@@ -9,12 +9,13 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-vercel": "^2.4.3",
-    "@sveltejs/kit": "^1.30.4",
+    "@sveltejs/adapter-vercel": "^4.0.5",
+    "@sveltejs/kit": "^2.50.2",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
-    "svelte": "^3.59.2",
-    "vite": "^4.5.14",
+    "svelte": "^4.2.20",
+    "vite": "^5.4.21",
     "graphql": "^16.12.0",
     "graphql-request": "^4.3.0"
   },

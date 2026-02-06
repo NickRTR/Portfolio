@@ -58,7 +58,7 @@
 	</nav>
 
 	{#if showHamburger && innerWidth < 900}
-		<div class="hamburger" transition:slide>
+		<div class="hamburger" transition:slide|global>
 			{#each nav as link}
 				<a
 					class="noYellowUnderline"
