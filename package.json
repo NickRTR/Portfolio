@@ -9,7 +9,7 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.1.1",
+    "@sveltejs/adapter-vercel": "^5.10.3",
     "@sveltejs/kit": "^1.30.4",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
@@ -21,8 +21,5 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^16.6.1"
-  },
-  "engines": {
-    "node": "22.x"
   }
 }
